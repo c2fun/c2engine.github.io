@@ -1,0 +1,263 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<meta name="renderer" content="webkit"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<title>C²engine|获取</title>
+<link href="css/global.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<!--<link href="css/download.css" rel="stylesheet">-->
+<link href="css/history_download.css" rel="stylesheet">
+<script src="js/jquery_1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+
+
+</head>
+<body>
+<!--判断当前浏览器是否IE8及以下版本-->
+<!--[if lte IE 8]>
+<script>
+    alert("您的IE浏览器版本过低！部分功能无法正常使用！请更新至IE9及以上版本");
+</script>
+<![endif]-->
+<!--导航栏-->
+<div id="top-head"></div>
+<div id="top-menu"></div>
+<script src="js/headernav.js"></script>
+<!--<script src="js/download.js"></script>-->
+
+<!--最新版本介绍-->
+<div class="version_all_container">
+    <div class="title_container">
+        <div class="title_content">
+            <h1>C²engine 历程图</h1>
+            <li>各位开发者，在这里您可以免费下载C²engine的各个历史版本，并查看对应更新日志。</li>
+        </div>
+    </div>
+    <div class="timeline">
+
+    <div class="version_container">
+        <h2 class="version_num">C²engine 0.9.3.0 尝鲜版
+            <span style="float: right">2017-8-4</span>
+        </h2>
+        <section class="details">
+            <h4>更新日志</h4>
+            <ul class="contents">
+                <li>【新增】 UI系统</li>
+                说明：使用尝鲜版，您将成为第一批体验UI系统的用户，欢迎您给我们提供反馈修改意见，我们将根据您的反馈意见作进一步的优化调整。<br>
+                您的建议有可能出现在下次的版本更新中。
+            </ul>
+
+            <a class='btn-primary down-btn005' href="#">下载C²engine 0.9.3.0</a>
+        </section>
+    </div>
+
+    <div class="version_container">
+        <h2 class="version_num">C²engine 0.9.2.5
+            <span style="float: right">2017-8-4</span>
+        </h2>
+        <section class="details">
+            <h4>更新日志</h4>
+            <ul class="contents">
+                <li class="bottom">C²引擎渲染核心</li>
+                <li>【优化】 大幅提高了画面渲染帧率</li>
+                <li>【优化】 优化了逻辑帧和渲染帧更新逻辑</li>
+                <li class="bottom">C²engine</li>
+                <li>【新增】 支持编辑器多开</li>
+                <li>【新增】 C#脚本模块新增api开放</li>
+                <li>【新增】对于C#脚本中的复杂类型变量，提供了界面编辑支持</li>
+                <li>【新增】资源文件移动及重命名追踪功能</li>
+                <li>【新增】增加了资源文件对应的meta文件</li>
+                <li>【新增】预制件属性编辑自动同步到场景中的节点</li>
+                <li>【新增】图片Sprite(2d and UI)编辑器</li>
+                <li>【新增】摄像机2D视图功能</li>
+                <li>【新增】文件预览区PNG图片文件双击查看</li>
+                <li>【调整】 坐标系同Unity3D同步</li>
+                <li>【优化】 场景树拖动及点选效率提升</li>
+                <li>【优化】材质类型多级显示</li>
+                <li>【优化】FBX资源文件编辑</li>
+                <li>【优化】普通文件对话窗口，改为模式文件对话窗口</li>
+                <li>【优化】属性界面刷新效率</li>
+                <li>【优化】场景视图 漫游加减速控制支持</li>
+                <li>【优化】动画控制器菜单和主界面菜单风格统一</li>
+                <li>【修复】导出资源包，部分依赖文件遗漏未被导出</li>
+                <li>【修复】Window Basic 配色方案下，打开新场景或项目后窗口标题不刷新</li>
+                <li>【修复】输入控件中输入时会误触发场景快捷键</li>
+                <li>【修复】创建中文名项目时路径异常</li>
+                <li>【修复】材质缓存未及时清除</li>
+                <li>【修复】部分二级界面无法移动位置 </li>
+                <li>【修复】初次打开项目时操作界面未响应</li>
+                <li>【修复】重命名节点或文件时无法复制粘贴</li>
+                <li>【修复】导入资源时，文件筛选错误</li>
+                <li>【修复】预览区材质预览缩略图没有及时更新</li>
+                <li>【修复】对象属性区 模型渲染组件显示异常</li>
+                <li>【修复】粒子特效暂停后渲染位置出错</li>
+                <li>【修复】场景游戏对象，默认命名重复</li>
+                <li>【修复】粒子特效部分属性编辑BUG</li>
+                <li>【修复】 脚本中对material及sharedMaterial功能bug</li>
+                <li>【修复】 发布后pc版本后脚本运行无效果</li>
+                <li>【修复】 FBX模型3DMAX中位置未归零导入引擎中引起的相对位置及旋转信息错误</li>
+                <li>【修复】 FBX模型中包含中文名称模型导入后名称异常</li>
+                <li>【修复】 HTML页面导致的严重内存泄露问题</li>
+                <li>【修复】 特效中动态节点功能异常</li>
+                <li>【修复】 双击脚本文件修改后保存导致的一系列异常</li>
+            </ul>
+            <a class='btn-primary down-btn004' href="#">下载C²engine 0.9.2.5</a>
+        </section>
+    </div>
+
+<div class="version_container">
+            <h2 class="version_num">C²engine 0.9.1.5
+                <span style="float: right">2017-05-27</span>
+            </h2>
+            <section class="details">
+                <h4>更新日志</h4>
+                <ul class="contents">
+                    <li class="bottom">C²engine渲染核心</li>
+                    <li>【修复】平行光被剪裁BUG</li>
+                    <li>【新增】质量及卡通选项界面开放</li>
+                    <li>【修复】对象在场景视图中显示视距异常</li>
+                    <li class="bottom">C²engine</li>
+                    <li>【修复】官方基础包中两个示例场景功能使用C#进行是实现</li>
+                    <li>【修复】局部全局，中心私有坐标系功能需求</li>
+                    <li>【修复】模型旋转后，对x、y轴进行缩放，缩放方向与实际操作相反</li>
+                    <li>【修复】第一次创建项目的时候不创建就能够打开引擎界面</li>
+                    <li>【修复】当前C#中在 Update 或者 FixedUpdatez 中多次调用Get接口会导致严重的内存泄露</li>
+                    <li>【修复】导入导出资源包中文路径bug </li>
+                    <li>【修复】编译界面表单更新BUG</li>
+                    <li>【新增】支持创建默认3d对象，立方体，胶囊体，圆柱体，矩形面，球体</li>
+                    <li>【新增】view视图 ：开放小图示选项，添加网格、3d图标的显示/隐藏</li>
+                    <li>【新增】增加页面消息框控件功能</li>
+                    <li>【调整】材质编辑界面调整</li>
+                    <li>【调整】登陆界面，创建打开项目界面效果优化</li>
+                    <li>【调整】网格效果优化</li>
+                    <li class="bottom">C²engine试验性新功能</li>
+                    <li>【新增】全中文支持</li>
+                    <li class="bottom">C²engine 文档</li>
+                    <li>【新增】C#脚本API文档提供</li>
+                    <li class="bottom">C²实验性物理系统</li>
+                    <li>【新增】球体碰撞体</li>
+                    <li>【修复】缩放带来的碰撞bug</li>
+                </ul>
+                <a class='btn-primary down-btn003' href="#">下载C²engine 0.9.1.5</a>
+            </section>
+        </div>
+
+
+        <div class="version_container">
+            <h2 class="version_num">C²engine 0.9.0.9
+                <span style="float: right">2017-05-17</span>
+            </h2>
+            <section class="details">
+                <h4>更新日志</h4>
+                <ul class="contents">
+                    <li class="bottom">C²引擎渲染核心</li>
+                    <li>【新增】多种高级材质效果</li>
+                    <li>【修复】fbx模型导出后概率出现模型错乱的问题</li>
+                    <li class="bottom">C²engine编辑器</li>
+                    <li>【修复】拖放polygonsoup或者fbx后名称未同步</li>
+                    <li>【修复】音频文件资源浏览界面，在assets与scene间切换，scene默认选中的none选项会显示为未选中状态</li>
+                    <li>【修复】弹出型窗口移动窗口最上方界面会被引擎遮盖</li>
+                    <li>【修复】点击摄像机预览场景后，切换到游戏界面，窗口显示异常</li>
+                    <li>【修复】多选删除操作bug</li>
+                    <li>【修复】多个特效播放功能bug</li>
+                    <li>【修复】丢失焦点导致qwer快捷操作错乱问题</li>
+                    <li>【修复】天空盒发布后异常的问题</li>
+                    <li>【修复】编辑器使用默认资源发布后异常的问题</li>
+                    <li>【修复】编辑器输入焦点丢失相关问题</li>
+                    <li>【修复】关闭崩溃问题</li>
+                    <li>【修复】整体效率降低，浏览器线程跟Runtime线程会导致互相锁住的问题</li>
+                    <li>【修复】菜单栏去除“文件”分栏，区分“项目”、“场景”操作</li>
+                    <li>【修复】编辑器编辑窗口效率问题</li>
+                    <li>【修复】发布不同平台下游戏帧率不稳定问题</li>
+                    <li>【修复】处理材质的时候在运行时创建运行时备份</li>
+                    <li>【修复】创建项目界面无法关闭（第一次创建工程后打开）</li>
+                    <li>【修复】场景中，按住键盘alt键，左上角手抓图概率显示为眼睛图标，且同时按住alt+左键，无法实现场景镜头随屏幕中心点移动</li>
+                    <li>【修复】项目面板右下角滑动条，点击滑动条任意处概率无反馈，导致滚动球位置不改变，文件图标大小不改变 </li>
+                    <li>【修复】重复资源包导入，界面提示</li>
+                    <li>【修复】新加组件调色板必须先点颜色才能右侧拖动</li>
+                    <li>【修复】shaded菜单下功能屏蔽了</li>
+                    <li>【新增】yaml 文件解析模块 </li>
+                    <li>【新增】创建删除GameObject，添加移除Component，修改属性的撤销返回</li>
+                    <li>【新增】支持中文路径及名称</li>
+                    <li>【新增】动画系统中播放及实时调整功能</li>
+                    <li>【新增】脚本热更新功能</li>
+                    <li>【新增】在资源管理器中创建，修改，删除后引擎会自动同步功能</li>
+                    <li>【新增】c2资源包后缀由.rvp变为.c2pack</li>
+                    <li class="bottom">C²实验性粒子系统</li>
+                    <li>【修复】动态变化组件节点颜色无效</li>
+                    <li>【修复】粒子，环状粒子，矩形面透明度变化值无法保存</li>
+                    <li>【修复】粒子，环状粒子，矩形面透明度变化值无法保存</li>
+                    <li>【修复】动态变化自转时，自转中心点不是特效节点中心点</li>
+                    <li>【修复】GPU粒子材质不能保存</li>
+                    <li>【修复】动态变化公转速度值无法保存</li>
+                    <li>【修复】粒子，环状粒子，矩形面透明度变化值无法保存</li>
+                    <li>【新增】所有特效添加播放/暂停/停止按钮</li>
+                    <li class="bottom">C²engine试验性新功能</li>
+                    <li>【新增】C#脚本开发支持</li>
+                    <li>【新增】C#脚本API实现</li>
+                </ul>
+                <a class='btn-primary down-btn002' href="#">下载C²engine 0.9.0.9</a>
+            </section>
+        </div>
+
+        <div class="version_container">
+            <h2 class="version_num">C²engine 0.9.0.0
+                <span style="float: right">2017-04-01</span>
+            </h2>
+            <section class="details">
+                <h4>更新日志</h4>
+                <ul class="contents">
+                    <li class="bottom">C²引擎渲染核心</li>
+                    <li>【新增】不受雾效影响的材质功能</li>
+                    <li>【新增】支持关闭Z-Test，Z-Write材质功能</li>
+                    <li>【新增】材质系统中多种预置高级效果</li>
+                    <li>【修复】Lightmap下第二层uv错乱问题</li>
+                    <li>【修复】修改fov会导致天空盒异常的bug</li>
+                    <li class="bottom">C²engine</li>
+                    <li>【新增】支持材质的预览</li>
+                    <li>【新增】支持fbx模型预览</li>
+                    <li>【新增】支持fbx中动画预览</li>
+                    <li>【新增】支持导航网格实时预览</li>
+                    <li>【新增】语言切换功能</li>
+                    <li>【新增】GameObject的Tag功能</li>
+                    <li>【新增】后期屏幕效果组件</li>
+                    <li>【新增】鼠标框选场景区物件功能</li>
+                    <li>【修复】点击播放后界面数据没有跟游戏运行时同步问题</li>
+                    <li>【修复】fbx模型在非T字形导出后在C²引擎中显示异常的问题</li>
+                    <li>【修复】模型经过缩放之后导致点选不中的bug</li>
+                    <li>【修复】模型经过缩放之后导航网格生成异常</li>
+                    <li>【修复】解决页面概率被遮罩问题</li>
+                    <li>【修复】前后台键盘事件偶尔错乱的问题</li>
+                    <li>【修复】预览图片时导致内存增长过快的问题</li>
+                    <li>【修复】天空盒无法取消的问题</li>
+                    <li>【修复】发布android应用的时候android应用安装崩溃的问题</li>
+                    <li>【修复】导入导出时大小写异常问题</li>
+                    <li>【修复】引擎本身不稳定导致崩溃问题</li>
+                    <li>【修复】修复C²engine0.0.0.2版本bug</li>
+                    <li>【修复】颜色编辑器切换RGB到HSB的时候数据错误的问题</li>
+                    <li>【修复】属性区刷新效率低下的问题</li>
+                    <li class="bottom">C²实验性动画系统</li>
+                    <li>【新增】支持部分组件中数据受动画系统影响</li>
+                    <li class="bottom">C²实验性特效模块</li>
+                    <li>【新增】全新的特效系统，支持全屏背景、动态条带、粒子、矩形面、圆柱体、环状粒子、抖动、屏幕面片、动态变化等效果</li>
+                    <li class="bottom">C²实验性物理系统</li>
+                    <li>【新增】物理系统中新增刚体组件、网格碰撞体组件，胶囊体</li>
+                    <li>【新增】物理材质，控制物体的物理特性</li>
+                </ul>
+                <a class='btn-primary down-btn001' href="#">下载C²engine 0.9.0.0</a>
+            </section>
+        </div>
+
+    </div>
+
+<!--底部导航栏-->
+<div id="bottom-menu"></div>
+<script src="js/footernav.js"></script>
+
+</body>
+</html>

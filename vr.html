@@ -1,0 +1,157 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.o,user-scalable=no">
+<meta name="renderer" content="webkit"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<title>C²engine|VR</title>
+<link href="css/global.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/vr.css" rel="stylesheet">
+<link href="slick/slick.css" rel="stylesheet">
+<link href="css/vr_style.css" rel="stylesheet">
+<script src="js/jquery_1.11.3.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+</head>
+<body>
+<!--判断当前浏览器是否IE8及以下版本-->
+<!--[if lte IE 8]>
+<script>
+    alert("您的IE浏览器版本过低！部分功能无法正常使用！请更新至IE9及以上版本");
+</script>
+<![endif]-->
+<!--导航栏-->
+<div id="vrfirst">
+<div id="top-menu"></div>
+<script src="js/headernav.js"></script>
+<!--VR-->
+<div class="vr_first">
+  
+</div>
+</div>
+<!--future-->
+<div class="vr_future" id="vrfuture">
+  <div class="vr_future_margin" id="vfm">
+    <div class="container">
+      <h1>虚拟现实是我们的未来</h1>
+      <p>虚拟现实技术正在不断地进化，而且正逐渐变得越来越令人激动和引人入胜。即使您正在为了制作简单项目而学习VR或AR技术，无论现在还是未来，您都应该根据能传达您创意目标的技术来构建您的团队、资源和工作流程。</p>
+    </div>
+  </div>
+  
+</div>
+<!--quality-->
+<div class="vr_quality">
+  <div class="container">
+    <h1>高性能和高保真度的虚拟现实</h1>
+    <p>为了创建另大脑感觉真实可信的引人入胜的虚拟现实体验，虚拟现实需要以非常高的帧速进行渲染的复杂场景。制作这种体验没有捷径可走。C²engine引擎专为这些高要求的应用而设计，并为您后期的创作提供坚固的基石。</p>
+  </div>
+</div>
+<!--glass-->
+<div class="vr_glass">
+  <img src="http://cdn.c2engine.com/c2engine/img/vr/glass.png" width="100%" />
+</div>
+<!--vr game-->
+<div class="vr_game">
+  <div class="container">
+    <h1>VR游戏</h1>
+    <p>对于游戏行业而言，VR游戏已经是游戏厂商与虚拟设备提供商最看中的市场之一，尽管VR游戏的发展道路还很漫长，但不可否认，已经有一些VR游戏开始展露头角。</p>
+    <!--图片轮播-->
+        <div class="single-item">
+            <div>
+                <h3><img src="http://cdn.c2engine.com/c2engine/img/vr/vr1.jpg" width="100%"alt=""/></h3>
+            </div>
+            <div>
+                <h3><img src="http://cdn.c2engine.com/c2engine/img/vr/vr2.jpg" width="100%" alt=""/></h3>
+            </div>
+            <div>
+                <h3><img src="http://cdn.c2engine.com/c2engine/img/vr/vr3.jpg" width="100%" alt=""/></h3>
+            </div>
+            <div>
+                <h3><img src="http://cdn.c2engine.com/c2engine/img/vr/vr4.jpg" width="100%" alt=""/></h3>
+            </div>
+        </div>
+        <script>
+            $('.single-item').slick({
+              dots: true,
+              arrows: true,
+              infinite: true,
+              speed: 360,
+              cssEase: 'linear',
+              autoplay: true,
+              autoplaySpeed: 4000,
+              responsive: [
+              {
+              breakpoint: 549,
+              settings: {
+                  dots: true,
+                  arrows: false,
+                  infinite: true,
+                  speed: 360,
+                  cssEase: 'linear',
+                  autoplay: true,
+                  autoplaySpeed: 4000
+              }
+            }
+            ]
+            });
+        </script>
+
+
+
+  </div>
+</div>
+<script>
+$(function(){//根据w的大小读取$(vrfirst).height()
+  var n=$('#vrfirst').height();
+  var m=$('#vfm').height();
+  var ms=$('#vfm').css('height');//有单位px
+  var sum=n+m;
+  var w=window.innerWidth;
+    var win=$(window);
+    var sc=$(document);
+    if(w>1140){
+      null;
+    }
+    else if(w<=1140){
+      $('.vr_future').css('margin-top',ms);
+      $('.vr_future_margin').css('margin-top','-'+ms);
+    }
+
+    win.scroll(function(){
+    if(w>1140&&sc.scrollTop()>=n){
+      $("#vrfuture").addClass('foo');
+      }
+    else if(w>=749&&w<=1140&&sc.scrollTop()>=sum){
+      $("#vrfuture").addClass('foo');
+      }
+    else{
+      $("#vrfuture").removeClass('foo');
+      }
+    });
+  })
+</script>
+
+
+
+<!--底部导航栏-->
+<div id="bottom-menu"></div>
+<script src="js/footernav.js"></script>
+<script>
+	var userAgentInfo = navigator.userAgent;
+	var Agents = new Array("Android","iPhone","SymbianOS","Windows Phone","iPad","iPod");
+	var flag = false;
+	for (var v = 0;v < Agents.length; v++){
+		if(userAgentInfo.indexOf(Agents[v]) > 0) {flag = true;break;}
+	}
+	if(flag)
+	{
+		document.write('<link href="css/uc.css" rel="stylesheet">');
+
+	}
+</script>
+
+</body>
+</html>

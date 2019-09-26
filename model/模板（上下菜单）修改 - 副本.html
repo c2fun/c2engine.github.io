@@ -1,0 +1,136 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.o,user-scalable=no">
+<title>导航栏--模板</title>
+<link href="../css/main.css" rel="stylesheet">
+<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="../css/muban.css" rel="stylesheet">
+<script src="../js/jquery_1.11.3.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
+</head>
+<body>
+<!--导航栏-->
+<div class="uu-header">
+    <div class="container">
+    <!--liangxin.org-->
+    <a href="#">
+    <div class="uu-site">
+        <div class="web-site">liangxin.org</div>
+        <canvas id="myCanvas" width="100" height="29">五边形</canvas>
+    </div>
+    </a>
+    <script>
+        var myCanvas=document.getElementById("myCanvas");
+        var context=myCanvas.getContext("2d");
+        context.fillStyle='rgb(77,75,77)';
+        context.lineWidth=0;
+        context.beginPath();
+        context.moveTo(0,0);
+        context.lineTo(0,19);
+        context.lineTo(50,29);
+        context.lineTo(100,19);
+        context.lineTo(100,0);
+        context.closePath();
+        context.fill();
+    </script>
+    <!--liangxin.org-->
+        <div class="uu-logo">
+            <a href="index.html"><img src="..http://cdn.c2engine.com/c2engine/img/logo.png" width="55" alt=""/></a>
+        </div>
+        <div class="uu-bar">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="down-uu">
+        <ul class="uu-ul-head">
+            <li><a href="#">C²engine</a></li>
+            <li><a href="show.html">展示</a></li>
+            <li><a href="#">学习中心</a></li>
+            <li><a href="#">社区</a></li>
+            <li><a href="#">博客</a></li>
+            <li><a href="#">开发平台</a></li>
+            <li><a href="#">申请投资</a></li>
+            <li><a href="about_campony.html">关于我们</a></li>
+            <li><a href="about_opportunity.html">工作机会</a></li>
+        </ul>
+        <ul class="uu-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>登录</a></li>
+            <li><a href="#"><span class="btn-primary">获取C²engine</span></a></li>
+        </ul>
+        </div>
+        <script>
+            $(".uu-bar").click(function(){
+                $("#down-uu").slideToggle(300);
+            });
+        </script>
+
+    </div>
+</div>
+<!--子菜单-->
+<div class="sub-header">
+    <div class="container">
+        <div class="sub-logo">
+            <h1>关于我们</h1>
+        </div>
+        <div class="sub-bar">
+            <div><img src="..http://cdn.c2engine.com/c2engine/img/about/sub.png" width="20" id="pic-sub"></div>
+        </div>
+        <div id="sub-down">
+        <ul class="sub-ul-head">
+            <li><a href="#">公司简介</a></li>
+            <li><a href="#">工作机会</a></li>
+            <li><a href="#">校园英雄</a></li>
+        </ul>
+        </div>
+        <script>
+        var sub=0;
+            $(".sub-bar").click(function(){
+                $("#sub-down").slideToggle(300);
+                sub++;
+                $("#pic-sub").css("transform","rotate("+180*sub+"deg)");
+            });
+        </script>
+    </div>
+</div>
+
+
+
+
+here
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+
+<div class="uu-footer">
+    <div class="container">
+        <ul class="uu-ul-foot">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">C²engine</a></li>
+            <li><a href="#">展示</a></li>
+            <li><a href="#">学习中心</a></li>
+            <li><a href="#">社区</a></li>
+            <li><a href="#">博客</a></li>
+            <li><a href="#">开发平台</a></li>
+            <li><a href="#">申请投资</a></li>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">工作机会</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

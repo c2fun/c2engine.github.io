@@ -1,0 +1,174 @@
+.center div h3{ padding:0!important;}
+#disqus_thread{margin-top:20px;}
+*{-moz-box-sizing:border-box;box-sizing:border-box;}
+.blue{height:25vw; margin-top: 15px; overflow: hidden;}
+.blue h3{color:#3498db;font-size:36px;line-height:100px;margin:15px;padding:0%;position:relative;text-align:center;}
+.button{background:#3498db;color:#EFEFEF;display:block;font-size:16px;margin:20px auto;padding:20px;text-align:center;text-decoration:none;width:48%;}
+.buttons{padding:0 20px 20px; margin-bottom: 10px;}
+.buttons .button{background:#EFEFEF;color:#3498db;float:left;margin:5px;}
+.center .slick-center h3{margin:0px 7px 0px 5px;position:relative!important;z-index:9999 !important;-moz-transform:scale(1.08);-ms-transform:scale(1.08);-o-transform:scale(1.08);-webkit-transform:scale(1.08);color:#e67e22;opacity:1;transform:scale(1.08);}
+
+.center h3{z-index:8000 !important;opacity:0.4;transition:all 300ms ease;}
+.content{ width:100%!important; margin:0 auto;padding:0px;}
+.content:after,.buttons::after{clear:both;content:"";display:table;}
+.destroy{font-weight:400;margin-top:40px;}
+.features{display:block;list-style-type:none;margin-top:30px;padding:0;text-align:center;}
+.features li{margin:20px 0;}
+.filter .button{background:#EFEFEF;color:#3498db; margin-bottom: 40px;}
+.fixed-header{background:#EFEFEF;box-shadow:2px 0 5px rgba(0,0,0,0.5);display:none;padding:10px;position:fixed;top:0;width:100%;z-index:10000;}
+.fixed-header .header-content{margin:auto;width:600px;}
+.fixed-header .subheading{display:none;}
+.fixed-header h1.title{float:left;font-size:24px;margin:0;}
+.fixed-header ul.nav{float:right;margin:0;padding:5px;}
+.fixed-header ul.nav li{margin:0 0 0 10px;}
+.header{padding:20px 0;}
+.margin-40{margin-bottom:40px;}
+.more,.button.first{margin-top:40px;}
+.red{background:#e74c3c;color:#EFEFEF;}
+.slick-slide .image{padding:10px;}
+.slick-slide img{border:none;display:block;width:100%;}
+.slick-slide img.slick-loading{border:0 }
+.slick-slider{margin:30px auto 50px;}
+.subheading{color:#555;font-size:12px;font-style:italic;font-weight:400;margin:10px auto;text-align:center;}
+.white{background:#EFEFEF;color:#3498db;}
+.white pre,.white hr{background:#3498db;}
+section{width:100%; margin-top:-20px;}
+/* ul.nav{margin-bottom:0;padding-left:0;text-align:center;}
+ul.nav li{display:inline-block;list-style-type:none;margin:0 20px;}
+ul.nav li a{font-size:12px;text-decoration:none;}
+ */
+/* @media (max-width: 420px) {
+ul.nav li a{display:block;font-size:10px;}
+} */
+@media(min-width: 2400px){
+	.blue{height: 19vw;}
+}
+@media(min-width: 2200px) and (max-width: 2400px){
+	.blue{height: 19vw;}
+}
+@media(min-width: 1999px) and (max-width: 2200px){
+	.blue{height: 20vw;}
+}
+@media(min-width: 1900px) and (max-width: 1999px){
+	.blue{height: 22vw;}
+}
+@media(min-width: 1779px) and (max-width: 1900px){
+	.blue{height: 23vw;}
+}
+@media( min-width: 1660px) and (max-width: 1779px){
+	.blue{ height: 25vw; }
+}
+@media(min-width:1561px )and(max-width: 1659px){
+.blue{height:27vw;}
+}
+@media(min-width: 1490px) and (max-width:1561px ){
+.blue{height:28vw;}
+}
+@media(min-width: 1400px) and (max-width:1490px ){
+.blue{height:30vw;}
+}
+@media(min-width: 1351px) and (max-width:1399px ){
+.blue{height:32vw;}
+}
+@media(min-width: 1254px) and (max-width:1351px ){
+.blue{height:28vw;}
+}
+@media(min-width: 991px) and (max-width:1254px ){
+.blue{height:29vw;}
+}
+@media(min-width: 955px) and (max-width:991px ){
+.blue{height:32vw;}
+}
+@media(min-width: 885px) and (max-width:955px ){
+.blue{height:32vw;}
+}
+@media(min-width: 862px) and (max-width:885px ){
+.blue{height:34vw;}
+}
+@media(min-width: 790px) and (max-width:862px ){
+.blue{height:36vw;}
+}
+@media(min-width: 684px) and (max-width:790px ){
+.blue{height:38vw;}
+}
+@media(min-width: 517px) and (max-width:684px ){
+.blue{height:42vw;margin-top: 0px;}
+}
+@media(min-width: 406px) and (max-width:517px ){
+.blue{height:46vw;margin-top: 0px;}
+}
+@media(min-width: 320px) and (max-width:406px ){
+.blue{height:55vw;margin-top: 0px;}
+}
+@media(min-width: 300px) and (max-width:320px ){
+.blue{height:55vw;margin-top: 0px;}
+}
+
+
+
+
+@media (min-width:1799px) and ( max-width: 1996px) {
+.center .slick-center h3{margin:0px 8px 0px 0px;}
+}
+@media (min-width:1659px) and ( max-width: 1799px) {
+.center .slick-center h3{margin:0px 7px 0px 0px;}
+}
+@media (min-width:1516px) and ( max-width: 1659px) {
+.center .slick-center h3{margin:0px 7px 0px 0px;}
+
+}
+@media (min-width:1481px) and ( max-width: 1516px) {
+.center .slick-center h3{margin:0px 7px 0px 0px;}
+}
+@media (min-width:1351px) and ( max-width: 1481px) {
+.center .slick-center h3{margin:0px 8px 0px 0px;}
+}
+@media (min-width:1200px) and ( max-width: 1351px) {
+.center .slick-center h3{margin:0px 4px 0px 0px;}
+}
+@media (min-width:1158px) and ( max-width: 1200px) {
+.center .slick-center h3{margin:0px 3px 0px 0px;}
+}
+@media (min-width:1000px) and ( max-width: 1158px) {
+.center .slick-center h3{margin:0px 2px 0px 0px;}
+}
+@media (min-width:756px) and ( max-width: 1000px) {
+.center .slick-center h3{margin:0px 1px 0px 0px;}
+}
+@media (min-width:730px) and ( max-width: 756px) {
+.center .slick-center h3{margin:0px 0px 0px 0px;}
+}
+@media (min-width:701px) and ( max-width: 730px) {
+.center .slick-center h3{margin:0px -1px 0px -1px;}
+}
+@media (min-width:601px) and ( max-width: 701px) {
+.center .slick-center h3{margin:0px -2px 0px -2px;}
+}
+@media (min-width:588px) and ( max-width: 601px) {
+.center .slick-center h3{margin:0px -2px 0px -10px;}
+}
+@media (min-width:539px) and ( max-width: 588px) {
+.center .slick-center h3{margin:0px -4px 0px -10px;}
+}
+@media (min-width:501px) and ( max-width: 539px) {
+.center .slick-center h3{margin:0px -6px 0px -10px;}
+}
+@media (min-width:455px) and ( max-width: 501px) {
+.center .slick-center h3{margin:0px -4px 0px -10px;}
+}
+@media (min-width:456px) and ( max-width: 501px) {
+.center .slick-center h3{margin:0px -4px 0px -10px;}
+}
+@media (min-width:411px) and ( max-width: 456px) {
+.center .slick-center h3{margin:0px -5px 0px -10px;}
+}
+@media (min-width:345px) and ( max-width: 411px) {
+.center .slick-center h3{margin:0px -6px 0px -10px;}
+}
+@media (min-width:100px) and ( max-width: 345px) {
+.center .slick-center h3{margin:0px -7px 0px -10px;}
+}
+
+
+
+

@@ -1,0 +1,137 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.o,user-scalable=no">
+<meta name="renderer" content="webkit"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<title>C²engine|H5和多平台</title>
+<link href="css/global.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/c2_h5.css" rel="stylesheet">
+<link href="slick/slick.css" rel="stylesheet">
+<link href="css/c2_h5_style.css" rel="stylesheet">
+<script src="js/jquery_1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/scripts.js"></script>
+</head>
+
+<body>
+<!--判断当前浏览器是否IE8及以下版本-->
+<!--[if lte IE 8]>
+<script>
+    alert("您的IE浏览器版本过低！部分功能无法正常使用！请更新至IE9及以上版本");
+</script>
+<![endif]-->
+<!--导航栏-->
+<div id="top-menu"></div>
+<script src="js/headernav.js"></script>
+
+<!--子菜单-->
+<div class="sub-header">
+    <div class="container">
+        <div class="sub-logo">
+            <h1>C²engine</h1>
+        </div>
+        <div id="sub-bar">
+            <div><span id="pic-sub"></span></div>
+        </div>
+        <div id="sub-down">
+        <ul class="sub-ul-head">
+            <li><a href="c2_editor.html">编辑器</a></li>
+            <li class="ahover"><a href="#">H5和多平台</a></li>
+            <li><a href="c2_vr.html" target="_self">VR行业</a></li>
+        </ul>
+        </div>
+        
+    </div>
+</div>
+
+<!--banner图-->
+<div class="h5_banner">
+    <div class="container">
+        <h1>开发HTML5游戏就用C²engine</h1>
+        <p>最好用的HTML5游戏开发工具</p>
+    </div>
+</div>
+<!--任何地方部署-->
+<div class="h5_build">
+    <div class="container">
+        <h3>只要生成一次，可在任何地方部署</h3>
+        <p>使用C²engine，您仅需学习一个引擎和一种工作流程，就能在现在和未来都满足所需。从移动平台项目，到超级高端的主机和PC游戏，C²engine是全球独立游戏开发人士和专业游戏开发者的选择</p>
+    </div>
+    <!--图片轮播-->
+        <div class="single-item">
+            <div>
+                <h3><img src="http://cdn.c2engine.com/c2engine/img2/c2/h5_1.png" alt=""/></h3>
+                <h4 id="oppp">C²engine用于移动游戏</h4>
+                <p>一键部署到Android、IOS、Windows手机和Tizen。针对手机游戏的世界一流的盈利和客户保留服务
+    。专门的、易于使用的3D和2D工具和工作流程。</p>
+            </div>
+            <div>
+                <h3><img src="http://cdn.c2engine.com/c2engine/img2/c2/h5_2.png" alt=""/></h3>
+                <h4 id="oppp">C²engine用于游戏主机</h4>
+                <p>独立开发人员发布到游戏机平台上，比以往任何时候更容易。使用C²engine，您可以免费定位到PS4、PS3、
+    Xbox 360、PlayStation Mobile、PlayStation Vita和Wii U。</p>
+            </div>
+            <div>
+                <h3><img src="http://cdn.c2engine.com/c2engine/img2/c2/h5_3.png" alt=""/></h3>
+                <h4>C²engine用于WEB游戏</h4>
+                <p>在C²engine中访问用于Web发布的免费编译选项。一旦用户安装它，十分流行的C²engine网络播放器插件会自动
+    更新.使用它来部署到Internet Explorer、Safari、Mozilla Firefox等。</p>
+            </div>
+            <div>
+                <h3><img src="http://cdn.c2engine.com/c2engine/img2/c2/h5_4.png" alt=""/></h3>
+                <h4>用于VR与AR的C²engine</h4>
+                <p>我们高度优化的渲染管线可以帮您实现非凡的帧速率。该功能和C²engine编辑器的快速迭代能力，已经帮助
+    C²engine牢牢占据了最广泛的虚拟现实开发平台。</p>
+            </div>
+            <div>
+                <h3><img src="http://cdn.c2engine.com/c2engine/img2/c2/h5_5.png" alt=""/></h3>
+                <h4>C²engine用于桌面游戏</h4>
+                <p>得益于基于Enlighten的Realtime Global Illumination和C²engine基于物理的着色器，现在是使用C²engine制作美丽、身临其境和有趣的桌面游戏的最好时候。</p>
+            </div>
+        </div>
+        <script>
+            $('.single-item').slick({
+              dots: true,
+              arrows: true,
+              infinite: true,
+              speed: 360,
+              cssEase: 'linear',
+              autoplay: true,
+              autoplaySpeed: 4000
+              responsive: [
+              {
+              breakpoint: 550,
+              settings: {
+                  dots: true,
+                  arrows: false,
+                  infinite: true,
+                  speed: 360,
+                  cssEase: 'linear',
+                  autoplay: true,
+                  autoplaySpeed: 4000
+              }
+            }
+            ]
+            });
+        </script>
+</div>
+
+<!--底部导航栏-->
+<div id="bottom-menu"></div>
+<script src="js/footernav.js"></script>
+<script>
+    var sub=0;
+        $("#sub-bar").click(function(){
+            $("#sub-down").slideToggle(300);
+            sub++;
+            $("#pic-sub").css("transform","rotate("+180*sub+"deg)");
+        });
+</script>
+
+</body>
+</html>

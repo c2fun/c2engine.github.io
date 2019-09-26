@@ -1,0 +1,331 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="keywords" content="关键词,关键词">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.o,user-scalable=no">
+<meta name="renderer" content="webkit"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<title>C²engine|编辑器</title>
+<link href="css/global.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/c2_bjq.css" rel="stylesheet">
+<link href="slick/slick.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/c2editor.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery_1.11.3.min.js"></script>
+<script src="js/dynamicLoading.js"></script>
+</head>
+<body>
+<!--判断当前浏览器是否IE8及以下版本-->
+<!--[if lte IE 8]>
+<script>
+    alert("您的IE浏览器版本过低！部分功能无法正常使用！请更新至IE9及以上版本");
+</script>
+<![endif]-->
+
+<!--导航栏-->
+<div id="top-menu"></div>
+<script src="js/headernav.js"></script>
+
+<div class="sub-header">
+    <div class="container">
+        <div class="sub-logo">
+            <h1>C²engine</h1>
+        </div>
+        <div id="sub-bar">
+            <div><span id="pic-sub"></span></div>
+        </div>
+        <div id="sub-down">
+        <ul class="sub-ul-head">
+            <li class="ahover"><a href="#">编辑器</a></li>
+            <li><a href="c2_h5.html">H5和多平台</a></li>
+            <li><a href="c2_vr.html">VR行业</a></li>
+        </ul>
+        </div>
+        
+    </div>
+</div>
+
+	<div class="topx">
+      <div class="container">
+		<ul class="top">
+			<li class="p_left">
+				<h2 class="p_t_top">功能丰富且高度灵活的编辑器</h2>
+				<div class="p_t_in">
+					<p>C²engine是一个灵活、强大的开发平台，用于打造多平台的3D和2D游戏和互动体验。这是要一个完整的生态系统，服务于旨在打造高端内容并联系最忠诚、最富热情的玩家与客户的开发人员。</p>
+				</div>
+				<a href="download.html"><span>即将上线，敬请期待</span></a>
+			</li>
+
+            <li class="p_right">
+                <div class="p_r_in" id="move">
+                    <div class="p_t_circular" onclick="moveblock()"></div>
+                </div>
+            </li>
+		</ul>
+      </div>
+	</div>
+<!--编辑器介绍-->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-4 col-md-12">
+			<!--1列上-->
+			<div class="colpage1">
+				<div>
+					<img src="http://cdn.c2engine.com/c2engine/img2/c2/c2_editor/1.jpg" width="100%"/>
+					<h5>动作快捷</h5>
+					<p>添加自己的工具到C²engine中，达到终极的舒适性和工作效率。运行脚本编程，编译超快。</p>
+				</div>
+			</div>
+			<!--1列下-->
+			<div class="colpage1">
+				<div>
+					<img src="http://cdn.c2engine.com/c2engine/img2/c2/c2_editor/2.jpg" width="100%"/>
+					<h5>C#、JavaScript</h5>
+					<p>添加自己的工具到C²engine中，达到终极的舒适性和工作效率。运行脚本编程，编译超快。</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-12">
+			<!--2列上-->
+			<div class="colpage2">
+				<div>
+					<img src="http://cdn.c2engine.com/c2engine/img2/c2/c2_editor/3.jpg" width="100%"/>
+					<h5>基于物理的着色</h5>
+					<p>添加自己的工具到C²engine中，达到终极的舒适性和工作效率。运行脚本编程，编译超快。</p>
+				</div>
+			</div>
+			<!--2列下-->
+			<div class="colpage2">
+				<div>
+					<img src="http://cdn.c2engine.com/c2engine/img2/c2/c2_editor/4.jpg" width="100%"/>
+					<h5>直观的UI工具</h5>
+					<p>添加自己的工具到C²engine中，达到终极的舒适性和工作效率。运行脚本编程，编译超快。</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-12">
+			<!--3列上-->
+			<div class="colpage3">
+				<div>
+					<img src="http://cdn.c2engine.com/c2engine/img2/c2/c2_editor/5.jpg" width="100%"/>
+					<h5>高级内存分析</h5>
+					<p>添加自己的工具到C²engine中，达到终极的舒适性和工作效率。运行脚本编程，编译超快。</p>
+				</div>
+			</div>
+			<!--3列下-->
+			<div class="colpage3">
+				<div>
+					<img src="http://cdn.c2engine.com/c2engine/img2/c2/c2_editor/6.jpg" width="100%"/>
+					<h5>强大的动画技术</h5>
+					<p>添加自己的工具到C²engine中，达到终极的舒适性和工作效率。运行脚本编程，编译超快。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+  <div class="container">
+	<div class="in">
+		<div class="i_top">
+			<h3>包含些什么？</h3>
+			<p>使用C2，无需附加许可证，您可以立即得到一切</p>
+		</div>
+	
+		<ul class="i_lower">
+			<li class="i_l_a">
+				<div class="i_l_catalog">动画</div>
+				<ul class="i_l_a_1">
+					<li><div></div>可重定向的动画</li>
+					<li><div></div>复杂的状态机层次结构和转换</li>
+				</ul>
+				<ul class="i_l_a_2">
+					<li><div></div>在运行时完全控制动画的权重</li>
+					<li><div></div>面部动画混合状态</li>
+				</ul>
+				<ul class="i_l_a_3 i_l_1_3">
+					<li><div></div>在动画播放中进行事件调用</li>
+				</ul>
+			</li>
+			<li class="i_l_2">
+				<div class="i_l_catalog">图形</div>
+				<ul class="i_l_a_1">
+					<li><div></div>基于Englighten的Realtime Globallllumination</li>
+					
+					<li><div></div>由曲线和梯度驱动的模块化粒子系统</li>
+					
+				</ul>
+				<ul class="i_l_a_2 i_l_a_2_2">
+					<li><div></div>基于物理着色</li>
+					<li><div></div>直观的UI工具</li>
+				</ul>
+				<ul class="i_l_a_3 i_l_2_3">
+					<li><div></div>反射探头</li>
+				</ul>
+			</li>
+			<li class="i_l_a">
+				<div class="i_l_catalog">优化</div>
+				<ul class="i_l_a_1">
+					<li><div></div>高级内存分析</li>
+					<li><div></div>细节级别支持</li>
+				</ul>
+				<ul class="i_l_a_2">
+					<li><div></div>基于Umbra的遮挡剔除</li>
+					<li><div></div>构建大小剥离</li>
+				</ul>
+				<ul class="i_l_a_3 i_l_3_3">
+					<li><div></div>资源捆绑</li>
+					<li class="il33_1"><div></div>多线程任务系统</li>
+				</ul>
+			</li>
+			<li class="i_l_b">
+				<div class="i_l_catalog">音频</div>
+				<ul class="i_l_b_1">
+					<li><div></div>实时混音和字母处理</li>
+				</ul>
+				<ul class="i_l_b_2">
+					<li><div></div>混音器的级别、快照和自定义效果</li>
+				</ul>
+			</li>
+			<li class="i_l_b">
+				<div class="i_l_catalog">2D和3D物理</div>
+				<ul class="i_l_b_1">
+					<li><div></div>包含全面的效果器、关节和碰撞机的Box2D</li>
+				</ul>
+				<ul class="i_l_b_2">
+					<li><div></div>NVIDIA Physx3.3</li>
+				</ul>
+			</li>
+			<li class="i_l_b">
+				<div class="i_l_catalog">脚本</div>
+				<ul class="i_l_b_1">
+					<li><div></div>C#、JavaScript或者Boo</li>
+				</ul>
+				<ul class="i_l_b_2">
+					<li><div></div>具有先进自动化寻路和导航网格的AI功能</li>
+				</ul>
+			</li>
+			<li class="i_l_b">
+				<div class="i_l_catalog">版本控制</div>
+				<ul class="i_l_b_1">
+					<li><div></div>为Perforce和Plastic SCM提供完全 继承支持</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+  </div>
+	<div class="intwox">
+      <div class="container">
+		<div class="intwo">
+			<div class="it_top">
+				<h3>无与伦比的导入管道</h3>
+				<p>只要您的资源拖拽入C2，他们会自动导入</p>
+			</div>
+			<ul class="it_bottom">
+				<li class="it_b_li it_b_li1">
+					<div class="it_b_cat">图像格式</div>
+					<ul id="ul1">
+						<li class="it_b_ul1 it_b_ul3">.psd</li>
+						<li class="it_b_ul1">.gif</li>
+						<li class="it_b_ul1">.tiff</li>
+						<li class="it_b_ul1">.dds</li>
+					</ul>
+					<ul id="ul2">
+						<li class="it_b_ul1 it_b_ul3">.jpg</li>
+						<li class="it_b_ul1">.bmp</li>
+						<li class="it_b_ul1">.iff</li>
+                        <li class="it_b_ul2"></li>
+					</ul>
+					<ul id="ul3">
+						<li class="it_b_ul1 it_b_ul3 it_b_ul4">.png</li>
+						<li class="it_b_ul1 it_b_ul4">.tga</li>
+						<li class="it_b_ul1 it_b_ul4">.pict</li>
+					</ul>
+				</li>
+				<li class="it_b_li it_b_li2">
+					<div class="it_b_cat" id="it_b_can">音频格式</div>
+					<ul id="ul4">
+						<li class="it_b_ul1 it_b_ul3">.mp3</li>
+						<li class="it_b_ul1">.wav</li>
+						<li class="it_b_ul1">.sm3</li>
+
+					</ul>
+					<ul id="ul5">
+						<li class="it_b_ul1 it_b_ul3">.ogg</li>
+						<li class="it_b_ul1">.mod</li>
+                        <li class="it_b_ul2"></li>
+					</ul>
+					<ul id="ul6">
+						<li class="it_b_ul1 it_b_ul3 it_b_ul4">.aiff</li>
+						<li class="it_b_ul1 it_b_ul4">.it</li>
+					</ul>
+				</li>
+				<li class="it_b_li it_b_li3">
+					<div class="it_b_cat">视频格式</div>
+					<ul id="ul7">
+						<li class="it_b_ul1 it_b_ul3">.mov</li>
+						<li class="it_b_ul1">.mpg</li>
+					</ul>
+					<ul id="ul8">
+						<li class="it_b_ul1 it_b_ul3">.avi</li>
+						<li class="it_b_ul1">.mpeg</li>
+					</ul>
+					<ul id="ul9">
+						<li class="it_b_ul1 it_b_ul3 it_b_ul4">.asf</li>
+						<li class="it_b_ul1 it_b_ul4">mp4</li>
+					</ul>
+				</li>
+				<li class="it_b_li it_b_li4">
+					<div class="it_b_cat">文本格式</div>
+					<ul id="ul10">
+						<li class="it_b_ul1 it_b_ul3">.text</li>
+						<li class="it_b_ul1">.xml</li>
+					</ul>
+					<ul id="ul11">
+						<li class="it_b_ul1 it_b_ul3">.htm</li>
+						<li class="it_b_ul1">.bytes</li>
+					</ul>
+					<ul id="ul12">
+						<li class="it_b_ul1 it_b_ul3 it_b_ul4">.html</li>
+                        <li class="it_b_ul2"></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+      </div>
+	</div>
+	
+
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	var begsh = document.getElementById("move");
+	var video = document.getElementById("myVideo");
+    var myVideo = document.getElementById("myVideo");
+    function moveblock(){
+		begsh.style.display="none";
+		//if(browser.versions.mobile){
+   	  $(".p_right").append("<video id='youku-html5player-video' autoplay='autoplay' controls='controls' style='width: 100%; display: block;'> <source src='http://cdn.c2engine.com/c2engine/movie/muguang.mp4' type='video/mp4' ><source src='http://cdn.c2engine.com/c2engine/movie/muguang.ogv' type='video/ogv' ><source src='http://cdn.c2engine.com/c2engine/movie/muguang.webm' type='video/webm' >你的浏览器不支持html5标签</video>");
+    //}else{
+    //	$(".p_right").append("<embed id='youku-html5player-video' src='http://player.youku.com/player.php/sid/XNjc1MTgzMzk2/v.swf' allowFullScreen='true' quality='high' width='100%' height='100%' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>");    
+		//	$("#youku-html5player-video").height($("#move").height());
+		//}
+	}
+</script>
+<!--底部导航栏-->
+<div id="bottom-menu"></div>
+<script src="js/footernav.js"></script>
+<script>
+    var sub=0;
+		$("#sub-bar").click(function(){
+			$("#sub-down").slideToggle();
+			sub++;
+			$("#pic-sub").css("transform","rotate("+180*sub+"deg)");
+		});
+</script>
+
+</body>
+</html>

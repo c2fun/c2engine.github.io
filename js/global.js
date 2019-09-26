@@ -1,0 +1,1 @@
+﻿imgpath="http://cdn.c2engine.com/c2engine/img2";

@@ -1,0 +1,135 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.o,user-scalable=no">
+<meta name="renderer" content="webkit"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<title>C²engine|平台介绍</title>
+<link href="css/global.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/c2_h5.css" rel="stylesheet">
+<link href="css/c2_h5_style.css" rel="stylesheet">
+<link href="css/c2editor.css" rel="stylesheet">
+<link href="css/c2_vr.css" rel="stylesheet">
+<script src="js/jquery_1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="./plugin/slick-1.6.0/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/scripts.js"></script>
+<script src="js/platformintroduction.js"></script>
+</head>
+
+<body>
+<!--判断当前浏览器是否IE8及以下版本-->
+<!--[if lte IE 8]>
+<script>
+    alert("您的IE浏览器版本过低！部分功能无法正常使用！请更新至IE9及以上版本");
+</script>
+<![endif]-->
+<!--导航栏-->
+<div id="top-head"></div>
+<div id="top-menu"></div>
+<script src="js/headernav.js"></script>
+
+<!--编辑器editor-->
+<div id="index-editor" class="topx">
+  <div class="container">
+    <ul class="top">
+      <li class="p_left">
+        <ul class="p-left-top-ul">
+          <li class="p-left-top-li">
+            <h2 class="p_t_top">高度灵活的编辑器</h2>
+          </li>
+          <li class="p-left-top-li">
+            <div class="p_t_in">
+              <p>C²engine是一个灵活、强大的SaaS云引擎，开发者可在云端或客户端进行大型3D/VR/AR/MR内容的创作。</p>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="p_right">
+        <div class="p_r_in" id="move"><img src="http://cdn.c2engine.com/c2engine/img2/platformintroduction/pc.png"></img></div>
+      </li>
+    </ul>
+  </div>
+</div>
+<!--包含些什么-->
+<div id="index-include" class="C2-plate include-bg">
+  <div class="container">
+    <div class="include-title"><h1>包含些什么</h1></div>
+    <div class="include-checkbox">
+      <ul class="include-checkbox-ul">
+      </ul>
+    </div>
+    <div class="include-content">
+      <div class="include-content-box">
+        <!--<ul class="include-content-ul">
+        </ul>-->
+        <div class="include-content-ul">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--banner图-->
+<div id="index-h5" class="h5_banner">
+    <div class="container">
+        <h1>HTML5</h1>
+        <p>C²engine支持高品质3D内容<br/>以HTML5的方式发布到各大平台</p>
+    </div>
+</div>
+<!--更多发布方式-->
+<div class="C2-plate morerelease-bg">
+  <div class="container">
+    <div class="morerelease-title"><h1>更多发布方式</h1></div>
+    <div class="morerelease-icon">
+      <ul class="morerelease-icon-ul">
+        <li class="morerelease-icon-li"><img src="http://cdn.c2engine.com/c2engine/img2/platformintroduction/morerelease/ios.png"></img><p>ios</p></li>
+        <li class="morerelease-icon-li"><img src="http://cdn.c2engine.com/c2engine/img2/platformintroduction/morerelease/android.png"></img><p>Android</p></li>
+        <li class="morerelease-icon-li"><img src="http://cdn.c2engine.com/c2engine/img2/platformintroduction/morerelease/mac.png"></img><p>Mac</p></li>
+        <li class="morerelease-icon-li"><img src="http://cdn.c2engine.com/c2engine/img2/platformintroduction/morerelease/windows.png"></img><p>windows</p></li>
+        <li class="morerelease-icon-li"><img src="http://cdn.c2engine.com/c2engine/img2/platformintroduction/morerelease/tv.png"></img><p>TV</p></li>
+        <li class="morerelease-icon-li"><img src="http://cdn.c2engine.com/c2engine/img2/platformintroduction/morerelease/Xbox.png"></img><p>Xbox</p></li>
+        <li class="morerelease-icon-li"><img src="http://cdn.c2engine.com/c2engine/img2/platformintroduction/morerelease/ps.png"></img><p>PalyStation</p></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--vr-->
+<div id="index-vrar" class="vr-banner">
+  <div class="container">
+      <h1>VR/AR/MR</h1>
+      <p>C²engine支持大型VR/AR/MR内容的创作</p> 
+  </div>
+</div>
+<!--vr/ar/MR领域解决方案-->
+<div class="C2-plate vrar-bg">
+  <div class="container">
+    <div class="vrar-title"><h1>VR/AR/MR领域解决方案</h1></div>
+    <div class="vrar-checkbox">
+      <ul class="vrar-checkbox-ul">
+      </ul>
+    </div>
+    <div class="vrar-content">
+      <div class="vrar-content-box">
+        <div class="vrar-content-ul">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--底部导航栏-->
+<div id="bottom-menu"></div>
+<script src="js/footernav.js"></script>
+<script>
+    var sub=0;
+        $("#sub-bar").click(function(){
+            $("#sub-down").slideToggle(300);
+            sub++;
+            $("#pic-sub").css("transform","rotate("+180*sub+"deg)");
+        });
+</script>
+
+</body>
+</html>

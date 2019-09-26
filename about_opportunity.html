@@ -1,0 +1,332 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.o,user-scalable=no">
+<meta name="renderer" content="webkit"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<title>C²engine|工作机会</title>
+<link rel="stylesheet" type="text/css" href="./plugin/slick-1.6.0/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="./plugin/slick-1.6.0/slick/slick-theme.css">
+<link href="css/global.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/opportunity.css"rel="stylesheet">
+<link href="css/about_style.css" rel="stylesheet">
+<script src="js/jquery_1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="./plugin/slick-1.6.0/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<!--判断当前浏览器是否IE8及以下版本-->
+<!--[if lte IE 8]>
+<script>
+    alert("您的IE浏览器版本过低！部分功能无法正常使用！请更新至IE9及以上版本");
+</script>
+<![endif]-->
+<!--导航栏-->
+<div id="top-menu"></div>
+<script src="js/headernav.js"></script>
+<!--子菜单
+<div class="sub-header">
+    <div class="container">
+        <div class="sub-logo">
+            <h1>关于我们</h1>
+        </div>
+        <div id="sub-bar">
+            <div><span id="pic-sub"></span></div>
+        </div>
+        <div id="sub-down">
+        <ul class="sub-ul-head">
+            <li><a href="about_company.html" target="_self">公司简介</a></li>
+            <li class="ahover"><a href="#">工作机会</a></li>
+            <li><a href="campus.html" target="_self">校园英雄</a></li>
+        </ul>
+        </div>
+        
+    </div>
+</div>
+-->
+<!--顶部长条背景-->
+<!--展示轮播图-->
+  <div class="container">
+  	<section id="features" class="center slider">
+      <div><img src="http://cdn.c2engine.com/c2engine/img2/about/job_01.jpg" width="100%" height="100%"  alt=""/></div>
+      <div><img src="http://cdn.c2engine.com/c2engine/img2/about/job_02.jpg" width="100%" height="100%"  alt=""/></div>
+      <div><img src="http://cdn.c2engine.com/c2engine/img2/about/job_03.jpg" width="100%" height="100%"  alt=""/></div>
+      <div><img src="http://cdn.c2engine.com/c2engine/img2/about/job_01.jpg" width="100%" height="100%"  alt=""/></div>
+      <div><img src="http://cdn.c2engine.com/c2engine/img2/about/job_02.jpg" width="100%" height="100%"  alt=""/></div>
+      <div><img src="http://cdn.c2engine.com/c2engine/img2/about/job_03.jpg" width="100%" height="100%"  alt=""/></div>
+  	</section>
+  </div>
+ <script>
+  $(document).on('ready', function() {
+    $('.center').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow:3,
+      prevArrow:"<button type='button' data-role='none' class='slick-prev slick-arrow' aria-label='Previous' role='button' style='display: block;'>Previous</button>",
+      nextArrow:"<button type='button' data-role='none' class='slick-next slick-arrow' aria-label='Next' role='button' style='display: block;'>Next</button>",
+      autoplay:true,
+      autoplaySpeed:3000,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  });
+  </script>
+<div class="container">
+	<hr style="border-color:rgb(41,48,49);">
+</div>
+<!--岗位-->
+<div class="job_slider">
+	<div class="container">
+		<div id="job_select">策划部</div>
+		<div id="job_bar">
+        <span></span>  
+    </div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+    	<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+    			<ul id="job-item">
+      				<li id="item1" class="curr">策划部</li>
+      				<li id="item2">产品部</li>
+      				<li id="item3">程序部</li>
+      				<li id="item4">美术部</li>
+      				<li id="item5">市场部</li>
+      				<li id="item6">人事部</li>
+    			</ul>
+    	</div>
+<script>
+  var cot=0;
+  $("#job_bar").click(function(){
+      $("#job-item").slideToggle(300);
+      cot++;
+      $("#job_bar span").css("transform","rotate("+180*cot+"deg)");
+  });
+</script>
+<script>
+$(function(){
+  var win=$(window);
+  var sc=$(document);
+  var w=window.innerWidth;
+  win.scroll(function(){
+    if(w>=768&&sc.scrollTop()>=w*0.35){
+      $("#job-item").addClass('afixed');
+      $("#job-item").css("padding-top","10px");
+      }
+    else{
+      $("#job-item").removeClass('afixed');
+      $("#job-item").css("padding-top","0px");
+    }
+    });
+  })
+</script>
+        <div class="col-lg-10 col-md-10 col-sm-9 col-xs-12">
+        	<div class="job-title">
+				<ul>
+					<li>招聘名称</li>
+					<li>工作地点</li>
+					<li>招聘人数</li>
+				</ul>
+        	</div>
+
+				<!--招聘岗位-->
+        		<div id="total-job">
+
+
+        		</div>
+				
+				<!--招聘内容-->
+
+<!--==================================================================================================-->
+<script src="js/compus_job.js"></script>
+<script>
+var w=window.innerWidth;
+var nbr=json_cehua.employees.length;//岗位总数
+var dsp=json_cehua.employees[0].jtion.length;//描述总数
+var jfn=json_cehua.employees[0].jneed.length;//要求总数
+var radd=json_cehua.employees[0].jname;//"读"--招聘名称
+var rloc=json_cehua.employees[0].jaddr;//"读"--工作地点
+var rjnu=json_cehua.employees[0].jnum;//"读"--招聘人数
+var ratr=json_cehua.employees[0].jtype;//"读"--工作性质
+var rdescp=json_cehua.employees[0].jtion[0].xx;//"读"--描述
+var rneed=json_cehua.employees[0].jneed[0].yy;//"读"--要求
+var i,m,z,j;
+
+function jopp(x){
+	document.getElementById('total-job').innerHTML="";
+	var nbr=x.employees.length;//岗位总数
+	for(i=0;i<nbr;i++){
+		var dsp=x.employees[i].jtion.length;//描述总数
+		var jfn=x.employees[i].jneed.length;//要求总数
+			one = "#name"+i;
+			two = "#addr"+i;
+			three = "#num"+i;
+			four = "#tipe"+i;
+		document.getElementById('total-job').innerHTML+="<ul class='single-job' id='singlan"+i+"'><li id='name"+i+"'>游戏逻辑开发</li><li id='addr"+i+"'>苏州</li><li id='num"+i+"'>若干</li></ul><div id='condown"+i+"'  class='job-content'><h1>工作性质 : <span id='tipe"+i+"'></span></h1><h3>职位描述:</h3><ol id='miaoshu"+i+"'></ol><h3>任职要求:</h3><ol id='yaoqiu"+i+"'></ol><div class='send-out'><a href='campus.html' target='_blank'><span>投简历</span></a></div></div>";
+		$(one).html(x.employees[i].jname);
+		$(two).html(x.employees[i].jaddr);
+		$(three).html(x.employees[i].jnum+"<img src='http://cdn.c2engine.com/c2engine/img2/about/icondown.png' class='icodown' id='somp"+i+"'/>");
+		$(four).html(x.employees[i].jtype);
+		for(m=0;m<dsp;m++){
+			five = "#misu"+i+""+m;
+			document.getElementById("miaoshu"+i).innerHTML+="<li id='misu"+i+""+m+"'></li>";
+			$(five).html(x.employees[i].jtion[m].xx);
+		}
+		for(z=0;z<jfn;z++){
+			six = "#yaoo"+i+""+z;
+			document.getElementById("yaoqiu"+i).innerHTML+="<li id='yaoo"+i+""+z+"'></li>";
+			$(six).html(x.employees[i].jneed[z].yy);
+
+		}
+	}//jopp中for循环
+var num=0;
+    for(j=0;j<i;j++){
+      !function(j){
+        document.getElementById("singlan"+j).addEventListener("click",function(){
+            //num++;
+            $("#condown"+j).slideToggle(300);
+            //$("#somp"+j).css("transform","rotate("+180*num+"deg)");
+            elemt=document.getElementById("somp"+j);
+            if(elemt.src.match("icondown")){
+              elemt.src="http://cdn.c2engine.com/c2engine/img2/about/iconup.png";
+            }
+            else{
+              elemt.src="http://cdn.c2engine.com/c2engine/img2/about/icondown.png";
+            }
+            //$("#somp"+j).attr("src","");
+        });
+      }(j);
+    }
+
+}//jopp函数
+
+$("#item1").click(function(){
+	$(this).addClass("curr").siblings().removeClass("curr");
+	document.getElementById("job_select").innerHTML='策划部';
+  if( w>=768){}
+  else{
+      $("#job-item").slideToggle(300);
+  }
+	cot++;
+	$("#job_bar span").css("transform","rotate("+180*cot+"deg)");
+	jopp(json_cehua);
+
+});
+$("#item2").click(function(){
+	$(this).addClass("curr").siblings().removeClass("curr");
+	document.getElementById("job_select").innerHTML='产品部';
+	if( w>=768){}
+  else{
+      $("#job-item").slideToggle(300);
+  }
+	cot++;
+	$("#job_bar span").css("transform","rotate("+180*cot+"deg)");
+	jopp(json_chanpin);
+});
+$("#item3").click(function(){
+	$(this).addClass("curr").siblings().removeClass("curr");
+	document.getElementById("job_select").innerHTML='程序部';
+	if( w>=768){}
+  else{
+      $("#job-item").slideToggle(300);
+  }
+	cot++;
+	$("#job_bar span").css("transform","rotate("+180*cot+"deg)");
+	jopp(json_chengxu);
+});
+$("#item4").click(function(){
+	$(this).addClass("curr").siblings().removeClass("curr");
+	document.getElementById("job_select").innerHTML='美术部';
+	if( w>=768){}
+  else{
+      $("#job-item").slideToggle(300);
+  }
+	cot++;
+	$("#job_bar span").css("transform","rotate("+180*cot+"deg)");
+	jopp(json_meishu);
+});
+$("#item5").click(function(){
+	$(this).addClass("curr").siblings().removeClass("curr");
+	document.getElementById("job_select").innerHTML='市场部';
+	if( w>=768){}
+  else{
+      $("#job-item").slideToggle(300);
+  }
+	cot++;
+	$("#job_bar span").css("transform","rotate("+180*cot+"deg)");
+	jopp(json_shichang);
+});
+$("#item6").click(function(){
+	$(this).addClass("curr").siblings().removeClass("curr");
+	document.getElementById("job_select").innerHTML='人事部';
+	if( w>=768){}
+  else{
+      $("#job-item").slideToggle(300);
+  }
+	cot++;
+	$("#job_bar span").css("transform","rotate("+180*cot+"deg)");
+	jopp(json_renshi);
+});
+
+$(document).ready(function(){
+	jopp(json_cehua);
+})
+
+</script>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<br><br><br><br>
+<br><br>
+
+
+<!--底部导航栏-->
+<div id="bottom-menu"></div>
+<script src="js/footernav.js"></script>
+<script>
+    var sub=0;
+    $("#sub-bar").click(function(){
+        $("#sub-down").slideToggle(300);
+        sub++;
+        $("#pic-sub").css("transform","rotate("+180*sub+"deg)");
+    });
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

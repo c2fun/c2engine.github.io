@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js" lang="zh-CN"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>C²enginewiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"首页","wgTitle":"首页","wgCurRevisionId":1500,"wgRevisionId":1500,"wgArticleId":1,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":!1,"wgPageContentLanguage":"zh-cn","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgMonthNamesShort":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRelevantPageName":"首页","wgRelevantArticleId":1,"wgIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgIsMainPage":!0});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"zh-cn"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="c2wiki_files/load.css">
+<style>
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}  .mw-content-ltr .mw-collapsible-toggle,.mw-content-rtl .mw-content-ltr .mw-collapsible-toggle{float:right} .mw-content-rtl .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl .mw-collapsible-toggle{float:left}.mw-customtoggle,.mw-collapsible-toggle{cursor:pointer} caption .mw-collapsible-toggle,.mw-content-ltr caption .mw-collapsible-toggle,.mw-content-rtl caption .mw-collapsible-toggle,.mw-content-rtl .mw-content-ltr caption .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle,.mw-content-ltr li .mw-collapsible-toggle,.mw-content-rtl li .mw-collapsible-toggle,.mw-content-rtl .mw-content-ltr li .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.highlight{font-weight:bold}
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(239,239,239,0.5);border-radius:5px;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(http://localhost/mediawiki/resources/src/mediawiki.action/images/green-checkmark.png?9048a)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:black;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}</style><meta name="ResourceLoaderDynamicStyles" content="">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="c2wiki_files/load.php"></script>
+<meta name="generator" content="MediaWiki 1.26.2">
+<link rel="alternate" type="application/x-wiki" title="编辑" href="http://localhost/mediawiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;action=edit">
+<link rel="edit" title="编辑" href="http://localhost/mediawiki/index.php?title=%E9%A6%96%E9%A1%B5&amp;action=edit">
+<link rel="shortcut icon" href="http://localhost/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://localhost/mediawiki/opensearch_desc.php" title="c2wiki (zh-cn)">
+<link rel="EditURI" type="application/rsd+xml" href="http://localhost/mediawiki/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="c2wiki的Atom feed" href="http://localhost/mediawiki/index.php?title=%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom">
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/mediawiki/skins/Vector/csshover.min.htc")}</style><![endif]-->
+<style class="firebugResetStyles" type="text/css" charset="utf-8">/* See license.txt for terms of usage */
+/** reset styling **/
+.firebugResetStyles {
+    z-index: 2147483646 !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: block !important;
+    border: 0 none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    position: fixed !important;
+    transform: rotate(0deg) !important;
+    transform-origin: 50% 50% !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent none !important;
+    pointer-events: none !important;
+    white-space: normal !important;
+}
+style.firebugResetStyles {
+    display: none !important;
+}
+
+.firebugBlockBackgroundColor {
+    background-color: transparent !important;
+}
+
+.firebugResetStyles:before, .firebugResetStyles:after {
+    content: "" !important;
+}
+/**actual styling to be modified by firebug theme**/
+.firebugCanvas {
+    display: none !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBox {
+    width: auto !important;
+    position: static !important;
+}
+
+.firebugLayoutBoxOffset {
+    opacity: 0.8 !important;
+    position: fixed !important;
+}
+
+.firebugLayoutLine {
+    opacity: 0.4 !important;
+    background-color: #000000 !important;
+}
+
+.firebugLayoutLineLeft, .firebugLayoutLineRight {
+    width: 1px !important;
+    height: 100% !important;
+}
+
+.firebugLayoutLineTop, .firebugLayoutLineBottom {
+    width: 100% !important;
+    height: 1px !important;
+}
+
+.firebugLayoutLineTop {
+    margin-top: -1px !important;
+    border-top: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineRight {
+    border-right: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineBottom {
+    border-bottom: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineLeft {
+    margin-left: -1px !important;
+    border-left: 1px solid #999999 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBoxParent {
+    border-top: 0 none !important;
+    border-right: 1px dashed #E00 !important;
+    border-bottom: 1px dashed #E00 !important;
+    border-left: 0 none !important;
+    position: fixed !important;
+    width: auto !important;
+}
+
+.firebugRuler{
+    position: absolute !important;
+}
+
+.firebugRulerH {
+    top: -15px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 14px !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%13%88%00%00%00%0E%08%02%00%00%00L%25a%0A%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%04%F8IDATx%DA%EC%DD%D1n%E2%3A%00E%D1%80%F8%FF%EF%E2%AF2%95%D0D4%0E%C1%14%B0%8Fa-%E9%3E%CC%9C%87n%B9%81%A6W0%1C%A6i%9A%E7y%0As8%1CT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AATE9%FE%FCw%3E%9F%AF%2B%2F%BA%97%FDT%1D~K(%5C%9D%D5%EA%1B%5C%86%B5%A9%BDU%B5y%80%ED%AB*%03%FAV9%AB%E1%CEj%E7%82%EF%FB%18%BC%AEJ8%AB%FA'%D2%BEU9%D7U%ECc0%E1%A2r%5DynwVi%CFW%7F%BB%17%7Dy%EACU%CD%0E%F0%FA%3BX%FEbV%FEM%9B%2B%AD%BE%AA%E5%95v%AB%AA%E3E5%DCu%15rV9%07%B5%7F%B5w%FCm%BA%BE%AA%FBY%3D%14%F0%EE%C7%60%0EU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5JU%88%D3%F5%1F%AE%DF%3B%1B%F2%3E%DAUCNa%F92%D02%AC%7Dm%F9%3A%D4%F2%8B6%AE*%BF%5C%C2Ym~9g5%D0Y%95%17%7C%C8c%B0%7C%18%26%9CU%CD%13i%F7%AA%90%B3Z%7D%95%B4%C7%60%E6E%B5%BC%05%B4%FBY%95U%9E%DB%FD%1C%FC%E0%9F%83%7F%BE%17%7DkjMU%E3%03%AC%7CWj%DF%83%9An%BCG%AE%F1%95%96yQ%0Dq%5Dy%00%3Et%B5'%FC6%5DS%95pV%95%01%81%FF'%07%00%00%00%00%00%00%00%00%00%F8x%C7%F0%BE%9COp%5D%C9%7C%AD%E7%E6%EBV%FB%1E%E0(%07%E5%AC%C6%3A%ABi%9C%8F%C6%0E9%AB%C0'%D2%8E%9F%F99%D0E%B5%99%14%F5%0D%CD%7F%24%C6%DEH%B8%E9rV%DFs%DB%D0%F7%00k%FE%1D%84%84%83J%B8%E3%BA%FB%EF%20%84%1C%D7%AD%B0%8E%D7U%C8Y%05%1E%D4t%EF%AD%95Q%BF8w%BF%E9%0A%BF%EB%03%00%00%00%00%00%00%00%00%00%B8vJ%8E%BB%F5%B1u%8Cx%80%E1o%5E%CA9%AB%CB%CB%8E%03%DF%1D%B7T%25%9C%D5(%EFJM8%AB%CC'%D2%B2*%A4s%E7c6%FB%3E%FA%A2%1E%80~%0E%3E%DA%10x%5D%95Uig%15u%15%ED%7C%14%B6%87%A1%3B%FCo8%A8%D8o%D3%ADO%01%EDx%83%1A~%1B%9FpP%A3%DC%C6'%9C%95gK%00%00%00%00%00%00%00%00%00%20%D9%C9%11%D0%C0%40%AF%3F%EE%EE%92%94%D6%16X%B5%BCMH%15%2F%BF%D4%A7%C87%F1%8E%F2%81%AE%AAvzr%DA2%ABV%17%7C%E63%83%E7I%DC%C6%0Bs%1B%EF6%1E%00%00%00%00%00%00%00%00%00%80cr%9CW%FF%7F%C6%01%0E%F1%CE%A5%84%B3%CA%BC%E0%CB%AA%84%CE%F9%BF)%EC%13%08WU%AE%AB%B1%AE%2BO%EC%8E%CBYe%FE%8CN%ABr%5Dy%60~%CFA%0D%F4%AE%D4%BE%C75%CA%EDVB%EA(%B7%F1%09g%E5%D9%12%00%00%00%00%00%00%00%00%00H%F6%EB%13S%E7y%5E%5E%FB%98%F0%22%D1%B2'%A7%F0%92%B1%BC%24z3%AC%7Dm%60%D5%92%B4%7CEUO%5E%F0%AA*%3BU%B9%AE%3E%A0j%94%07%A0%C7%A0%AB%FD%B5%3F%A0%F7%03T%3Dy%D7%F7%D6%D4%C0%AAU%D2%E6%DFt%3F%A8%CC%AA%F2%86%B9%D7%F5%1F%18%E6%01%F8%CC%D5%9E%F0%F3z%88%AA%90%EF%20%00%00%00%00%00%00%00%00%00%C0%A6%D3%EA%CFi%AFb%2C%7BB%0A%2B%C3%1A%D7%06V%D5%07%A8r%5D%3D%D9%A6%CAu%F5%25%CF%A2%99%97zNX%60%95%AB%5DUZ%D5%FBR%03%AB%1C%D4k%9F%3F%BB%5C%FF%81a%AE%AB'%7F%F3%EA%FE%F3z%94%AA%D8%DF%5B%01%00%00%00%00%00%00%00%00%00%8E%FB%F3%F2%B1%1B%8DWU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*UiU%C7%BBe%E7%F3%B9%CB%AAJ%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5*%AAj%FD%C6%D4%5Eo%90%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5%86%AF%1B%9F%98%DA%EBm%BBV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%AD%D6%E4%F58%01%00%00%00%00%00%00%00%00%00%00%00%00%00%40%85%7F%02%0C%008%C2%D0H%16j%8FX%00%00%00%00IEND%AEB%60%82") repeat-x !important;
+    border-top: 1px solid #BBBBBB !important;
+    border-right: 1px dashed #BBBBBB !important;
+    border-bottom: 1px solid #000000 !important;
+}
+
+.firebugRulerV {
+    top: 0 !important;
+    left: -15px !important;
+    width: 14px !important;
+    height: 100% !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%0E%00%00%13%88%08%02%00%00%00%0E%F5%CB%10%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%06~IDATx%DA%EC%DD%D1v%A20%14%40Qt%F1%FF%FF%E4%97%D9%07%3BT%19%92%DC%40(%90%EEy%9A5%CB%B6%E8%F6%9Ac%A4%CC0%84%FF%DC%9E%CF%E7%E3%F1%88%DE4%F8%5D%C7%9F%2F%BA%DD%5E%7FI%7D%F18%DDn%BA%C5%FB%DF%97%BFk%F2%10%FF%FD%B4%F2M%A7%FB%FD%FD%B3%22%07p%8F%3F%AE%E3%F4S%8A%8F%40%EEq%9D%BE8D%F0%0EY%A1Uq%B7%EA%1F%81%88V%E8X%3F%B4%CEy%B7h%D1%A2E%EBohU%FC%D9%AF2fO%8BBeD%BE%F7X%0C%97%A4%D6b7%2Ck%A5%12%E3%9B%60v%B7r%C7%1AI%8C%BD%2B%23r%00c0%B2v%9B%AD%CA%26%0C%1Ek%05A%FD%93%D0%2B%A1u%8B%16-%95q%5Ce%DCSO%8E%E4M%23%8B%F7%C2%FE%40%BB%BD%8C%FC%8A%B5V%EBu%40%F9%3B%A72%FA%AE%8C%D4%01%CC%B5%DA%13%9CB%AB%E2I%18%24%B0n%A9%0CZ*Ce%9C%A22%8E%D8NJ%1E%EB%FF%8F%AE%CAP%19*%C3%BAEKe%AC%D1%AAX%8C*%DEH%8F%C5W%A1e%AD%D4%B7%5C%5B%19%C5%DB%0D%EF%9F%19%1D%7B%5E%86%BD%0C%95%A12%AC%5B*%83%96%CAP%19%F62T%86%CAP%19*%83%96%CA%B8Xe%BC%FE)T%19%A1%17xg%7F%DA%CBP%19*%C3%BA%A52T%86%CAP%19%F62T%86%CA%B0n%A9%0CZ%1DV%C6%3D%F3%FCH%DE%B4%B8~%7F%5CZc%F1%D6%1F%AF%84%F9%0F6%E6%EBVt9%0E~%BEr%AF%23%B0%97%A12T%86%CAP%19%B4T%86%CA%B8Re%D8%CBP%19*%C3%BA%A52huX%19%AE%CA%E5%BC%0C%7B%19*CeX%B7h%A9%0C%95%E1%BC%0C%7B%19*CeX%B7T%06%AD%CB%5E%95%2B%BF.%8F%C5%97%D5%E4%7B%EE%82%D6%FB%CF-%9C%FD%B9%CF%3By%7B%19%F62T%86%CA%B0n%D1R%19*%A3%D3%CA%B0%97%A12T%86uKe%D0%EA%B02*%3F1%99%5DB%2B%A4%B5%F8%3A%7C%BA%2B%8Co%7D%5C%EDe%A8%0C%95a%DDR%19%B4T%C66%82fA%B2%ED%DA%9FC%FC%17GZ%06%C9%E1%B3%E5%2C%1A%9FoiB%EB%96%CA%A0%D5qe4%7B%7D%FD%85%F7%5B%ED_%E0s%07%F0k%951%ECr%0D%B5C%D7-g%D1%A8%0C%EB%96%CA%A0%A52T%C6)*%C3%5E%86%CAP%19%D6-%95A%EB*%95q%F8%BB%E3%F9%AB%F6%E21%ACZ%B7%22%B7%9B%3F%02%85%CB%A2%5B%B7%BA%5E%B7%9C%97%E1%BC%0C%EB%16-%95%A12z%AC%0C%BFc%A22T%86uKe%D0%EA%B02V%DD%AD%8A%2B%8CWhe%5E%AF%CF%F5%3B%26%CE%CBh%5C%19%CE%CB%B0%F3%A4%095%A1%CAP%19*Ce%A8%0C%3BO*Ce%A8%0C%95%A12%3A%AD%8C%0A%82%7B%F0v%1F%2FD%A9%5B%9F%EE%EA%26%AF%03%CA%DF9%7B%19*Ce%A8%0C%95%A12T%86%CA%B8Ze%D8%CBP%19*Ce%A8%0C%95%D1ae%EC%F7%89I%E1%B4%D7M%D7P%8BjU%5C%BB%3E%F2%20%D8%CBP%19*Ce%A8%0C%95%A12T%C6%D5*%C3%5E%86%CAP%19*Ce%B4O%07%7B%F0W%7Bw%1C%7C%1A%8C%B3%3B%D1%EE%AA%5C%D6-%EBV%83%80%5E%D0%CA%10%5CU%2BD%E07YU%86%CAP%19*%E3%9A%95%91%D9%A0%C8%AD%5B%EDv%9E%82%FFKOee%E4%8FUe%A8%0C%95%A12T%C6%1F%A9%8C%C8%3D%5B%A5%15%FD%14%22r%E7B%9F%17l%F8%BF%ED%EAf%2B%7F%CF%ECe%D8%CBP%19*Ce%A8%0C%95%E1%93~%7B%19%F62T%86%CAP%19*Ce%A8%0C%E7%13%DA%CBP%19*Ce%A8%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4%AE%A4%F5%25%C0%00%DE%BF%5C'%0F%DA%B8q%00%00%00%00IEND%AEB%60%82") repeat-y !important;
+    border-left: 1px solid #BBBBBB !important;
+    border-right: 1px solid #000000 !important;
+    border-bottom: 1px dashed #BBBBBB !important;
+}
+
+.overflowRulerX > .firebugRulerV {
+    left: 0 !important;
+}
+
+.overflowRulerY > .firebugRulerH {
+    top: 0 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.fbProxyElement {
+    position: fixed !important;
+    pointer-events: auto !important;
+}
+</style><style class="firebugResetStyles" type="text/css" charset="utf-8">/* See license.txt for terms of usage */
+/** reset styling **/
+.firebugResetStyles {
+    z-index: 2147483646 !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: block !important;
+    border: 0 none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    position: fixed !important;
+    transform: rotate(0deg) !important;
+    transform-origin: 50% 50% !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent none !important;
+    pointer-events: none !important;
+    white-space: normal !important;
+}
+style.firebugResetStyles {
+    display: none !important;
+}
+
+.firebugBlockBackgroundColor {
+    background-color: transparent !important;
+}
+
+.firebugResetStyles:before, .firebugResetStyles:after {
+    content: "" !important;
+}
+/**actual styling to be modified by firebug theme**/
+.firebugCanvas {
+    display: none !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBox {
+    width: auto !important;
+    position: static !important;
+}
+
+.firebugLayoutBoxOffset {
+    opacity: 0.8 !important;
+    position: fixed !important;
+}
+
+.firebugLayoutLine {
+    opacity: 0.4 !important;
+    background-color: #000000 !important;
+}
+
+.firebugLayoutLineLeft, .firebugLayoutLineRight {
+    width: 1px !important;
+    height: 100% !important;
+}
+
+.firebugLayoutLineTop, .firebugLayoutLineBottom {
+    width: 100% !important;
+    height: 1px !important;
+}
+
+.firebugLayoutLineTop {
+    margin-top: -1px !important;
+    border-top: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineRight {
+    border-right: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineBottom {
+    border-bottom: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineLeft {
+    margin-left: -1px !important;
+    border-left: 1px solid #999999 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBoxParent {
+    border-top: 0 none !important;
+    border-right: 1px dashed #E00 !important;
+    border-bottom: 1px dashed #E00 !important;
+    border-left: 0 none !important;
+    position: fixed !important;
+    width: auto !important;
+}
+
+.firebugRuler{
+    position: absolute !important;
+}
+
+.firebugRulerH {
+    top: -15px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 14px !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%13%88%00%00%00%0E%08%02%00%00%00L%25a%0A%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%04%F8IDATx%DA%EC%DD%D1n%E2%3A%00E%D1%80%F8%FF%EF%E2%AF2%95%D0D4%0E%C1%14%B0%8Fa-%E9%3E%CC%9C%87n%B9%81%A6W0%1C%A6i%9A%E7y%0As8%1CT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AATE9%FE%FCw%3E%9F%AF%2B%2F%BA%97%FDT%1D~K(%5C%9D%D5%EA%1B%5C%86%B5%A9%BDU%B5y%80%ED%AB*%03%FAV9%AB%E1%CEj%E7%82%EF%FB%18%BC%AEJ8%AB%FA'%D2%BEU9%D7U%ECc0%E1%A2r%5DynwVi%CFW%7F%BB%17%7Dy%EACU%CD%0E%F0%FA%3BX%FEbV%FEM%9B%2B%AD%BE%AA%E5%95v%AB%AA%E3E5%DCu%15rV9%07%B5%7F%B5w%FCm%BA%BE%AA%FBY%3D%14%F0%EE%C7%60%0EU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5JU%88%D3%F5%1F%AE%DF%3B%1B%F2%3E%DAUCNa%F92%D02%AC%7Dm%F9%3A%D4%F2%8B6%AE*%BF%5C%C2Ym~9g5%D0Y%95%17%7C%C8c%B0%7C%18%26%9CU%CD%13i%F7%AA%90%B3Z%7D%95%B4%C7%60%E6E%B5%BC%05%B4%FBY%95U%9E%DB%FD%1C%FC%E0%9F%83%7F%BE%17%7DkjMU%E3%03%AC%7CWj%DF%83%9An%BCG%AE%F1%95%96yQ%0Dq%5Dy%00%3Et%B5'%FC6%5DS%95pV%95%01%81%FF'%07%00%00%00%00%00%00%00%00%00%F8x%C7%F0%BE%9COp%5D%C9%7C%AD%E7%E6%EBV%FB%1E%E0(%07%E5%AC%C6%3A%ABi%9C%8F%C6%0E9%AB%C0'%D2%8E%9F%F99%D0E%B5%99%14%F5%0D%CD%7F%24%C6%DEH%B8%E9rV%DFs%DB%D0%F7%00k%FE%1D%84%84%83J%B8%E3%BA%FB%EF%20%84%1C%D7%AD%B0%8E%D7U%C8Y%05%1E%D4t%EF%AD%95Q%BF8w%BF%E9%0A%BF%EB%03%00%00%00%00%00%00%00%00%00%B8vJ%8E%BB%F5%B1u%8Cx%80%E1o%5E%CA9%AB%CB%CB%8E%03%DF%1D%B7T%25%9C%D5(%EFJM8%AB%CC'%D2%B2*%A4s%E7c6%FB%3E%FA%A2%1E%80~%0E%3E%DA%10x%5D%95Uig%15u%15%ED%7C%14%B6%87%A1%3B%FCo8%A8%D8o%D3%ADO%01%EDx%83%1A~%1B%9FpP%A3%DC%C6'%9C%95gK%00%00%00%00%00%00%00%00%00%20%D9%C9%11%D0%C0%40%AF%3F%EE%EE%92%94%D6%16X%B5%BCMH%15%2F%BF%D4%A7%C87%F1%8E%F2%81%AE%AAvzr%DA2%ABV%17%7C%E63%83%E7I%DC%C6%0Bs%1B%EF6%1E%00%00%00%00%00%00%00%00%00%80cr%9CW%FF%7F%C6%01%0E%F1%CE%A5%84%B3%CA%BC%E0%CB%AA%84%CE%F9%BF)%EC%13%08WU%AE%AB%B1%AE%2BO%EC%8E%CBYe%FE%8CN%ABr%5Dy%60~%CFA%0D%F4%AE%D4%BE%C75%CA%EDVB%EA(%B7%F1%09g%E5%D9%12%00%00%00%00%00%00%00%00%00H%F6%EB%13S%E7y%5E%5E%FB%98%F0%22%D1%B2'%A7%F0%92%B1%BC%24z3%AC%7Dm%60%D5%92%B4%7CEUO%5E%F0%AA*%3BU%B9%AE%3E%A0j%94%07%A0%C7%A0%AB%FD%B5%3F%A0%F7%03T%3Dy%D7%F7%D6%D4%C0%AAU%D2%E6%DFt%3F%A8%CC%AA%F2%86%B9%D7%F5%1F%18%E6%01%F8%CC%D5%9E%F0%F3z%88%AA%90%EF%20%00%00%00%00%00%00%00%00%00%C0%A6%D3%EA%CFi%AFb%2C%7BB%0A%2B%C3%1A%D7%06V%D5%07%A8r%5D%3D%D9%A6%CAu%F5%25%CF%A2%99%97zNX%60%95%AB%5DUZ%D5%FBR%03%AB%1C%D4k%9F%3F%BB%5C%FF%81a%AE%AB'%7F%F3%EA%FE%F3z%94%AA%D8%DF%5B%01%00%00%00%00%00%00%00%00%00%8E%FB%F3%F2%B1%1B%8DWU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*UiU%C7%BBe%E7%F3%B9%CB%AAJ%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5*%AAj%FD%C6%D4%5Eo%90%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5%86%AF%1B%9F%98%DA%EBm%BBV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%AD%D6%E4%F58%01%00%00%00%00%00%00%00%00%00%00%00%00%00%40%85%7F%02%0C%008%C2%D0H%16j%8FX%00%00%00%00IEND%AEB%60%82") repeat-x !important;
+    border-top: 1px solid #BBBBBB !important;
+    border-right: 1px dashed #BBBBBB !important;
+    border-bottom: 1px solid #000000 !important;
+}
+
+.firebugRulerV {
+    top: 0 !important;
+    left: -15px !important;
+    width: 14px !important;
+    height: 100% !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%0E%00%00%13%88%08%02%00%00%00%0E%F5%CB%10%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%06~IDATx%DA%EC%DD%D1v%A20%14%40Qt%F1%FF%FF%E4%97%D9%07%3BT%19%92%DC%40(%90%EEy%9A5%CB%B6%E8%F6%9Ac%A4%CC0%84%FF%DC%9E%CF%E7%E3%F1%88%DE4%F8%5D%C7%9F%2F%BA%DD%5E%7FI%7D%F18%DDn%BA%C5%FB%DF%97%BFk%F2%10%FF%FD%B4%F2M%A7%FB%FD%FD%B3%22%07p%8F%3F%AE%E3%F4S%8A%8F%40%EEq%9D%BE8D%F0%0EY%A1Uq%B7%EA%1F%81%88V%E8X%3F%B4%CEy%B7h%D1%A2E%EBohU%FC%D9%AF2fO%8BBeD%BE%F7X%0C%97%A4%D6b7%2Ck%A5%12%E3%9B%60v%B7r%C7%1AI%8C%BD%2B%23r%00c0%B2v%9B%AD%CA%26%0C%1Ek%05A%FD%93%D0%2B%A1u%8B%16-%95q%5Ce%DCSO%8E%E4M%23%8B%F7%C2%FE%40%BB%BD%8C%FC%8A%B5V%EBu%40%F9%3B%A72%FA%AE%8C%D4%01%CC%B5%DA%13%9CB%AB%E2I%18%24%B0n%A9%0CZ*Ce%9C%A22%8E%D8NJ%1E%EB%FF%8F%AE%CAP%19*%C3%BAEKe%AC%D1%AAX%8C*%DEH%8F%C5W%A1e%AD%D4%B7%5C%5B%19%C5%DB%0D%EF%9F%19%1D%7B%5E%86%BD%0C%95%A12%AC%5B*%83%96%CAP%19%F62T%86%CAP%19*%83%96%CA%B8Xe%BC%FE)T%19%A1%17xg%7F%DA%CBP%19*%C3%BA%A52T%86%CAP%19%F62T%86%CA%B0n%A9%0CZ%1DV%C6%3D%F3%FCH%DE%B4%B8~%7F%5CZc%F1%D6%1F%AF%84%F9%0F6%E6%EBVt9%0E~%BEr%AF%23%B0%97%A12T%86%CAP%19%B4T%86%CA%B8Re%D8%CBP%19*%C3%BA%A52huX%19%AE%CA%E5%BC%0C%7B%19*CeX%B7h%A9%0C%95%E1%BC%0C%7B%19*CeX%B7T%06%AD%CB%5E%95%2B%BF.%8F%C5%97%D5%E4%7B%EE%82%D6%FB%CF-%9C%FD%B9%CF%3By%7B%19%F62T%86%CA%B0n%D1R%19*%A3%D3%CA%B0%97%A12T%86uKe%D0%EA%B02*%3F1%99%5DB%2B%A4%B5%F8%3A%7C%BA%2B%8Co%7D%5C%EDe%A8%0C%95a%DDR%19%B4T%C66%82fA%B2%ED%DA%9FC%FC%17GZ%06%C9%E1%B3%E5%2C%1A%9FoiB%EB%96%CA%A0%D5qe4%7B%7D%FD%85%F7%5B%ED_%E0s%07%F0k%951%ECr%0D%B5C%D7-g%D1%A8%0C%EB%96%CA%A0%A52T%C6)*%C3%5E%86%CAP%19%D6-%95A%EB*%95q%F8%BB%E3%F9%AB%F6%E21%ACZ%B7%22%B7%9B%3F%02%85%CB%A2%5B%B7%BA%5E%B7%9C%97%E1%BC%0C%EB%16-%95%A12z%AC%0C%BFc%A22T%86uKe%D0%EA%B02V%DD%AD%8A%2B%8CWhe%5E%AF%CF%F5%3B%26%CE%CBh%5C%19%CE%CB%B0%F3%A4%095%A1%CAP%19*Ce%A8%0C%3BO*Ce%A8%0C%95%A12%3A%AD%8C%0A%82%7B%F0v%1F%2FD%A9%5B%9F%EE%EA%26%AF%03%CA%DF9%7B%19*Ce%A8%0C%95%A12T%86%CA%B8Ze%D8%CBP%19*Ce%A8%0C%95%D1ae%EC%F7%89I%E1%B4%D7M%D7P%8BjU%5C%BB%3E%F2%20%D8%CBP%19*Ce%A8%0C%95%A12T%C6%D5*%C3%5E%86%CAP%19*Ce%B4O%07%7B%F0W%7Bw%1C%7C%1A%8C%B3%3B%D1%EE%AA%5C%D6-%EBV%83%80%5E%D0%CA%10%5CU%2BD%E07YU%86%CAP%19*%E3%9A%95%91%D9%A0%C8%AD%5B%EDv%9E%82%FFKOee%E4%8FUe%A8%0C%95%A12T%C6%1F%A9%8C%C8%3D%5B%A5%15%FD%14%22r%E7B%9F%17l%F8%BF%ED%EAf%2B%7F%CF%ECe%D8%CBP%19*Ce%A8%0C%95%E1%93~%7B%19%F62T%86%CAP%19*Ce%A8%0C%E7%13%DA%CBP%19*Ce%A8%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4%AE%A4%F5%25%C0%00%DE%BF%5C'%0F%DA%B8q%00%00%00%00IEND%AEB%60%82") repeat-y !important;
+    border-left: 1px solid #BBBBBB !important;
+    border-right: 1px solid #000000 !important;
+    border-bottom: 1px dashed #BBBBBB !important;
+}
+
+.overflowRulerX > .firebugRulerV {
+    left: 0 !important;
+}
+
+.overflowRulerY > .firebugRulerH {
+    top: 0 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.fbProxyElement {
+    position: fixed !important;
+    pointer-events: auto !important;
+}
+</style><style class="firebugResetStyles" type="text/css" charset="utf-8">/* See license.txt for terms of usage */
+/** reset styling **/
+.firebugResetStyles {
+    z-index: 2147483646 !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: block !important;
+    border: 0 none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    position: fixed !important;
+    transform: rotate(0deg) !important;
+    transform-origin: 50% 50% !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent none !important;
+    pointer-events: none !important;
+    white-space: normal !important;
+}
+style.firebugResetStyles {
+    display: none !important;
+}
+
+.firebugBlockBackgroundColor {
+    background-color: transparent !important;
+}
+
+.firebugResetStyles:before, .firebugResetStyles:after {
+    content: "" !important;
+}
+/**actual styling to be modified by firebug theme**/
+.firebugCanvas {
+    display: none !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBox {
+    width: auto !important;
+    position: static !important;
+}
+
+.firebugLayoutBoxOffset {
+    opacity: 0.8 !important;
+    position: fixed !important;
+}
+
+.firebugLayoutLine {
+    opacity: 0.4 !important;
+    background-color: #000000 !important;
+}
+
+.firebugLayoutLineLeft, .firebugLayoutLineRight {
+    width: 1px !important;
+    height: 100% !important;
+}
+
+.firebugLayoutLineTop, .firebugLayoutLineBottom {
+    width: 100% !important;
+    height: 1px !important;
+}
+
+.firebugLayoutLineTop {
+    margin-top: -1px !important;
+    border-top: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineRight {
+    border-right: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineBottom {
+    border-bottom: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineLeft {
+    margin-left: -1px !important;
+    border-left: 1px solid #999999 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBoxParent {
+    border-top: 0 none !important;
+    border-right: 1px dashed #E00 !important;
+    border-bottom: 1px dashed #E00 !important;
+    border-left: 0 none !important;
+    position: fixed !important;
+    width: auto !important;
+}
+
+.firebugRuler{
+    position: absolute !important;
+}
+
+.firebugRulerH {
+    top: -15px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 14px !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%13%88%00%00%00%0E%08%02%00%00%00L%25a%0A%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%04%F8IDATx%DA%EC%DD%D1n%E2%3A%00E%D1%80%F8%FF%EF%E2%AF2%95%D0D4%0E%C1%14%B0%8Fa-%E9%3E%CC%9C%87n%B9%81%A6W0%1C%A6i%9A%E7y%0As8%1CT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AATE9%FE%FCw%3E%9F%AF%2B%2F%BA%97%FDT%1D~K(%5C%9D%D5%EA%1B%5C%86%B5%A9%BDU%B5y%80%ED%AB*%03%FAV9%AB%E1%CEj%E7%82%EF%FB%18%BC%AEJ8%AB%FA'%D2%BEU9%D7U%ECc0%E1%A2r%5DynwVi%CFW%7F%BB%17%7Dy%EACU%CD%0E%F0%FA%3BX%FEbV%FEM%9B%2B%AD%BE%AA%E5%95v%AB%AA%E3E5%DCu%15rV9%07%B5%7F%B5w%FCm%BA%BE%AA%FBY%3D%14%F0%EE%C7%60%0EU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5JU%88%D3%F5%1F%AE%DF%3B%1B%F2%3E%DAUCNa%F92%D02%AC%7Dm%F9%3A%D4%F2%8B6%AE*%BF%5C%C2Ym~9g5%D0Y%95%17%7C%C8c%B0%7C%18%26%9CU%CD%13i%F7%AA%90%B3Z%7D%95%B4%C7%60%E6E%B5%BC%05%B4%FBY%95U%9E%DB%FD%1C%FC%E0%9F%83%7F%BE%17%7DkjMU%E3%03%AC%7CWj%DF%83%9An%BCG%AE%F1%95%96yQ%0Dq%5Dy%00%3Et%B5'%FC6%5DS%95pV%95%01%81%FF'%07%00%00%00%00%00%00%00%00%00%F8x%C7%F0%BE%9COp%5D%C9%7C%AD%E7%E6%EBV%FB%1E%E0(%07%E5%AC%C6%3A%ABi%9C%8F%C6%0E9%AB%C0'%D2%8E%9F%F99%D0E%B5%99%14%F5%0D%CD%7F%24%C6%DEH%B8%E9rV%DFs%DB%D0%F7%00k%FE%1D%84%84%83J%B8%E3%BA%FB%EF%20%84%1C%D7%AD%B0%8E%D7U%C8Y%05%1E%D4t%EF%AD%95Q%BF8w%BF%E9%0A%BF%EB%03%00%00%00%00%00%00%00%00%00%B8vJ%8E%BB%F5%B1u%8Cx%80%E1o%5E%CA9%AB%CB%CB%8E%03%DF%1D%B7T%25%9C%D5(%EFJM8%AB%CC'%D2%B2*%A4s%E7c6%FB%3E%FA%A2%1E%80~%0E%3E%DA%10x%5D%95Uig%15u%15%ED%7C%14%B6%87%A1%3B%FCo8%A8%D8o%D3%ADO%01%EDx%83%1A~%1B%9FpP%A3%DC%C6'%9C%95gK%00%00%00%00%00%00%00%00%00%20%D9%C9%11%D0%C0%40%AF%3F%EE%EE%92%94%D6%16X%B5%BCMH%15%2F%BF%D4%A7%C87%F1%8E%F2%81%AE%AAvzr%DA2%ABV%17%7C%E63%83%E7I%DC%C6%0Bs%1B%EF6%1E%00%00%00%00%00%00%00%00%00%80cr%9CW%FF%7F%C6%01%0E%F1%CE%A5%84%B3%CA%BC%E0%CB%AA%84%CE%F9%BF)%EC%13%08WU%AE%AB%B1%AE%2BO%EC%8E%CBYe%FE%8CN%ABr%5Dy%60~%CFA%0D%F4%AE%D4%BE%C75%CA%EDVB%EA(%B7%F1%09g%E5%D9%12%00%00%00%00%00%00%00%00%00H%F6%EB%13S%E7y%5E%5E%FB%98%F0%22%D1%B2'%A7%F0%92%B1%BC%24z3%AC%7Dm%60%D5%92%B4%7CEUO%5E%F0%AA*%3BU%B9%AE%3E%A0j%94%07%A0%C7%A0%AB%FD%B5%3F%A0%F7%03T%3Dy%D7%F7%D6%D4%C0%AAU%D2%E6%DFt%3F%A8%CC%AA%F2%86%B9%D7%F5%1F%18%E6%01%F8%CC%D5%9E%F0%F3z%88%AA%90%EF%20%00%00%00%00%00%00%00%00%00%C0%A6%D3%EA%CFi%AFb%2C%7BB%0A%2B%C3%1A%D7%06V%D5%07%A8r%5D%3D%D9%A6%CAu%F5%25%CF%A2%99%97zNX%60%95%AB%5DUZ%D5%FBR%03%AB%1C%D4k%9F%3F%BB%5C%FF%81a%AE%AB'%7F%F3%EA%FE%F3z%94%AA%D8%DF%5B%01%00%00%00%00%00%00%00%00%00%8E%FB%F3%F2%B1%1B%8DWU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*UiU%C7%BBe%E7%F3%B9%CB%AAJ%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5*%AAj%FD%C6%D4%5Eo%90%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5%86%AF%1B%9F%98%DA%EBm%BBV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%AD%D6%E4%F58%01%00%00%00%00%00%00%00%00%00%00%00%00%00%40%85%7F%02%0C%008%C2%D0H%16j%8FX%00%00%00%00IEND%AEB%60%82") repeat-x !important;
+    border-top: 1px solid #BBBBBB !important;
+    border-right: 1px dashed #BBBBBB !important;
+    border-bottom: 1px solid #000000 !important;
+}
+
+.firebugRulerV {
+    top: 0 !important;
+    left: -15px !important;
+    width: 14px !important;
+    height: 100% !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%0E%00%00%13%88%08%02%00%00%00%0E%F5%CB%10%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%06~IDATx%DA%EC%DD%D1v%A20%14%40Qt%F1%FF%FF%E4%97%D9%07%3BT%19%92%DC%40(%90%EEy%9A5%CB%B6%E8%F6%9Ac%A4%CC0%84%FF%DC%9E%CF%E7%E3%F1%88%DE4%F8%5D%C7%9F%2F%BA%DD%5E%7FI%7D%F18%DDn%BA%C5%FB%DF%97%BFk%F2%10%FF%FD%B4%F2M%A7%FB%FD%FD%B3%22%07p%8F%3F%AE%E3%F4S%8A%8F%40%EEq%9D%BE8D%F0%0EY%A1Uq%B7%EA%1F%81%88V%E8X%3F%B4%CEy%B7h%D1%A2E%EBohU%FC%D9%AF2fO%8BBeD%BE%F7X%0C%97%A4%D6b7%2Ck%A5%12%E3%9B%60v%B7r%C7%1AI%8C%BD%2B%23r%00c0%B2v%9B%AD%CA%26%0C%1Ek%05A%FD%93%D0%2B%A1u%8B%16-%95q%5Ce%DCSO%8E%E4M%23%8B%F7%C2%FE%40%BB%BD%8C%FC%8A%B5V%EBu%40%F9%3B%A72%FA%AE%8C%D4%01%CC%B5%DA%13%9CB%AB%E2I%18%24%B0n%A9%0CZ*Ce%9C%A22%8E%D8NJ%1E%EB%FF%8F%AE%CAP%19*%C3%BAEKe%AC%D1%AAX%8C*%DEH%8F%C5W%A1e%AD%D4%B7%5C%5B%19%C5%DB%0D%EF%9F%19%1D%7B%5E%86%BD%0C%95%A12%AC%5B*%83%96%CAP%19%F62T%86%CAP%19*%83%96%CA%B8Xe%BC%FE)T%19%A1%17xg%7F%DA%CBP%19*%C3%BA%A52T%86%CAP%19%F62T%86%CA%B0n%A9%0CZ%1DV%C6%3D%F3%FCH%DE%B4%B8~%7F%5CZc%F1%D6%1F%AF%84%F9%0F6%E6%EBVt9%0E~%BEr%AF%23%B0%97%A12T%86%CAP%19%B4T%86%CA%B8Re%D8%CBP%19*%C3%BA%A52huX%19%AE%CA%E5%BC%0C%7B%19*CeX%B7h%A9%0C%95%E1%BC%0C%7B%19*CeX%B7T%06%AD%CB%5E%95%2B%BF.%8F%C5%97%D5%E4%7B%EE%82%D6%FB%CF-%9C%FD%B9%CF%3By%7B%19%F62T%86%CA%B0n%D1R%19*%A3%D3%CA%B0%97%A12T%86uKe%D0%EA%B02*%3F1%99%5DB%2B%A4%B5%F8%3A%7C%BA%2B%8Co%7D%5C%EDe%A8%0C%95a%DDR%19%B4T%C66%82fA%B2%ED%DA%9FC%FC%17GZ%06%C9%E1%B3%E5%2C%1A%9FoiB%EB%96%CA%A0%D5qe4%7B%7D%FD%85%F7%5B%ED_%E0s%07%F0k%951%ECr%0D%B5C%D7-g%D1%A8%0C%EB%96%CA%A0%A52T%C6)*%C3%5E%86%CAP%19%D6-%95A%EB*%95q%F8%BB%E3%F9%AB%F6%E21%ACZ%B7%22%B7%9B%3F%02%85%CB%A2%5B%B7%BA%5E%B7%9C%97%E1%BC%0C%EB%16-%95%A12z%AC%0C%BFc%A22T%86uKe%D0%EA%B02V%DD%AD%8A%2B%8CWhe%5E%AF%CF%F5%3B%26%CE%CBh%5C%19%CE%CB%B0%F3%A4%095%A1%CAP%19*Ce%A8%0C%3BO*Ce%A8%0C%95%A12%3A%AD%8C%0A%82%7B%F0v%1F%2FD%A9%5B%9F%EE%EA%26%AF%03%CA%DF9%7B%19*Ce%A8%0C%95%A12T%86%CA%B8Ze%D8%CBP%19*Ce%A8%0C%95%D1ae%EC%F7%89I%E1%B4%D7M%D7P%8BjU%5C%BB%3E%F2%20%D8%CBP%19*Ce%A8%0C%95%A12T%C6%D5*%C3%5E%86%CAP%19*Ce%B4O%07%7B%F0W%7Bw%1C%7C%1A%8C%B3%3B%D1%EE%AA%5C%D6-%EBV%83%80%5E%D0%CA%10%5CU%2BD%E07YU%86%CAP%19*%E3%9A%95%91%D9%A0%C8%AD%5B%EDv%9E%82%FFKOee%E4%8FUe%A8%0C%95%A12T%C6%1F%A9%8C%C8%3D%5B%A5%15%FD%14%22r%E7B%9F%17l%F8%BF%ED%EAf%2B%7F%CF%ECe%D8%CBP%19*Ce%A8%0C%95%E1%93~%7B%19%F62T%86%CAP%19*Ce%A8%0C%E7%13%DA%CBP%19*Ce%A8%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4%AE%A4%F5%25%C0%00%DE%BF%5C'%0F%DA%B8q%00%00%00%00IEND%AEB%60%82") repeat-y !important;
+    border-left: 1px solid #BBBBBB !important;
+    border-right: 1px solid #000000 !important;
+    border-bottom: 1px dashed #BBBBBB !important;
+}
+
+.overflowRulerX > .firebugRulerV {
+    left: 0 !important;
+}
+
+.overflowRulerY > .firebugRulerH {
+    top: 0 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.fbProxyElement {
+    position: fixed !important;
+    pointer-events: auto !important;
+}
+</style></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-首页 skin-vector action-view">
+	<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="zh-CN">Buffer系统</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">来自c2wiki</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					跳转至：					<a href="#mw-head">导航</a>、					<a href="#p-search">搜索</a>
+				</div>
+				<div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="zh-CN"><table align="left" border="0" cellspacing="0" width="90%">
+<tbody><tr>
+<td>
+<p>特别说明:因为武器倍率从之前的百分数修改成倍率(100-&gt;1),时间从秒修改成毫秒(1-&gt;1000),文档中可能有未更正过来的地方,若出现此疑问,请联系方午卫.<br>
+特别说明:文档中填nil的部分,可以用0代替.文档中true,false必须为小写<br>
+此文档主要说明和Buffer相关的修改二级属性,造成伤害等与Buffer有关的配置方法.<br><br>
+相关配置文件:<br>
+<font color="#009900">\script\common\lua_buffer\script\LuaBufferConfig.lua</font><br>
+此文件在tw-client与tw-server下各有一份,需同步维护.<br>
+<font color="#009900">\script\client\lua_buffer\script\lua_buffer_config_c.lua</font><br>
+此文件在tw-client下有一份,负责客户端显示方面的配置.<br><br>
+<font color="#0000FF">关键词说明:</font><br>
+<font color="#AA0066">gainEffect</font>&nbsp;&nbsp;&nbsp;&nbsp;当Buffer生效的时候执行<br>
+<font color="#AA0066">attackAffect2Target</font>&nbsp;&nbsp;&nbsp;&nbsp;当攻击的时候,对被击者执行<br>
+<font color="#AA0066">attackAffect2Self</font>&nbsp;&nbsp;&nbsp;&nbsp;当攻击的时候,对攻击者执行<br>
+<font color="#AA0066">attackedAffect2Target</font>&nbsp;&nbsp;&nbsp;&nbsp;当被击的时候,对攻击者执行<br>
+<font color="#AA0066">attackedAffect2Self</font>&nbsp;&nbsp;&nbsp;&nbsp;当被击的时候,对被击者执行.<br>
+<font color="#AA0066">period</font>&nbsp;&nbsp;&nbsp;&nbsp;当Buffer有周期特性是,在周期到的时候执行<br>
+<font color="#AA0066">lostEffect</font>&nbsp;&nbsp;&nbsp;&nbsp;当Buffer	失效的时候执行.<br>
+<font color="#AA0066">通用配置表</font>&nbsp;&nbsp;&nbsp;&nbsp;在Buffer配置表中,所有Buffer都必须配置的一张表,此表中体现了Buffer的一些通用的特性.形式如下:<br>
+p[BufferID] = {<font color="#FF0000">17</font>,<font color="#FF0000">2</font>,<font color="#FF0000">1</font>,<font color="#FF0000">3000</font>,<font color="#0000FF">true</font>,<font color="#0000FF">true</font>,<font color="#0000FF">true</font>,<font color="#0000FF">false</font>};<br>
+<font color="#AA0066">效果配置表</font>&nbsp;&nbsp;&nbsp;&nbsp;在Buffer配置表中,用于影响Buffer效果的配置表,例如:造成伤害.形式如下:<br>
+{<font color="#FF00FF">"BufferAffectHP"</font> , <font color="#FF0000">7</font>, <font color="#FF0000">1</font>, <font color="#FF0000">4</font>, <font color="#FF0000">9</font>, <font color="#0000FF">false</font>}<br>
+其中,第一个值表示效果名字,第二个值开始是此效果需要的参数.<br><br>
+<font color="#0000FF">通用配置表的配置详细说明:</font><br>
+{<font color="#FF0000">17</font>,<font color="#FF0000">2</font>,<font color="#FF0000">1</font>,<font color="#FF0000">3000</font>,<font color="#0000FF">true</font>,<font color="#0000FF">true</font>,<font color="#0000FF">true</font>,<font color="#0000FF">false</font>};<br>
+表中有8个值,分别代表:<br>
+<font color="#FF0000">第一个值:替换组</font>:这里的17代表此Buffer可能替换其他替换组为17的Buffer,也可能被其他替换组为17的Buffer替换.<br>
+<font color="#FF0000">第二个值:替换权重</font>:决定是否替换的一个依据.规则是:值大的替换值小的,值相同也会替换.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;例如:有一个BufferID为2的Buffer,他的替换组也是17,权重值是2,那么ID2的Buffer将会替换ID1的Buffer,同样,ID1的Buffer也会替换ID2的Buffer.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;又如:有一个BufferID为3的Buffer,他的替换组也是17,权重值是3,那么ID3的Buffer将会替换ID1的Buffer,但是,ID1的Buffer不能替换ID3的Buffer.<br>
+<font color="#FF0000">第三个值:可叠加次数</font>:此Buffer可以被叠加的层数,预留参数,填1<br>
+<font color="#FF0000">第四个值:周期(毫秒)</font>:Buffer有周期(period不等于<font color="#0000FF">nil</font>)则代表周期值,单位为豪秒<br>
+<font color="#0000FF">第五个值:是否可以用右键取消</font>:<font color="#0000FF">true</font>代表可以在客户端用右键取消Buffer,<font color="#0000FF">false</font>代表不能再客户端用右键取消Buffer<br>
+<font color="#0000FF">第六个值:是否为Debuffer</font>:<font color="#0000FF">true</font>代表是Debuffer,<font color="#0000FF">false</font>代表是Buffer<br>
+<font color="#0000FF">第七个值:是否死亡消失</font>:<font color="#0000FF">true</font>代表是,<font color="#0000FF">false</font>代表死亡后会继续存在<br>
+<font color="#0000FF">第八个值:是否可以被其他玩家(NPC)加的同ID Buffer替换</font>:<font color="#0000FF">true</font>代表是,<font color="#0000FF">false</font>代表不是,那么,不同人加的同ID的Buffer将同时存在<br><br>
+</p><p><font color="#0000FF">效果配置表的配置详细说明:</font><br>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<table style="background:#009966" align="left" border="0" cellspacing="1" width="100%">
+<tbody><tr valign="middle"><td colspan="2" style="background:#EFEFEF" align="center"><font color="#AA0066">BufferModifyAttribute</font>&nbsp;&nbsp;&nbsp;&nbsp;由Buffer影响的二级属性修改.表的形式如下:</td></tr>
+<tr valign="middle">
+<td style="background:#EFEFEF" align="left" width="50%">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{<font color="#FF00FF">"BufferModifyAttribute"</font>,<font color="#FF0000">2</font>,<font color="#FF0000">6</font>,<font color="#FF0000">7</font>,<font color="#FF0000">100</font>,<font color="#0000FF">false</font>}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;上例代表增加7%力量<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{<font color="#FF00FF">"BufferModifyAttribute"</font>,<font color="#FF0000">2</font>,<font color="#FF0000">6</font>,<font color="#FF0000">7</font>,<font color="#FF0000">100</font>,<font color="#0000FF">true</font>}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;上例代表增加7倍武器伤害的力量,例如武器伤害是100,那么就修改700%力量<br>
+</p>
+</td>
+<td style="background:#EFEFEF" align="left" width="50%">
+<p><br>
+&nbsp;&nbsp;&nbsp;&nbsp;表中有5个值,分别代表:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF00FF">效果名</font>, <font color="#FF0000">二级属性分类枚举</font>, <font color="#FF0000">二级属性属性枚举</font>, <font color="#FF0000">二级属性改变值</font>, <font color="#FF0000">修改成功率</font>(Buffer中请填100), <font color="#0000FF">是否为武器伤害</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;关于二级属性枚举详见:<font color="#009900"> \tw-design\data\配置说明\二级属性配置说明.txt</font><br><br>
+</p>
+</td>
+</tr>
+<tr valign="middle"><td colspan="2" style="background:#EFEFEF" align="center"><font color="#AA0066">BufferAffectHP</font>&nbsp;&nbsp;&nbsp;&nbsp;由Buffer影响的HP改变,如伤害,如加血.表的形式如下:</td></tr>
+<tr valign="middle">
+<td style="background:#EFEFEF" align="left">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{<font color="#FF00FF">"BufferAffectHP"</font> , <font color="#FF0000">7</font>, <font color="#FF0000">1</font>, <font color="#FF0000">1</font>, <font color="#FF0000">1</font>, <font color="#0000FF">true</font>, <font color="#FF0000">20</font>}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;上例代表:造成100%武器伤害量的肉搏伤害.假如武器伤害是300,那么伤害值就是300,并且20%的概率发生<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{<font color="#FF00FF">"BufferAffectHP"</font> , <font color="#FF0000">7</font>, <font color="#FF0000">1</font>, <font color="#FF0000">1</font>, <font color="#FF0000">100</font>, <font color="#0000FF">false</font>}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;上例代表:直接造成100点的肉搏伤害.第七个参数没填,代表通过命中计算是否造成伤害<br>
+</p>
+</td>
+<td style="background:#EFEFEF" align="left">
+<p><br>
+&nbsp;&nbsp;&nbsp;&nbsp;表中有7个值,分别代表:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF00FF">效果名</font>, <font color="#FF0000">伤害类型</font>, <font color="#FF0000">预留参数</font>(未使用,填1), <font color="#FF0000">预留参数</font>(未使用,填1), <font color="#FF0000">伤害值/倍率</font>, <font color="#0000FF">是否依据武器伤害(修订:计算类型)</font>(<font color="#0000FF">true</font>表示依据武器伤害/<font color="#0000FF">false</font>不依据武器伤害(修订:按绝对值计算伤害)/<font color="#FF0000">2(新增:)</font>表示按总血量的百分比计算), <font color="#FF0000">概率</font>表示引发此次伤害的概率,不填则按攻击命中计算,填100则100%命中,填20则20%命中<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF0000">特别说明</font>:当依据武器伤害计算的时候,<font color="#FF0000">伤害值</font>就表示武器伤害的倍率(1表示100%),当不依据武器伤害的时候(修订:按绝对值计算时),<font color="#FF0000">伤害值</font>就表示伤害绝对值,<font color="#FF0000">(新增:)</font>当按百分比计算时,<font color="#FF0000">伤害值</font>就表示总血量的百分比,1代表100%.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;伤害类型枚举详见<font color="#009900">\tw-design\data\配置说明\二级属性配置说明.txt”应用类”的各种枚举.</font><br><br>
+</p>
+</td>
+</tr>
+<tr valign="middle"><td colspan="2" style="background:#EFEFEF" align="center"><font color="#AA0066">BufferAddBuffer</font>&nbsp;&nbsp;&nbsp;&nbsp;由Buffer产生效果添加Buffer.表的形式如下:<br></td></tr>
+<tr valign="middle">
+<td style="background:#EFEFEF" align="left">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{<font color="#FF00FF">"BufferAddBuffer"</font> , <font color="#FF0000">1</font>, <font color="#FF0000">3000</font>, <font color="#FF0000">0</font>, <font color="#FF0000">0</font>, <font color="#FF0000">50</font>}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;上例代表:有50%的几率加一个ID为1的Buffer, 持续3秒, 该ID的Buffer的value1与value2未使用,因此填0<br><br>
+</p>
+</td>
+<td style="background:#EFEFEF" align="left"><br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;表中有6个值,分别代表:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF00FF">效果名</font>, <font color="#FF0000">BufferID</font>, <font color="#FF0000">Buffer时间(毫秒)</font>, <font color="#FF0000">value1</font>, <font color="#FF0000">value2</font>, <font color="#FF0000">概率</font>(百分数)<br><br>
+</p>
+</td>
+</tr>
+<tr valign="middle"><td colspan="2" style="background:#EFEFEF" align="center"><font color="#AA0066">BufferAreaAddBuffer</font>&nbsp;&nbsp;&nbsp;&nbsp;由Buffer产生效果,范围加Buffer,如光环.表的形式如下:<br></td></tr>
+<tr valign="middle">
+<td style="background:#EFEFEF" align="left">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{<font color="#FF00FF">"BufferAreaAddBuffer"</font> , <font color="#FF0000">1</font>, <font color="#FF0000">3000</font>, <font color="#FF0000">0</font>, <font color="#FF0000">0</font>, <font color="#FF0000">2</font>, <font color="#FF0000">5</font>, <font color="#FF0000">50</font>}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;上例代表:对周围5米范围的队友与自己添加一个Buffer,ID为1,持续3秒,概率50%
+</p>
+</td>
+<td style="background:#EFEFEF" align="left"><br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;表中有9个值,分别代表:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF00FF">效果名</font>, <font color="#FF0000">BufferID</font>, <font color="#FF0000">Buffer时间(毫秒)</font>, <font color="#FF0000">目标种族</font>, <font color="#FF0000">value2</font>, <font color="#FF0000">范围类型</font>, <font color="#FF0000">范围半径</font>(米), <font color="#FF0000">概率</font>(百分数),  <font color="#FF0000">目标类型(TARGETTYPE的组合，和技能一样用法)</font>  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;关于<font color="#FF0000">范围类型</font>枚举如下:<br>
+<font color="#FF0000">1</font>&nbsp;&nbsp;&nbsp;&nbsp;范围内不可攻击目标不含自己(友好单位)<br>
+<font color="#FF0000">2</font>&nbsp;&nbsp;&nbsp;&nbsp;范围内不可攻击目标与自己(友好单位)<br>
+<font color="#FF0000">3</font>&nbsp;&nbsp;&nbsp;&nbsp;范围内队友不含自己<br>
+<font color="#FF0000">4</font>&nbsp;&nbsp;&nbsp;&nbsp;范围内队友与自己<br>
+<font color="#FF0000">5</font>&nbsp;&nbsp;&nbsp;&nbsp;范围内可攻击目标(敌人)<br>
+<font color="#FF0000">6</font>&nbsp;&nbsp;&nbsp;&nbsp;范围内的玩家（npc用）<br>
+<font color="#FF0000">10</font>&nbsp;&nbsp;&nbsp;&nbsp;范围内宠物主人<br>
+<font color="#FF0000">11</font>&nbsp;&nbsp;&nbsp;&nbsp;范围内NPC类型的敌人<br>
+<font color="#FF0000">12</font>&nbsp;&nbsp;&nbsp;&nbsp;范围内玩家类型的敌人<br><br>
+</p>
+</td>
+</tr>
+<tr valign="middle"><td colspan="2" style="background:#EFEFEF" align="center"><font color="#AA0066">BufferAreaAffectHP</font>&nbsp;&nbsp;&nbsp;&nbsp;由Buffer产生效果,范围影响HP.表的形式如下:<br></td></tr>
+<tr valign="middle">
+<td style="background:#EFEFEF" align="left">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{<font color="#FF00FF">"BufferAreaAffectHP"</font>, <font color="#FF0000">7</font>, <font color="#FF0000">1</font>, <font color="#FF0000">1</font>, <font color="#FF0000">2</font>, <font color="#FF0000">5</font>, <font color="#FF0000">7</font>, <font color="#0000FF">true</font>}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;上例代表:对周围7米的敌人造成200%的武器伤害,伤害类型为物理伤害
+</p>
+</td>
+<td style="background:#EFEFEF" align="left"><br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;表中有8个值,分别代表:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF00FF">效果名</font>, <font color="#FF0000">伤害类型</font>, <font color="#FF0000">预留参数</font>(未使用,填1), <font color="#FF0000">预留参数</font>(未使用,填1), <font color="#FF0000">伤害值/倍率/总血量百分比</font>, <font color="#FF0000">范围类型</font>, <font color="#FF0000">范围半径</font>(米), <font color="#0000FF">是否依据武器伤害</font>(<font color="#0000FF">true</font>表示依据武器伤害/<font color="#0000FF">false</font>不依据武器伤害)<font color="#FF0000">2(新增:)</font>表示按总血量的百分比计算),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;其中,关于伤害方面的说明见<font color="#FF00FF">BufferAffectHP</font>, 关于范围方面的说明见<font color="#FF00FF">BufferAreaAddBuffer</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF0000">特别说明</font>:当依据武器伤害计算的时候,<font color="#FF0000">伤害值</font>就表示武器伤害的倍率(1表示100%),当不依据武器伤害的时候,<font color="#FF0000">伤害值</font>就表示伤害绝对值.<br>&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF0000">修订(2011-07-27):</font>第八个值的含义等同于BufferAffectHP的第六个值<br><br>
+</p>
+</td>
+</tr>
+<tr valign="middle"><td colspan="2" style="background:#EFEFEF" align="center"><font color="AA0066">BufferAddThreat</font>&nbsp;&nbsp;&nbsp;&nbsp;由Buffer产生效果,改变目标仇恨.表的形式如下:<br></td></tr>
+<tr valign="middle">
+<td style="background:#EFEFEF" align="left">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{<font color="#FF00FF">"BufferAddThreat"</font>, <font color="#FF0000">1</font>, <font color="#0000FF">true</font>}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;上例中,表示造成武器伤害100%的仇恨,假如武器伤害是300,那么伤害值就是300<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{<font color="#FF00FF">"BufferAddThreat"</font>, <font color="#FF0000">100</font>, <font color="#0000FF">false</font>}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;上例中,表示直接造成100点仇恨.<br>
+</p>
+</td>
+<td style="background:#EFEFEF" align="left"><br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;表中3个值,分别代表:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF00FF">效果名</font>, <font color="#FF0000">仇恨值</font>, <font color="#0000FF">是否依据武器伤害</font>(<font color="#0000FF">true</font>表示依据武器伤害/<font color="#0000FF">false</font>表示不依据武器伤害)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;说明:当依据武器伤害的时候,则<font color="#FF0000">仇恨值</font>为武器伤害倍率(1代表100%), 当不依据武器伤害的时候,则<font color="#FF0000">仇恨值</font>为仇恨绝对值.<br><br>
+</p>
+</td>
+</tr>
+<tr valign="middle"><td colspan="2" style="background:#EFEFEF" align="center"><font color="#AA0066">BufferRemoveBuffer</font>&nbsp;&nbsp;&nbsp;&nbsp;由Buffer产生效果,移除Buffer.表的形式如下:<br></td></tr>
+<tr valign="middle">
+<td style="background:#EFEFEF" align="left">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{<font color="#FF00FF">"BufferRemoveBuffer"</font>, <font color="#FF0000">1</font>, <font color="#FF0000">1</font>}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;上例代表:按ID的方式移除ID为1的Buffer
+</p>
+</td>
+<td style="background:#EFEFEF" align="left"><br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;表中3个值,分表代表:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF00FF">效果名</font>, <font color="#FF0000">移除方式</font>, <font color="#FF0000">值</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF0000">移除方式</font>枚举如下:<br>
+<font color="#FF0000">1</font>&nbsp;&nbsp;&nbsp;&nbsp;按ID移除Buffer, 则<font color="#FF0000">值</font>代表BufferID<br>
+<font color="#FF0000">2</font>&nbsp;&nbsp;&nbsp;&nbsp;按替换组移除Buffer, 则<font color="#FF0000">值</font>代表替换组<br>
+<font color="#FF0000">3</font>&nbsp;&nbsp;&nbsp;&nbsp;移除Debuffer, 则<font color="#FF0000">值</font>代表移除数量.<font color="999900">新改属性:随机移除</font><br>
+<font color="#FF0000">4</font>&nbsp;&nbsp;&nbsp;&nbsp;移除Buffer, 则<font color="#FF0000">值</font>代表移除数量.<font color="999900">新改属性:随机移除</font><br>
+<font color="#FF0000">5</font>&nbsp;&nbsp;&nbsp;&nbsp;按Index移除Buffer, 则<font color="#FF0000">值</font>代表Buffer的Index<br><br>
+</p>
+</td>
+</tr>
+<tr valign="middle"><td colspan="2" style="background:#EFEFEF" align="center"><font color="#AA0066">PetModifyAttribute</font>&nbsp;&nbsp;&nbsp;&nbsp;宠物将自己的二级属性按比例添加给玩家.表的形式如下:<br></td></tr>
+<tr valign="middle">
+<td style="background:#EFEFEF" align="left">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{<font color="#FF00FF">"PetModifyAttribute"</font>, <font color="#FF0000">2</font>, <font color="#FF0000">5</font>, <font color="#FF0000">1</font>, <font color="#FF0000">100</font>, <font color="#0000FF">false</font>}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;上例代表:宠物将自己的力量按1比1的方式加给玩家
+</p>
+</td>
+<td style="background:#EFEFEF" align="left"><br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;表中6个值,分表代表:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF00FF">效果名</font>, <font color="#FF0000">二级属性分类枚举</font>(填2), <font color="#FF0000">二级属性属性枚举</font>(5,7,9,11四个值有效,分别代表力量,敏捷,智力,耐力), <font color="#FF0000">倍率</font>1代表按100%,0.5代表50%, <font color="#FF0000">添加成功率</font>(填100), <font color="#0000FF">未使用,填false</font><br><br>
+</p>
+</td>
+</tr>
+<tr valign="middle"><td colspan="2" style="background:#EFEFEF" align="center"><font color="#AA0066">BufferResurrect</font>&nbsp;&nbsp;&nbsp;&nbsp;Buffer复活.表的形式如下:<br></td></tr>
+<tr valign="middle">
+<td style="background:#EFEFEF" align="left">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{<font color="#FF00FF">"BufferResurrect"</font>, <font color="#FF0000">50</font>, <font color="#FF0000">60</font>, <font color="#0000FF">false</font>, <font color="#FF0000">0</font>, <font color="#FF0000">70</font>}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;上例代表:此Buffer有70%几率复活,复活时获得50%生命和60%魔法
+</p>
+</td>
+<td style="background:#EFEFEF" align="left"><br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;表中6个值,分表代表:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF00FF">效果名</font>, <font color="#FF0000">HP</font>, <font color="#FF0000">MP</font>, <font color="#0000FF">是否百分比</font>, <font color="#FF0000">保留</font>(填0), <font color="#FF0000">复活概率</font>(100代表100%)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;第四个参数说明:当填true时,则代表按百分比计算复活后的血和魔,那么HP,MP就代表百分数(100代表100%).当填false时,则代表按绝对值计算复活后的血和魔,那么,HP,MP就代表复活后的血和魔的值.<br><br>
+</p>
+</td>
+</tr>
+<tr valign="middle"><td colspan="2" style="background:#EFEFEF" align="center"><font color="#AA0066">freeze</font>&nbsp;&nbsp;&nbsp;&nbsp;冻结Buff.表的形式如下:<br></td></tr>
+<tr valign="middle">
+<td style="background:#EFEFEF" align="left">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;{<font color="#FF00FF">"freeze"</font>, <font color="#FF0000">10000</font>}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;上例代表:客户端冻结动作10秒
+</p>
+</td>
+<td style="background:#EFEFEF" align="left"><br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;表中2个值,分表代表:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF00FF">效果名</font>, <font color="#FF0000">客户端冻结动作时间(毫秒)</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;备注:此配置只让客户端做动作冻结(不播放动画),并未定身,请另行配置二级属性的定身,让冻结的目标定身不动<br><br>
+</p>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td>
+<p><font color="#0000FF">common下Buffer配置说明</font><br>
+<font color="#009900">LuaBufferConfig.lua</font><br>
+BufferID = <font color="#FF0000">1</font>;&nbsp;&nbsp;&nbsp;&nbsp;<font color="009900">--这里配置BufferID</font><br>
+p[BufferID] = {<font color="#FF0000">2</font>,<font color="#FF0000">2</font>,<font color="#FF0000">1</font>,<font color="#FF0000">3000</font>,<font color="#0000FF">true</font>,<font color="#0000FF">true</font>,<font color="#0000FF">true</font>,<font color="#0000FF">false</font>};&nbsp;&nbsp;&nbsp;&nbsp;<font color="009900">--这里是通用配置表--line 1</font><br>
+p[BufferID].gainEffect = <font color="#0000FF">nil</font>;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900">--获得Buffer执行的效果</font><font color="009900">--line 2</font><br>
+p[BufferID].attackAffect2Target = <font color="#0000FF">nil</font>;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#009900">--攻击的时候对目标执行的效果</font><font color="009900">--line 3</font><br>
+p[BufferID].attackAffect2Self = <font color="0000FF">nil</font>;&nbsp;&nbsp;&nbsp;&nbsp;<font color="009900">--攻击的时候对自己执行的效果</font><font color="009900">--line 4</font><br>
+p[BufferID].attackedAffect2Target = <font color="0000FF">nil</font>;&nbsp;&nbsp;&nbsp;&nbsp;<font color="009900">--被击的时候对攻击者执行的效果</font><font color="009900">--line 5</font><br>
+p[BufferID].attackedAffect2Self = <font color="0000FF">nil</font>;&nbsp;&nbsp;&nbsp;&nbsp;<font color="009900">--被击的时候对自己执行的效果</font><font color="009900">--line 6</font><br>
+p[BufferID].period = <font color="0000FF">nil</font>;&nbsp;&nbsp;&nbsp;&nbsp;<font color="009900">--周期Buffer周期到了执行的效果</font><font color="009900">--line 7</font><br>
+p[BufferID].lostEffect = <font color="0000FF">nil</font>;&nbsp;&nbsp;&nbsp;&nbsp;<font color="009900">--失去Buffer执行的效果</font><font color="009900">--line 8</font><br>
+<font color="0000FF">下面是新增加的配置特性,可以不配置,是针对特殊化的Buffer配置的</font><br>
+p[BufferID].bNotSave = <font color="0000FF">true</font> <font color="009900">--下线是否不保存,对于昼夜Buffer需要不保存,则填写此项</font><br>
+p[BufferID].bNotBroadCast = <font color="0000FF">true</font> <font color="009900">--是否不广播,对于连击点数这种Buffer,只需要施放者自己知道,因此填写此项</font><br>
+p[BufferID].bCantDispel = <font color="0000FF">true</font> <font color="009900">--是否不可驱散,对于有些VIP的Buff或特别的减益Buff不允许被驱散,则填写此项</font><br>
+<br>
+上面<font color="#009900">line2</font>到<font color="009900">line 8</font>部分,如果配置为<font color="#0000FF">nil</font>则表示什么都不干.否则需要进行如下配置:<br>
+{效果配置表1,效果配置表2,...},具体形式如下:<br>
+{{<font color="#FF00FF">"BufferModifyAttribute"</font>,<font color="FF0000">2</font>,<font color="FF0000">6</font>,<font color="FF0000">6</font>,<font color="FF0000">100</font>},}<br>
+这表示执行一个效果,此效果是修改二级属性.<br>
+{{<font color="#FF00FF">"BufferAreaAffectHP"</font>, <font color="#FF0000">7</font>, <font color="#FF0000">1</font>, <font color="#FF0000">4</font>, <font color="FF0000">2</font>, <font color="FF0000">5</font>, <font color="FF0000">200</font>, <font color="0000FF">true</font>},{<font color="FF00FF">"BufferAreaAddBuffer"</font>, <font color="FF0000">1</font>, <font color="FF0000">3</font>, <font color="FF0000">0</font>, <font color="FF0000">0</font>, <font color="FF0000">2</font>, <font color="FF0000">5</font>, <font color="FF0000">50</font>},}<br>
+这表示执行两个效果,第一个效果是范围性伤害,第二个效果是范围性加Buffer.若有需要,可以继续添加多个效果<br><br>
+</p><p><font color="#0000FF">client下Buffer配置说明</font><br>
+<font color="#009900">lua_buffer_config_c.lua</font><br>
+BufferID = <font color="FF0000">1</font>;&nbsp;&nbsp;&nbsp;&nbsp;<font color="009900">--这里配置BufferID</font><br>
+p[BufferID] = {<font color="FF0000">31</font>, <font color="FF0000">11</font>, <font color="FF0000">0</font>, <font color="0000FF">false</font>};&nbsp;&nbsp;&nbsp;&nbsp;<font color="009900">--这里是客户端效果表--line 1</font><br>
+p[BufferID].sPrompt = <font color="FF00FF">"这是一个测试Buffer"</font>;&nbsp;&nbsp;&nbsp;&nbsp;<font color="009900">--这里是Prompt信息--line 2</font><br>
+p[BufferID].texiao = <font color="FF00FF">"meigui"</font>;&nbsp;&nbsp;&nbsp;&nbsp;<font color="009900">--这里是特效名--line 3</font><br>
+p[BufferID].sName = <font color="FF00FF">"窒息丝带1级"</font>;&nbsp;&nbsp;&nbsp;&nbsp;<font color="009900">--这是Buff名字,新增配置,若为配置将以"Buff:" + BuffID取代,例如: Buff:177</font><br>
+<font color="0000FF">下面是新增加的配置特性,可以不配置,是针对特殊化的Buffer配置的</font><br>
+p[BufferID].bNotShow = <font color="0000FF">true</font> <font color="009900">--是否不在客户端界面显示,对于连击点数这种Buffer,因有单独的显示界面,因此在Buffer界面不需要显示</font><br>
+p[BufferID].action= <font color="FF00FF">"act_giddy"</font> <font color="009900">--此Buff在客户端做的动作.可用的动作配置见<a href="/index.php/%E5%8F%AF%E7%94%A8ability%E5%8F%8A%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E" title="可用ability及参数说明">可用ability及参数说明</a>中关于action的说明</font><br>
+p[BufferID].bNotHint= <font color="0000FF">true</font> <font color="009900">--是否不需要提示.配置为true则不会在战斗信息中显示</font><br>
+p[BufferID].lostEffect= <font color="FF00FF">"meigui"</font> <font color="009900">--Buff消失的时候播放的特效.</font><br>
+p[BufferID].nCosplayDelay= <font color="FF0000">1000</font> <font color="009900">--Buff如果有变身的话,则配置是否延迟变身.单位:毫秒.</font><br>
+p[BufferID].nStopCosplayDelay= <font color="FF0000">1000</font> <font color="009900">--Buff如果有变身的话,则配置停止变身时是否延迟.单位:毫秒.</font><br>
+<font color="009900">line 1:</font><br>
+第一个值代表ICON的ID, 第二个值代表cosplay的ID(无则填0), 第三个值代表坐骑外形的ID(无则填0), 第四个值代表是否显示时间.<font color="0000FF">true</font>代表显示时间,<font color="0000FF">false</font>代表不显示(例如光环)<br>
+<font color="009900">line 2:</font><br>
+Prompt信息,放此Buffer的描述信息<br>
+<font color="009900">line 3:</font><br>
+Buffer生效到失效期间的特效名<br>
+特效配置分两种方式:<br>
+<font color="FF00FF">"meigui"</font> 只配置一个名字,则默认的播放位置是0<br>
+{<font color="FF00FF">"dust01"</font>, <font color="FF0000">2</font>} 配置成一个table,第一个是名字,第二个是播放位置<br><br>
+</p><p><font color="#0000FF">下面是详细的用例说明</font><br>
+</p><p><font color="009900">--测试Buffer1</font><br>
+BufferID = <font color="FF0000">1</font>;<br>
+<font color="009900">----参数表说明:{替换组, 替换权重, 可叠加次数, 周期(豪秒), 是否可用右键取消(true则可以), 是否Debuffer(true则是), 是否死亡消失(true则是), 是否可被其他玩家(NPC)替换(true则是)};</font><br>
+p[BufferID] = {<font color="FF0000">2</font>,<font color="FF0000">2</font>,<font color="FF0000">1</font>,<font color="FF0000">0</font>,<font color="0000FF">true</font>,<font color="0000FF">true</font>,<font color="0000FF">true</font>,<font color="0000FF">false</font>};<br>
+p[BufferID].gainEffect = <font color="0000FF">nil</font>;&nbsp;&nbsp;&nbsp;&nbsp;<font color="009900">--获得Buffer执行的效果</font><br>
+p[BufferID].attackAffect2Target = <font color="0000FF">nil</font>;&nbsp;&nbsp;&nbsp;&nbsp;<font color="009900">--攻击的时候对目标执行的效果</font><br>
+p[BufferID].attackAffect2Self = <font color="0000FF">nil</font>;&nbsp;&nbsp;&nbsp;&nbsp;<font color="009900">--攻击的时候对自己执行的效果</font><br>
+p[BufferID].attackedAffect2Target = <font color="0000FF">nil</font>;&nbsp;&nbsp;&nbsp;&nbsp;<font color="009900">--被击的时候对攻击者执行的效果</font><br>
+p[BufferID].attackedAffect2Self = <font color="0000FF">nil</font>;&nbsp;&nbsp;&nbsp;&nbsp;<font color="009900">--被击的时候对自己执行的效果</font><br>
+p[BufferID].period = <font color="0000FF">nil</font>;&nbsp;&nbsp;&nbsp;&nbsp;<font color="009900">--周期Buffer周期到了执行的效果</font><br>
+p[BufferID].lostEffect = <font color="0000FF">nil</font>;<font color="009900">--失去Buffer执行的效果</font><br>
+p[BufferID].bNotSave = <font color="0000FF">true</font>;<font color="009900">--Buffer是否不保存,是则填true,不是则填false或不填</font><font color="FF0000">--新增属性</font><br><br>
+</p><p><font color="009900">--测试Buffer2</font><br>
+<font color="009900">--测试:在生效的时候增加二级属性:力量加6%,当然,在失效的时候会自动扣除增加的二级属性</font><br>
+BufferID = <font color="FF0000">2</font>;<br>
+p[BufferID] = {<font color="FF0000">3</font>,<font color="FF0000">2</font>,<font color="FF0000">1</font>,<font color="FF0000">0</font>,<font color="0000FF">true</font>,<font color="0000FF">true</font>,<font color="0000FF">true</font>, <font color="0000FF">false</font>};<br>
+p[BufferID].gainEffect = {{<font color="FF00FF">"BufferModifyAttribute"</font>,<font color="FF0000">2</font>,<font color="FF0000">6</font>,<font color="FF0000">6</font>,<font color="FF0000">100</font>},};<br>
+p[BufferID].attackAffect2Target = <font color="0000FF">nil</font>;<br>
+p[BufferID].attackAffect2Self = <font color="0000FF">nil</font>;<br>
+p[BufferID].attackedAffect2Target = <font color="0000FF">nil</font>;<br>
+p[BufferID].attackedAffect2Self = <font color="0000FF">nil</font>;<br>
+p[BufferID].period = <font color="0000FF">nil</font>;<br>
+p[BufferID].lostEffect = <font color="0000FF">nil</font>;<br><br>
+</p><p><font color="009900">--测试Buffer3</font><br>
+<font color="009900">--测试:在生效的时候收到伤害(绝对伤害9点),此伤害与武器伤害无关.在周期生效的时候产生伤害,此伤害与武器伤害有关(100%武器伤害)</font><br>
+<font color="0000FF">此Buffer有效果配置跟武器伤害有关,因此,添加此Buffer的时候,需要将武器伤害作为<font color="FF0000">value1</font>传给Buffer.</font><br>
+BufferID = <font color="FF0000">3</font>;<br>
+p[BufferID] = {<font color="FF0000">3</font>,<font color="FF0000">2</font>,<font color="FF0000">1</font>,<font color="FF0000">3000</font>,<font color="0000FF">true</font>,<font color="0000FF">true</font>,<font color="0000FF">true</font>, <font color="0000FF">false</font>};<br>
+p[BufferID].gainEffect = {{"<font color="FF00FF">BufferAffectHP"</font> , <font color="FF0000">7</font>, <font color="FF0000">1</font>, <font color="FF0000">1</font>, <font color="FF0000">9</font>, <font color="0000FF">false</font>},};<br>
+p[BufferID].attackAffect2Target = <font color="0000FF">nil</font>;<br>
+p[BufferID].attackAffect2Self = <font color="0000FF">nil</font>;<br>
+p[BufferID].attackedAffect2Target = <font color="0000FF">nil</font>;<br>
+p[BufferID].attackedAffect2Self = <font color="0000FF">nil</font>;<br>
+p[BufferID].period = {{<font color="FF00FF">"BufferAffectHP"</font> , <font color="FF0000">7</font>, <font color="FF0000">1</font>, <font color="FF0000">1</font>, <font color="FF0000">1</font>, <font color="0000FF">true</font>},};<br>
+p[BufferID].lostEffect = <font color="0000FF">nil</font>;<br><br>
+</p><p><font color="009900">--测试Buffer4</font><br>
+<font color="009900">--测试:在攻击的时候对目标加一个Buffer(ID为1,3秒时间),对自己造成伤害,与武器伤害无关(绝对伤害50点),Buffer失效的时候给自己加一个Buffer(50%概率)(ID为1,时间3秒)</font><br>
+BufferID = <font color="FF0000">4</font>;<br>
+p[BufferID] = {<font color="FF0000">3</font>,<font color="FF0000">2</font>,<font color="FF0000">1</font>,<font color="FF0000">0</font>,<font color="0000FF">true</font>,<font color="0000FF">true</font>,<font color="0000FF">true</font>, <font color="0000FF">false</font>};<br>
+p[BufferID].gainEffect = <font color="0000FF">nil</font>;<br>
+p[BufferID].attackAffect2Target = {{<font color="FF00FF">"BufferAddBuffer"</font> , <font color="FF0000">1</font>, <font color="FF0000">3000</font>, <font color="FF0000">0</font>, <font color="FF0000">0</font>, <font color="FF0000">100</font>},};<br>
+p[BufferID].attackAffect2Self = {{<font color="FF00FF">"BufferAffectHP"</font> , <font color="FF0000">7</font>, <font color="FF0000">1</font>, <font color="FF0000">1</font>, <font color="FF0000">50</font>, <font color="0000FF">false</font>},};<br>
+p[BufferID].attackedAffect2Target = <font color="0000FF">nil</font>;<br>
+p[BufferID].attackedAffect2Self = <font color="0000FF">nil</font>;<br>
+p[BufferID].period = <font color="0000FF">nil</font>;<br>
+p[BufferID].lostEffect = {{<font color="FF00FF">"BufferAddBuffer"</font> , <font color="FF0000">1</font>, <font color="FF0000">3000</font>, <font color="FF0000">0</font>, <font color="FF0000">0</font>, <font color="FF0000">50</font>},};<br><br>
+</p><p><font color="009900">--测试Buffer5</font><br>
+<font color="009900">--测试:在被击的时候对目标造成伤害,与武器伤害无关(绝对伤害20点), 对自己加一个Buffer(50%概率)(ID为1,时间3秒).</font><br>
+BufferID = <font color="FF0000">5</font>;<br>
+p[BufferID] = {<font color="FF0000">3</font>,<font color="FF0000">2</font>,<font color="FF0000">1</font>,<font color="FF0000">0</font>,<font color="0000FF">true</font>,<font color="0000FF">true</font>,<font color="0000FF">true</font>, <font color="0000FF">false</font>};<br>
+p[BufferID].gainEffect = <font color="0000FF">nil</font>;<br>
+p[BufferID].attackAffect2Target = <font color="0000FF">nil</font>;<br>
+p[BufferID].attackAffect2Self = <font color="0000FF">nil</font>;<br>
+p[BufferID].attackedAffect2Target = {{<font color="FF00FF">"BufferAffectHP"</font>, <font color="FF0000">7</font>, <font color="FF0000">1</font>, <font color="FF0000">1</font>, <font color="FF0000">20</font>, <font color="0000FF">false</font>},};<br>
+p[BufferID].attackedAffect2Self = {{<font color="FF00FF">"BufferAddBuffer"</font>, <font color="FF0000">1</font>, <font color="FF0000">3000</font>, <font color="FF0000">0</font>, <font color="FF0000">0</font>, <font color="FF0000">50</font>},};<br>
+p[BufferID].period = <font color="0000FF">nil</font>;<br>
+p[BufferID].lostEffect = <font color="0000FF">nil</font>;<br><br>
+</p><p><font color="009900">--测试Buffer6</font><br>
+<font color="009900">--测试:周期对周围敌人造成伤害,与武器伤害有关(造成200%武器伤害,范围7米), 同时给周围有好目标(包括自己)加一个Buffer(ID为1,持续3秒,范围7米), 50%概率</font><br>
+<font color="0000FF">此Buffer有效果配置跟武器伤害有关,因此,添加此Buffer的时候,需要将武器伤害作为<font color="FF0000">value1</font>传给Buffer.</font><br>
+BufferID = <font color="FF0000">6</font>;<br>
+p[BufferID] = {<font color="FF0000">3</font>,<font color="FF0000">2</font>,<font color="FF0000">1</font>,<font color="FF0000">3000</font>,<font color="0000FF">true</font>,<font color="0000FF">true</font>,<font color="0000FF">true</font>, <font color="0000FF">false</font>};<br>
+p[BufferID].gainEffect = <font color="0000FF">nil</font>;<br>
+p[BufferID].attackAffect2Target = <font color="0000FF">nil</font>;<br>
+p[BufferID].attackAffect2Self = <font color="0000FF">nil</font>;<br>
+p[BufferID].attackedAffect2Target = <font color="0000FF">nil</font>;<br>
+p[BufferID].attackedAffect2Self = <font color="0000FF">nil</font>;<br>
+p[BufferID].period = {{<font color="FF00FF">"BufferAreaAffectHP"</font>, <font color="FF0000">7</font>, <font color="FF0000">1</font>, <font color="FF0000">1</font>, <font color="FF0000">2</font>, <font color="FF0000">5</font>, <font color="FF0000">7</font>, <font color="0000FF">true</font>},{<font color="FF00FF">"BufferAreaAddBuffer"</font>, <font color="FF0000">1</font>, <font color="FF0000">3</font>, <font color="FF0000">0</font>, <font color="FF0000">0</font>, <font color="FF0000">2</font>, <font color="FF0000">7</font>, <font color="FF0000">50</font>},};<br>
+p[BufferID].lostEffect = <font color="0000FF">nil</font>;<br><br>
+</p><p><font color="009900">--测试Buffer7</font><br>
+<font color="009900">--测试:在被击的时候对攻击者产生仇恨,与武器伤害有关(100%武器伤害), 在失效的时候,移除ID为1的Buffer</font><br>
+<font color="0000FF">此Buffer有效果配置跟武器伤害有关,因此,添加此Buffer的时候,需要将武器伤害作为<font color="FF0000">value1</font>传给Buffer.</font><br>
+BufferID = <font color="FF0000">7</font>;<br>
+p[BufferID] = {<font color="FF0000">3</font>,<font color="FF0000">2</font>,<font color="FF0000">1</font>,<font color="FF0000">0</font>,<font color="0000FF">true</font>,<font color="0000FF">true</font>,<font color="0000FF">true</font>, <font color="0000FF">false</font>};<br>
+p[BufferID].gainEffect = <font color="0000FF">nil</font>;<br>
+p[BufferID].attackAffect2Target = <font color="0000FF">nil</font>;<br>
+p[BufferID].attackAffect2Self = <font color="0000FF">nil</font>;<br>
+p[BufferID].attackedAffect2Target = {{<font color="FF00FF">"BufferAddThreat"</font>, <font color="FF0000">100</font>, <font color="0000FF">true</font>},};<br>
+p[BufferID].attackedAffect2Self = <font color="0000FF">nil</font>;<br>
+p[BufferID].period = <font color="0000FF">nil</font>;<br>
+p[BufferID].lostEffect = {{<font color="FF00FF">"BufferRemoveBuffer"</font>, <font color="FF0000">1</font>, <font color="FF0000">1</font>},};<br><br>
+</p><p><font color="0000FF">与Buffer有关的可用ability及参数说明请参阅《可用abilitys及参数说明.doc》</font>
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>目录</h2><span class="toctoggle">&nbsp;[<a href="#" id="togglelink">隐藏</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.E6.96.B0.E5.A2.9EBuff.E7.A7.BB.E9.99.A4.E8.A7.84.E5.88.99:"><span class="tocnumber">1</span> <span class="toctext">新增Buff移除规则:</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.E6.96.B0.E5.A2.9EBuff.E6.B7.BB.E5.8A.A0.E8.A7.84.E5.88.99:"><span class="tocnumber">2</span> <span class="toctext">新增Buff添加规则:</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.E5.85.B3.E4.BA.8E.E4.B8.8A.E7.BA.BF.E4.BF.9D.E6.8A.A4.E7.9A.84Buff.E9.85.8D.E7.BD.AE:"><span class="tocnumber">3</span> <span class="toctext">关于上线保护的Buff配置:</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.E5.A4.9A.E5.80.8D.E7.BB.8F.E9.AA.8C.E7.9A.84.E9.85.8D.E7.BD.AE:"><span class="tocnumber">4</span> <span class="toctext">多倍经验的配置:</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#.E5.8F.96.E6.B6.88.E7.A5.88.E7.A5.B7"><span class="tocnumber">5</span> <span class="toctext">取消祈祷</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#PK.E4.BF.9D.E6.8A.A4"><span class="tocnumber">6</span> <span class="toctext">PK保护</span></a></li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id=".E6.96.B0.E5.A2.9EBuff.E7.A7.BB.E9.99.A4.E8.A7.84.E5.88.99:">新增Buff移除规则:</span></h1>
+<pre>配置文件位置: \tw-server\serverarea\script\server\lua_buffer\script\remove_rule.lua
+参数形式:
+{移除类型, value},
+目前只支持按组和ID移除.
+详细说明:
+1: 进入战斗后移除Buff.
+配置:RemoveRule.RemoveWhenEnterBattle.
+示例:
+RemoveRule.RemoveWhenEnterBattle =
+{
+	{ByGroup, 1000},
+	{ByID, 1000},
+}
+上例说明: 在进入战斗时,会移除所有替换组为1000的Buff,同时还会移除ID为1000的Buff.
+2: 脱离战斗后移除.
+配置:RemoveRule.RemoveWhenLeaveBattle.
+方式同上.
+</pre>
+<h1><span class="mw-headline" id=".E6.96.B0.E5.A2.9EBuff.E6.B7.BB.E5.8A.A0.E8.A7.84.E5.88.99:">新增Buff添加规则:</span></h1>
+<pre>配置文件位置:同上.
+参数形式:
+{BuffID, Time(ms), Value1, Value2,},
+详细说明:
+1: 上线后增加的上线保护.
+配置:AddBuffRule.AddWhenOnline.
+示例:
+AddBuffRule.AddWhenOnline =
+{
+	{98, 10000, 0, 0},
+	{99, 100000, 0, 0},
+}
+上例说明: 在上线的时候,会加98号Buff 10秒, 加99号Buff 100秒.
+
+</pre>
+<h1><span class="mw-headline" id=".E5.85.B3.E4.BA.8E.E4.B8.8A.E7.BA.BF.E4.BF.9D.E6.8A.A4.E7.9A.84Buff.E9.85.8D.E7.BD.AE:">关于上线保护的Buff配置:</span></h1>
+<pre>用ability的方式配置,配置如下:
+在生效的时候配置成:
+{{"useAbility", {"protectOnline", true}}};
+例如:
+p[1998].gainEffect = {{"useAbility", {"protectOnline", true}}};
+在失效的时候配置成:
+{{"useAbility", {"protectOnline", false}}};
+例如:
+p[1998].lostEffect = {{"useAbility", {"protectOnline", false}}};
+特别说明:此Buff配置成非保存类型:
+例如:
+p[1998].bNotSave = true;
+
+</pre>
+<h1><span class="mw-headline" id=".E5.A4.9A.E5.80.8D.E7.BB.8F.E9.AA.8C.E7.9A.84.E9.85.8D.E7.BD.AE:">多倍经验的配置:</span></h1>
+<pre>用ability的方式配置,配置如下:
+在生效的时候配置成:
+{{"useAbility", {"modifyMultiExp",Type1, Value1, Type2, Value2,...}}};
+Type: 多倍经验的类型.
+    可用多倍经验类型:
+    0: 杀怪获得的多倍经验.
+    1: 任务获得的多倍经验.
+    2: 玩家宠物获得的多倍经验.
+    3: 杀怪获得的多倍灵力.
+    4: 任务获得的多倍灵力.
+Value: 增加的倍率. 此值代表千分率,即1000表示1.
+    说明: 这里的值是增加的倍率,例如,双倍经验其实就是增加100%,那么就填1000即可.
+注意点:
+    因为这里是执行倍率加减运算,而不是直接修改,因此,在生效的时候配置加(或减),那么,在失效的时候配置同样的减(或加).
+范例:
+杀怪的双倍经验和灵力
+p[ID] = {....}
+p[ID].gainEffect = {{"useAbility", {"modifyMultiExp", {0, 1000}, {3, 1000},}}};
+p[ID].lostEffect = {{"useAbility", {"modifyMultiExp", {0, -1000}, {3, -1000},}}};    --谨记: 要扣掉,否则就BUG了.
+
+任务获得三倍经验和双倍灵力
+p[ID] = {....}
+p[ID].gainEffect = {{"useAbility", {"modifyMultiExp", {1, 2000}, {4, 1000},}}};
+p[ID].lostEffect = {{"useAbility", {"modifyMultiExp", {1, -2000}, {4, -1000},}}};
+
+宠物获得双倍经验
+p[ID] = {....}
+p[ID].gainEffect = {{"useAbility", {"modifyMultiExp", {2, 1000},}}};
+p[ID].lostEffect = {{"useAbility", {"modifyMultiExp", {2, -1000},}}};
+
+目前可以支持的一些配置(通过Buff替换组规则):
+同样是加多倍杀怪经验的Buff可以存在多个,例如:加三倍的VIP Buff可以设置为加双倍的活动 Buff共存,那么效果将是五倍经验.
+同样,加多倍杀怪经验的Buff可以替换,例如:三倍经验丹可以替换双倍经验丹等.
+灵力,宠物经验等也一样.
+</pre>
+<h1><span class="mw-headline" id=".E5.8F.96.E6.B6.88.E7.A5.88.E7.A5.B7">取消祈祷</span></h1>
+<pre>p[ID].lostEffect = {{"useAbility", {"stopPray"}}};
+</pre>
+<h1><span class="mw-headline" id="PK.E4.BF.9D.E6.8A.A4">PK保护</span></h1>
+<pre>生效的时候执行:
+p[ID].gainEffect = {{"useAbility", {"protectedPK", true}}};
+失效的时候执行:
+p[ID].lostEffect = {{"useAbility", {"protectedPK", false}}};
+
+</pre>
+</td>
+</tr>
+</tbody></table>
+
+<!-- 
+NewPP limit report
+Cached time: 20160518011627
+Cache expiry: 86400
+Dynamic content: false
+Real time usage: 0.531 seconds
+Preprocessor visited node count: 651/1000000
+Preprocessor generated node count: 1320/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key c2wiki:pcache:idhash:63-0!*!0!!zh-cn!*!* and timestamp 20160518011626 and revision id 125
+ -->
+</div>					<div class="printfooter">
+						取自“<a dir="ltr" href="http://wiki.c2engine.com/index.php?title=Buffer系统&amp;oldid=125">http://wiki.c2engine.com/index.php?title=Buffer系统&amp;oldid=125</a>”					</div>
+				<div id="catlinks" class="catlinks catlinks-allhidden"></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+</body></html>

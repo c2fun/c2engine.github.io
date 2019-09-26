@@ -1,0 +1,97 @@
+﻿@charset "utf-8";
+/* CSS Document */
+header,section,footer,aside,nav,article,figure
+{
+	display:block;
+}
+body{padding:0; margin:0; background:rgb(16,25,24);overflow-x:hidden;}
+.container{color:#EFEFEF; /* background:#CCCCCC; */}
+
+/*bootstrap属性*/
+.col-lg-6{padding:10px;}
+.col-lg-12{padding:10px;}
+.row{padding:0 5px 0 5px;}
+
+@media(min-width:1200px) {
+.container{ width:1140px;}	
+}
+@media(min-width:1140px) and (max-width:1199px){
+.container{ width:1140px;}	
+}
+
+/*vr*/
+.vr_first{width: 100vw; height: 36vw;background: #999999; background-image:url(http://cdn.c2engine.com/c2engine/img2/vr/vr_first.jpg);background-repeat: no-repeat; background-size: 100%; }
+.vr_future{ width: 100vw; height:41.66666vw; background: #234245;background-image:url(http://cdn.c2engine.com/c2engine/img2/vr/future.jpg); background-repeat: no-repeat; background-size: 100%; text-align: center; }
+.foo{ background-attachment: fixed; }
+.vr_future_margin{ width: 100%;}
+.vr_future .container h1{ text-align:center;font-size: 22px;text-shadow: 1px 1px 5px #000000;letter-spacing: 4px; margin-top: 60px; }
+.vr_future .container p{ width: 70%;margin:0 auto; text-align:center;font-size: 14px; line-height: 26px;letter-spacing: 2px; text-shadow: 1px 1px 1px #000000;margin-top:20px;margin-bottom: 40px; }
+.vr_quality{ width: 100%; background: #EFEFEF;padding: 50px 0px 50px 0px; }
+.vr_quality .container h1{ text-align:center;color: rgb(21,20,21); font-size: 22px;letter-spacing: 4px; }
+.vr_quality .container p{ width: 70%;margin:0 auto; text-align:center;color: rgb(50,52,54); font-size: 14px; line-height: 26px;letter-spacing: 2px; margin-top: 20px;}
+/*glass*/
+.vr_glass{ width: 100%;padding-top: 20vw;position: relative; background-image:url(http://cdn.c2engine.com/c2engine/img2/vr/bg_fixed.jpg);background-repeat: no-repeat; background-size:120%;background-attachment: fixed;background-position: center top; margin-bottom: -4px; }
+/*VR game*/
+.vr_game{ width: 100vw; background: #EFEFEF; padding: 60px 0px 0px 0px;}
+.vr_game .container{ color: #000; }
+.vr_game .container h1{ text-align:center;color: rgb(21,20,21); font-size: 22px;letter-spacing: 4px; }
+.vr_game .container p{ width: 70%;margin:0 auto; text-align:center;color: rgb(50,52,54); font-size: 14px; line-height: 26px;letter-spacing: 2px; margin-top: 20px; margin-bottom: 35px;}
+@media(max-width: 749px){
+.vr_first{width: 100vw; height: 45vw;background: #999999; background-image:url(http://cdn.c2engine.com/c2engine/img2/vr/vr_first_small.jpg);background-repeat: no-repeat; background-size: 100%; }
+.vr_glass{ background-attachment: scroll; }
+}
+@media(max-width: 1700px) and (min-width:1500px){
+.vr_glass{background-size:120%;}
+}
+@media(max-width: 1499px) and (min-width:1150px){
+.vr_glass{background-size:150%;}
+}
+@media(max-width: 991px) and (min-width:749px){
+.vr_glass{background-size:225%;}
+}
+
+
+@media(max-width: 1140px){
+.vr_future_margin{position:absolute;background: #EFEFEF; }
+.vr_future .container h1{color:rgb(21,20,21); text-shadow: none;}
+.vr_future .container p{ color:rgb(21,20,21); text-shadow: none;}
+}
+@media(max-width: 991px) and (min-width: 768px){
+.vr_future .container p {width: 90%;}
+.vr_quality .container p {width: 90%;}
+.vr_game .container p {width: 90%;}
+}
+@media(max-width: 767px) and (min-width: 450px){
+.vr_future .container h1 {font-size: 20px;}
+.vr_future .container p {width: 90%;font-size: 12px;}
+.vr_quality .container h1 {font-size: 20px;}
+.vr_quality .container p {width: 90%;font-size: 12px;}
+.vr_game .container h1 {font-size: 20px;}
+.vr_game .container p {width: 90%;font-size: 12px;}
+}
+@media(max-width: 449px) and (min-width: 315px){
+.vr_future .container h1 {font-size: 18px; margin-top: 40px;}
+.vr_future .container p {width: 90%;font-size: 12px; line-height: 22px;}
+.vr_quality {padding: 40px 0px 40px 0px;}
+.vr_quality .container h1 {font-size: 18px;}
+.vr_quality .container p {width: 90%;font-size: 12px;line-height: 22px;}
+.vr_glass {padding-top: 30vw;}
+.vr_game {padding: 40px 0px 0px 0px;}
+.vr_game .container h1 {font-size: 18px;}
+.vr_game .container p {width: 90%;font-size: 12px;line-height: 22px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

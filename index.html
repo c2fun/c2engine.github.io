@@ -1,0 +1,299 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+<meta http-equiv="X-UA-Compatible" content=",IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit"/>
+<meta name="keywords" content="C2engine,C2engine官网,C2官网"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<title>C²engine|首页</title><!--<link href="indexslick/slick/slick.css" rel="stylesheet">-->
+<link rel="stylesheet" type="text/css" href="./plugin/slick-1.6.0/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="./plugin/slick-1.6.0/slick/slick-theme.css">
+<link href="css/global.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<script src="js/jquery_1.11.3.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<!--<script src="js/slick.js"></script>-->
+<script src="./plugin/slick-1.6.0/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/dynamicLoading.js"></script>
+<script src="js/index.js"></script>
+</head>
+
+<body>
+<!--判断当前浏览器是否IE8及以下版本-->
+<!--[if lte IE 8]>
+<script>
+    alert("您的IE浏览器版本过低！部分功能无法正常使用！请更新至IE9及以上版本");
+</script>
+<![endif]-->
+<!--导航栏-->
+<div id="top-head"></div>
+<div id="top-menu"></div>
+<script src="js/headernav.js"></script>
+<script src="js/md5.js"></script>
+
+<!--加入c2-->
+<!--视频显示开始-->
+<div class="pout-ng">
+    <div id='close-mov'><span class='fa fa-times' id='offmov' aria-hidden='true'></span></div>
+</div>
+<!--视频显示结束-->
+<div class="join-us">
+    <div class="container">
+        <li>C²engine alpha版正式发布</li>
+        <li>中国创造的3D HTML5云引擎</li>
+        <li>欢迎来到C²engine，在这里和我们一起来实现您的理想世界</li>
+        <li class="down_new">
+            <a href="download.html">轻松为她创建游戏</a>
+        </li>
+        <!--
+        <h1>中国创造的3D HTML5云引擎</h1>
+        <p>欢迎来到C²engine，在这里和我们一起来实现您的理想世界</p>
+        <!--
+        <ul>
+            <li><a href="download.html"><span>获取c2engine预览版</span></a></li>
+            <li id="playmov"><span></span>Moonlight游戏视频</li>
+        </ul>
+        -->
+    </div>
+    <!--顶部图片轮播-->
+    <!--
+    <video id='youku-html5player-video' autoplay='autoplay' loop='loop' muted>
+            <source src='http://cdn.c2engine.com/c2engine/movie/index/index.mp4' type='video/mp4' >
+            <source src='http://cdn.c2engine.com/c2engine/movie/index/index.webm' type='video/webm' >
+            你的浏览器不支持html5标签</video>
+    -->
+    <div class="top-shift">
+        <div class="top-slider">
+            <section class="single-item">
+                <!--<div><img src="http://cdn.c2engine.com/c2engine/img2/index/slider/slider_6.jpg" width="100%" alt=""/></div>-->
+                <!--<div><img src="http://cdn.wan3.cn/c2engine/img/index/slider/slider_1.jpg" width="100%" alt=""/></div>-->
+                <!--<div><img src="http://cdn.wan3.cn/c2engine/img/index/slider/slider_2.jpg" width="100%" alt=""/></div>-->
+                <!--<div><img src="http://cdn.wan3.cn/c2engine/img/index/slider/slider_3.jpg" width="100%" alt=""/></div>-->
+                <!--<div><img src="http://cdn.wan3.cn/c2engine/img/index/slider/slider_4.jpg" width="100%" alt=""/></div>-->
+                <!--<div><img src="http://cdn.wan3.cn/c2engine/img/index/slider/slider_5.jpg" width="100%" alt=""/></div>-->
+            </section>
+        </div>
+    </div>
+
+    <!--手机版静态图代替-->
+    <div class="exch-pic"></div>
+</div>
+
+<!--向下箭头-->
+    <div class="aaas" onClick="sliderdown()">
+        <div class="fa fa-chevron-down" aria-hidden="true"></div>
+    </div>
+<!--6图-->
+<div id="index-select6" class="C2-plate">
+    <!--C2工具特点-->
+    <div class="container">
+        <ul class="feture">
+            <li>选择C²engine的理由</li>
+        </ul>
+    </div>
+    <!--放大显示结束-->
+    <div class="container">
+        <div class="row">
+            <ul class="pic-common-ul">
+                <li class="pic-common-li">
+                    <div name="pic" class="pic-common">
+                        <img src="http://cdn.c2engine.com/c2engine/img2/index/selectc2/allchinese.png" class="onepic" style="cursor: default;" width="100%" name="0" alt="学习成本低，地道的中文版教材与文档百科站点，提供7×24h的无时差本土化技术支持。" />
+                        <p>地道中文</p>
+                        <div class="show-more-content-auto">
+                            <span>学习成本低，地道的中文版教材与文档百科站点，提供7×24h的无时差本土化技术支持。</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="pic-common-li">
+                    <div name="pic" class="pic-common">
+                        <img src="http://cdn.c2engine.com/c2engine/img2/index/selectc2/SAAScloud.png" class="onepic" style="cursor: default;" width="100%" name="1" alt="国内首家SaaS云开发平台，支持开发者在线完成高质内容的创作过程。" />
+                        <p>SaaS云</p>
+                        <div class="show-more-content-auto">
+                            <span>国内首家SaaS云开发平台，支持开发者在线完成高质内容的创作过程。</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="pic-common-li">
+                    <div name="pic" class="pic-common">
+                        <img src="http://cdn.c2engine.com/c2engine/img2/index/selectc2/nextgen.png" class="onepic" style="cursor: default;" width="100%" name="2" alt="C²engine在H5-3D重度网游技术层面已达全球领先水平，游戏画质达次世代水平。" />
+                        <p>次世代</p>
+                        <div class="show-more-content-auto">
+                            <span>次世代游戏品质，主机级画面效果</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="pic-common-li">
+                    <div name="pic" class="pic-common">
+                        <img src="http://cdn.c2engine.com/c2engine/img2/index/selectc2/allchannel.png" class="onepic" style="cursor: default;" width="100%" name="3" alt="全渠道部署（HTML5、iOS、windows、Mac、TV、Xbox、Android、PlayStation等)。" >
+                        <p>全渠道</p>
+                        <div class="show-more-content-auto">
+                            <span>全渠道部署（HTML5、iOS、windows、Mac、TV、Xbox、Android、PlayStation等)。</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="pic-common-li">
+                    <div name="pic" class="pic-common">
+                        <img src="http://cdn.c2engine.com/c2engine/img2/index/selectc2/hotupdate.png" class="onepic" style="cursor: default;" width="100%" name="4" alt="支持热更新（非ROOT），每次冷更新导致15%流失率的情况会有明显改善。" />
+                        <p>热更新</p>
+                        <div class="show-more-content-auto">
+                            <span>支持原生层面的热更新，每次冷更新导致15%流失率的情况会有明显改善。</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="pic-common-li">
+                    <div name="pic" class="pic-common">
+                        <img src="http://cdn.c2engine.com/c2engine/img2/index/selectc2/ARVR.png" class="onepic" style="cursor: default;" width="100%" name="5" alt="C²engine支持开发者高效率产出高品质的3D/VR/AR/MR内容" />
+                        <p>AR/VR/MR</p>
+                        <div class="show-more-content-auto">
+                            <span>C²engine支持开发者高效率产出高品质的3D/VR/AR/MR内容。</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <p class="konw-more"><a href="platformintroduction.html">查看更多 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+</div>
+<!--展示-->
+<div id="index-show" class="C2-plate">
+    <div class="container">
+        <ul class="feture">
+            <li>案例展示</li>
+           <!-- <li style="margin-bottom: 80px;">您可以使用C²engine引擎技术制作您想要完成的任意内容。学生，独立开发者和大型团队都使用C²engine引擎。</li>
+           -->
+        </ul>
+    </div>
+    <!--展示轮播图-->
+    <section id="features" class="center slider">
+        <div>
+            <img src="http://cdn.c2engine.com/c2engine/img2/index/plandisplay/muguang.png" id="scrollto1" style="cursor: default;" alt="" video="http://player.youku.com/embed/XMTg2NTcxNDU0MA=="/>
+            <p>3D MMORPG网游 —《吸血鬼日记》</p>
+        </div>
+        <div>
+            <img src="http://cdn.c2engine.com/c2engine/img2/index/plandisplay/VRclothing.png" id="scrollto2" style="cursor: default;" alt="" video="http://player.youku.com/embed/XMTc3NzU2NjIyOA=="/>
+            <p>VR服装 —《VR智能服装设计系统》</p>
+        </div>
+        <div>
+            <img src="http://cdn.c2engine.com/c2engine/img2/index/plandisplay/VRtourism.png" id="scrollto3" style="cursor: default;" alt="" video="http://player.youku.com/embed/XMTc3NzU2NjIyOA=="/>
+            <p>VR旅游 —《高空挑战》</p>
+        </div>
+        <div>
+            <img src="http://cdn.c2engine.com/c2engine/img2/index/plandisplay/3DH5game.png" id="scrollto4" style="cursor: default;" alt="" video="http://player.youku.com/embed/XMTg2NTcyMjQyMA=="/>
+            <p>3D H5游戏 —《真三国战记》</p>
+        </div>
+        <div>
+            <img src="http://cdn.c2engine.com/c2engine/img2/index/plandisplay/3Dnextgengame.png" id="scrollto5" style="cursor: default;" alt="" video="http://player.youku.com/embed/XMTg2NTcxODk3Ng=="/>
+            <p>3D 次世代游戏 —《全面回忆》</p>
+        </div>
+    </section>
+	<p class="konw-more"><a href="show.html">查看更多 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+</div>
+	
+<!--开始使用-->
+<div id="index-startuse" class="C2-plate">
+    <div class="container">
+        <ul class="feture">
+            <li>开发者</li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul class="developer-select-ul">
+            <li class="developer-select-li">
+                <div id="tutorial-entry" class="developer-select-div">
+                    <img src="http://cdn.c2engine.com/c2engine/img2/index/shortcutentry/manual.png" alt=""/>
+                    <p class="show-content">学习教程</p>
+                    <div class="show-more-content">
+                        <p>从这里开始学习C²engine?</p>
+                        <span><a href="http://wiki.c2engine.com/"  target="_blank">开始</a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="developer-select-li">
+                <div id="interactive-entry" class="developer-select-div">
+                    <img src="http://cdn.c2engine.com/c2engine/img2/index/shortcutentry/community.png" alt=""/>
+                    <p class="show-content">互动社区</p>
+                    <div class="show-more-content">
+                        <p style='bottom:70%'>C²engine什么时候上线？</p>
+                        <p style='bottom:50%'>发现了一款C²engine的游戏视频，好酷！</p>
+                        <p style='bottom:30%'>C²engine使用免费吗？做出来的游戏画面效果怎么样？</p>
+                        <span><a href="http://bbs.c2engine.com/"  target="_blank">开始</a></span>
+                    </div>
+                </div>
+            </li>
+            <li class="developer-select-li">
+                <div id="cooperation-entry" class="developer-select-div">
+                    <img src="http://cdn.c2engine.com/c2engine/img2/index/shortcutentry/cooperation.png" alt=""/>
+                    <p class="show-content">寻求合作</p>
+                    <div class="show-more-content">
+                         <span><a href="searchcoo.html">开始</a></span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+    
+<!-- 行业资讯 -->
+<div id="index-industryinfo" class="C2-plate industry-information-bg">
+    <div class="container">
+        <ul class="feture">
+            <li class="industry-information-title">行业资讯</li>
+        </ul>
+    </div>
+    <div class="container">
+        <ul class="industry-information-ul">
+            <li class="industry-information-li">
+                <ul class="industry-list-ul">
+                    <li class="industry-list-li-img"><img src="http://cdn.c2engine.com/c2engine/img2/index/news/show01.jpg"></li>
+                    <li class="industry-list-li-txt">
+                        <ul class="industry-txt-ul">
+                            <li class="industry-txt-li-title"><h1>游戏引擎科普：C2engine推出alpha版本</h1></li>
+                            <li class="industry-txt-li-content"><p>经过了两个多月的等待，在这段时间内，引擎群里的开发者反复地催问，到底什么时候出新版本，现在，我们终于可以给大家一个明确的答复：C2engine将在4月1日推出alpha版本。在这个版本中，我们更新了动画系统、特效模块和物理系统，同时支持JS和C#两种语言，还开放了美术资源商店，可以免费获取2D、3D、特效和音乐声效等资源……</p></li>
+                        </ul>
+                    </li>
+                    <li class="industry-list-li-button" style="display: none;"><a href="http://bbs.c2engine.com/forum.php?mod=viewthread&tid=3322&extra=page%3D1" target="_blank">了解详情</a></li>
+                </ul>
+            </li>
+            <li class="industry-information-li">
+                <ul class="industry-list-ul">
+                    <li class="industry-list-li-img"><img src="http://cdn.c2engine.com/c2engine/img2/index/news/show02.jpg"></li>
+                    <li class="industry-list-li-txt">
+                        <ul class="industry-txt-ul">
+                            <li class="industry-txt-li-title"><h1>游戏引擎服务体系的强者逻辑</h1></li>
+                            <li class="industry-txt-li-content"><p>一款出色的游戏开发引擎，功能强大不必说，重点在于能让开发者找到“归属感”。强者引擎的逻辑是：程序开发不再是开发者的孤独旅行，一旦他们的开发过程遇到任何困难，强大的引擎服务体系都能快速为其提供相关支持。</p></li>
+                        </ul>
+                    </li>
+                    <li class="industry-list-li-button" style="display: none;"><a href="http://bbs.c2engine.com/forum.php?mod=viewthread&tid=3324&extra=page%3D1" target="_blank">了解详情</a></li>
+                </ul>
+            </li>
+            <li class="industry-information-li">
+                <ul class="industry-list-ul">
+                    <li class="industry-list-li-img"><img src="http://cdn.c2engine.com/c2engine/img2/index/news/show03.jpg"></li>
+                    <li class="industry-list-li-txt">
+                        <ul class="industry-txt-ul">http://cdn.c2engine.com/c2engine/img2/index/news/show03.jpg
+                            <li class="industry-txt-li-title "><h1>2017扬帆起航：国产引擎C2engine正式上线</h1></li>
+                            <li class="industry-txt-li-content"><p>2016年12月31日，在新年钟声即将敲响的时候，经过程序猿夜以继日的技术攻关，国产引擎C2engine终于在官网正式上线！</p></li>
+                        </ul>
+                    </li>
+                    <li class="industry-list-li-button" style="display: none;"><a href="http://bbs.c2engine.com/forum.php?mod=viewthread&tid=3328&extra=page%3D1" target="_blank">了解详情</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <p class="konw-more" style="display: none;"><a href="http://c2engine.com/social/?/explore/category-6" target="_blank">搜索更多 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></p>
+</div>
+    
+<!--底部导航栏-->
+<div id="bottom-menu"></div>
+<script src="js/footernav.js"></script>
+
+
+
+</body>
+</html>

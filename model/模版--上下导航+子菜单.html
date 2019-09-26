@@ -1,0 +1,68 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.o,user-scalable=no">
+<title>导航栏--模板</title>
+<link href="../css/main.css" rel="stylesheet">
+<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="../css/muban.css" rel="stylesheet">
+<script src="../js/jquery_1.11.3.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.easing.min.js"></script>
+</head>
+<body>
+<!--导航栏-->
+<div id="top-menu"></div>
+<script src="../js/headernav.js"></script>
+<!--子菜单-->
+<div class="sub-header">
+    <div class="container">
+        <div class="sub-logo">
+            <h1>关于我们</h1>
+        </div>
+        <div id="sub-bar">
+            <div><span id="pic-sub"></span></div>
+        </div>
+        <div id="sub-down">
+        <ul class="sub-ul-head">
+            <li><a href="#">公司简介</a></li>
+            <li><a href="#">工作机会</a></li>
+            <li><a href="#">校园英雄</a></li>
+        </ul>
+        </div>
+        <script>
+        var sub=0;
+            $("#sub-bar").click(function(){
+                $("#sub-down").slideToggle(300);
+                sub++;
+                $("#pic-sub").css("transform","rotate("+180*sub+"deg)");
+            });
+        </script>
+    </div>
+</div>
+
+
+
+
+here
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+
+<!--底部导航栏-->
+<div id="bottom-menu"></div>
+<script src="../js/footernav.js"></script>
+
+
+
+
+
+
+</body>
+</html>

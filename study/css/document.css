@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+header,section,footer,aside,nav,article,figure
+{
+	display:block;
+}
+body{padding:0; margin:0; background:#EFEFEF;overflow-x:hidden;
+font-family:Arial, 'Microsoft YaHei';}
+.container{color:#EFEFEF; /* background:#CCCCCC; */}
+
+
+
+/**/
+.clog_left{ width: 300px; height: 100vh;background: #999999; float: left;}
+.clog_right{ width:70%; float: right; }
+.catalog{ width: 300px;height: 100vh; background: #EFEFEF; overflow-y:scroll; overflow-x: hidden; padding-right:30px; padding-top: 20px;}
+.catalog span{font-family:Arial, 'Microsoft YaHei'; font-size: 16px; color: rgb(51,51,51);}
+.first_{ padding:0; margin:0; -webkit-user-select:none;}
+.first_ li{ list-style:none;  margin:12px 0px 12px 0px;padding-left: 20px;
+background-image: url(http://cdn.c2engine.com/c2engine/img/study/document/plus.jpg);
+background-repeat: no-repeat;
+background-size: auto 100%;
+font-family:'微软雅黑'; color: #000000; font-size:14px; line-height:14px;cursor:pointer;}
+/*.first_ li:before{ content:url(http://cdn.c2engine.com/c2engine/img/study/document/plus.jpg); margin-right:10px;}*/
+.ul{ margin-left: 25px; }
+.layouted li{
+	background-image: url(http://cdn.c2engine.com/c2engine/img/study/document/dot.jpg);
+}
+.tool_bar{ width: 100%; height: 50px;background: rgb(250,250,250);text-align: right; vertical-align: middle; padding: 0px 20px 0px 20px; }
+.search_bar{ display: inline-block; width: 262px; height: 37px; margin-bottom: 10px; }
+.search_botton{display: inline-block; width: 37px; height: 32px; background: rgb(0,174,239);
+	border: none; margin-top: 9px;
+ background-image:url(http://cdn.c2engine.com/c2engine/img/study/document/search.png); 
+ background-repeat: no-repeat;
+ background-position: center center; }
+
+
+
+
+
+/*bootstrap属性*/
+.col-lg-6{padding:10px;}
+.col-lg-12{padding:10px;}
+.row{padding:0 5px 0 5px;}
+
+
+@media(min-width:1500px) {
+.container{ width:1410px;}
+
+
+}
+@media(min-width:1351px) and (max-width:1499px){
+.container{ width:1300px;}
+}
+@media(min-width:1200px) and (max-width:1350px){
+	.container{ width:1140px;}	
+}
+@media(min-width:1140px) and (max-width:1199px){
+.container{ width:1140px;}	
+}
+@media(min-width:769px) and (max-width:1199px){
+.co-intro .container .row .col-lg-9 p{ font-family:Arial,"宋体"; font-size:14px; color:#000000; margin-bottom:15px;}	
+}
+@media(max-width:768px){
+.co-intro .container .row .col-lg-9 p{ font-family:Arial,"宋体"; font-size:12px; color:#000000; margin-bottom:15px;}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color: rgb(28,28,28);overflow-x:hidden;}
+/**/
+.lay-body{width: 100vw; height: 100vh; background-image:url(http://cdn.c2engine.com/c2engine/img/about/03.jpg);background-repeat:no-repeat;background-size:100%; 
+color:#EFEFEF; padding-top: 13vw;}
+.container h1{ text-align: center;font-size: 32px; text-shadow:0px 0px 10px #000000;line-height: 100px; margin-bottom: 2vw; }
+.col-lg-4 h3{ font-size: 20px; line-height: 20px; text-shadow:0px 0px 6px #000000; }
+.col-lg-4 h3 span{display:inline-block; vertical-align:middle; color:#FF3300;}
+.col-lg-4 p{ margin-top: 20px; }
+.row .feture{ padding: 0px 0px 0px 15px; margin: 0px; }
+.check{ font-size: 14px; line-height: 14px; font-weight: normal; }
+.check input{float:left;}
+.check p{ margin:3px 0 0 5px;float:left;letter-spacing:1px;}
+.button-position{width:100%;margin-top:15px;padding-top:20px;text-align:center;}
+.sendbtn{color:#EFEFEF;font-size:18px; padding: 4px 23px 4px 23px;background:rgb(0,174,239);border:none;
+border-radius:5px;}
+@media(min-width: 1468px) and (max-width:1800px) {
+.lay-body{background-size:110%; background-position: 50% 0%;padding-top: 15vw;}
+}
+@media(min-width: 1420px) and (max-width:1468px) {
+.lay-body{background-size:110%; background-position: 50% 0%;padding-top: 15vw;}
+}
+@media(min-width: 1199px) and (max-width:1420px) {
+.lay-body{background-size:110%; background-position: 50% 0%;padding-top: 13vw;}
+.button-position{ padding-top: 20px; }
+}
+@media(min-width: 785px) and (max-width:991px) {
+.lay-body{background-size:110%; background-position: 50% 0%;padding-top: 13vw;}
+.button-position{ padding-top: 20px; }
+}
+/**/
+@media(min-width: 750px) and (max-width:785px) {
+.lay-body{background-size:190%; background-position: 50% 0%;padding-top: 26vw;}
+.container h1{ margin-bottom: 7.4vw; }
+.button-position{ padding-top: 20px; }
+}
+@media(min-width: 500px) and (max-width:750px) {
+.lay-body{background-size:200%; background-position: 50% 0%;padding-top: 22vw;}
+.button-position{ padding-top: 20px; padding-bottom: 60px;}
+}
+@media(max-width:499px) {
+.lay-body{background-size:200%; background-position: 50% 0%;padding-top: 22vw;}
+.container{ padding-bottom: 80px; }
+.button-position{z-index: 1000; position: fixed;width: 100vw; bottom: 0;left: 0; 
+	padding-top: 20px 15px 0px 15px; padding-bottom: 0px;}
+.sendbtn{color:#EFEFEF;font-size:18px;width: 100%; padding: 10px 0px 10px 0px;background:rgb(0,174,239);border:none;
+border-radius:0px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.compusjob{
+	width:100%;
+	background-image:;
+	background-repeat:no-repeat;
+	background-size:180%;
+	font-size:15px;}
+.container p{
+	width:100%;
+	text-align:center;}
+@media(min-width:991px){
+	.container{
+		padding-top:20vh;}
+	.compusjob{
+	width:100%;
+	height:100vh;
+	background-image:;
+	background-repeat:no-repeat;
+	background-size:100%;
+	font-size:15px;}}
+.welcome{
+	width:100%;
+	text-align:center;
+	padding-top:20px;
+	padding-bottom:20px;}
+@media(min-width:1199px){
+	.welcome{
+	width:100%;
+	text-align:center;
+	padding-top:45px;
+	padding-bottom:45px;}
+	.welcome h3{
+		font-size:36px;}}
+.check{
+	color:#E8E8E8;
+	font-weight:normal;}
+.button-position{
+	width:100%;
+	margin-top:15px;
+	padding-bottom:60px;
+	text-align:center;}
+@media(max-width:768px){
+	.centerp{
+		width:90%;
+		margin:0 auto;}
+	.container{
+		padding-bottom:75px;}
+	.button-position{
+	width:100%;
+	margin-top:15px;
+	padding-bottom:0px;
+	text-align:center;
+	position:fixed;
+	bottom:0px;
+	left:0px}}
+	
+	
+.sendbtn{
+	color:#EFEFEF;
+	font-size:18px;
+	width:100%;
+	text-align:center;
+	background:rgb(31,205,152);
+	padding-top:10px;
+	padding-bottom:10px;
+	border:none;
+	border-radius:5px;}
+@media(min-width:768px){
+	.sendbtn{
+	color:#EFEFEF;
+	font-size:18px;
+	width:120px;
+	text-align:center;
+	background:rgb(31,205,152);
+	padding-top:10px;
+	padding-bottom:10px;
+	border:none;
+	border-radius:5px;}}
+.col-lg-5{
+	margin-bottom:5px;}
+@media(min-width:1199px){
+	.col-lg-4{
+		text-align:right;}
+	.col-lg-5{
+	margin-bottom:20px;}}
+.form-control{
+	background:#C2C2C2;}
+	*/
+
+
+
+
+/*=================================================================================================*/
+/*=================================================================================================*/
+/*=================================================================================================*/
+
+	
+	
+
+	
+.panel-title{
+	font-family:微软雅黑;
+	font-size:17px;
+	}
+.panel-body a{
+	font-family:微软雅黑;
+	font-size:16px;
+	color:#000000;
+	}
+.container{
+	font-family:微软雅黑;
+	}

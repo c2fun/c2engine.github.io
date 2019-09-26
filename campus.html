@@ -1,0 +1,205 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.o,user-scalable=no">
+<meta name="renderer" content="webkit"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<title>C²engine|校园英雄</title>
+<!--引入Bootstrap-->
+<link href="css/global.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/campus.css" rel="stylesheet" type="text/css">
+<script src="js/jquery_1.11.3.min.js"></script>
+</head>
+<body>
+<!--判断当前浏览器是否IE8及以下版本-->
+<!--[if lte IE 8]>
+<script>
+    alert("您的IE浏览器版本过低！部分功能无法正常使用！请更新至IE9及以上版本");
+</script>
+<![endif]-->
+<form  class="form-horizontal" role="form"  enctype="multipart/form-data" id="form" method="post" action="http://wan3.cn:8080/resume/addJianli">
+<div class="lay-body">
+	<div class="container">
+		<h1>"校园英雄" 在线简历</h1>
+		<div class="row">
+			<div class="col-lg-2 col-md-1 hidden-sm hidden-xs "></div>
+			<div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+				<h3><span>*</span>应聘岗位</h3>
+				<select name="gangwei" id="jobid" class="form-control" onchange="getSelectvalue(this)">
+					<option value="">请选择岗位</option>
+					<option value="程序员">程序员</option>
+					<option value="游戏美术设计师">游戏美术设计师</option>
+					<option value="质量工程师(QA)">质量工程师(QA)</option>
+					<option value="网络推广专员">网络推广专员</option>
+					<option value="前端开发工程师">前端开发工程师</option>
+	        		<option value="软件技术文档编辑">软件技术文档编辑</option>
+				</select>
+				<h3><span style>*</span>姓名</h3>
+				<input type="text" class="form-control" id="nameid" placeholder="请输入名字" name="addname">
+			</div>
+			<div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+				<h3><span>*</span>手机</h3>
+				<input type="text" class="form-control" id="phoneid" placeholder="请输入手机号码" name= "addtel" onBlur="checkphone()">
+				<h3><span>*</span>邮箱</h3>
+				<input type="email" class="form-control" id="emailid" placeholder="请输入邮箱" name="email" onBlur="checkmail()">
+			</div>
+			<div class="col-lg-2 col-md-1 hidden-sm hidden-xs"></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2 col-md-1 hidden-sm hidden-xs "></div>
+			<div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 ">
+				<h3>你的特长</h3>
+				<div class="row">
+					<div class="feture">
+						<label class="check"><input name="xingge" type="checkbox"  value="视觉大师"><p>视觉大师</p></label>
+						<label class="check"><input name="xingge" type="checkbox"  value="脑洞大开"><p>脑洞大开</p></label>
+						<label class="check"><input name="xingge" type="checkbox"  value="聪明绝顶"><p>聪明绝顶</p></label>
+						<label class="check"><input name="xingge" type="checkbox"  value="思维缜密"><p>思维缜密</p></label>
+						<label class="check"><input name="xingge" type="checkbox"  value="抗高压"><p>抗高压</p></label>
+						<label class="check"><input name="xingge" type="checkbox"  value="独当一面"><p>独当一面</p></label>
+						<label class="check"><input name="xingge" type="checkbox"  value="从不揍程序员"><p>从不揍程序员</p></label>
+						<label class="check"><input name="xingge" type="checkbox"  value="天生段子手"><p>天生段子手</p></label>
+						<label class="check"><input name="xingge" type="checkbox"  value="完美主义"><p>完美主义</p></label>
+						<label class="check"><input name="xingge" type="checkbox"  value="刚猛执行力"><p>刚猛执行力</p></label>
+						<label class="check"><input name="xingge" type="checkbox"  value="路子野"><p>路子野</p></label>
+						<label class="check"><input name="xingge" type="checkbox"  value="开发特种兵"><p>开发特种兵</p></label>
+						<label class="check"><input name="xingge" type="checkbox"  value="点子王"><p>点子王</p></label>
+						<label class="check"><input name="xingge" type="checkbox"  value="极客精神"><p>极客精神</p></label>
+						<label class="check"><input name="xingge" type="checkbox"  value="工匠精神"><p>工匠精神</p></label>
+						<label class="check"><input name="xingge" type="checkbox"  value="用户需求癖"><p>用户需求癖</p></label>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 ">
+				<h3>附言</h3>
+				<textarea name="zishu" id="textid" class="form-control" rows="4"></textarea>
+				<p>注：带<span style="color:#FF3300; font-size:16px;">*</span>项为必填项</p>
+			</div>
+			<div class="col-lg-2 col-md-1 hidden-sm hidden-xs "></div>
+			<input type="hidden" id="uri" name ="uri" value="">
+        <input type="hidden" id="xingge" name ="xingge" value="">
+        <input type="hidden" id="fromid" name ="fromid" value="">
+		</div>
+		<div class="button-position">
+			<button type="submit" class="sendbtn" id="infoupload">投递简历</button>
+		</div>
+	</div>
+</div><!--laybody-->
+</form>
+<script>
+				function GetArgs(sHref,sArgName)
+				{
+					var args = sHref.split("?");
+					var retval ="";
+					var str ="";
+					//参数为空 
+					if(args[0]==sHref)
+					{
+						return "";
+					}
+					str = args[1];
+					args = str.split("&");
+					for(var i= 0;i<args.length;i++)
+					{
+						str = args[i];
+						var arg = str.split("=");
+						if(arg.length<=1)
+							continue;
+						if(arg[0]==sArgName)
+							return arg[1];
+					}
+					return "";
+				}
+				var sHref = window.location.href;
+				sHref = decodeURI(sHref);
+				document.getElementById("uri").value=sHref;
+				var value_gangwei=GetArgs(sHref,"name");
+				document.getElementById("gangwei1")[0].text=value_gangwei;
+				var value_from=GetArgs(sHref,"fromid");
+				document.getElementById("fromid").value=value_from;
+    		//document.getElementById("classitem").value=value2;
+    		function aa()
+    		{
+    			var bb="";
+    			var temp="";
+    			var a = document.getElementsByName("xingge_1");
+    			for(var i=0;i<a.length;i++)
+    			{
+    				if(a[i].checked)
+    				{
+    					temp=a[i].value;
+    					bb=bb+","+temp;
+    				}
+    			}
+    			return bb;
+    		} 
+        document.getElementById("xingge").value=aa();
+    		
+    		var svalue;
+    		function getSelectvalue(obj)
+    		{
+    			svalue= obj.options[obj.options.selectedIndex].value;
+					return svalue;
+				}	
+				
+			</script>
+<script>
+function checkphone(){//判断手机号码
+				var phone=document.getElementById("phoneid").value;
+				var re=/^1\d{10}$/;
+				if(re.test(phone)){
+					null;
+					}
+				else{
+					alert("请输入正确格式的手机号码");
+					}
+				}
+function checkmail(){
+				var mail=document.getElementById("emailid").value;
+				if(mail.match('@')){
+					null;
+					}
+				else{
+					alert("请输入正确格式的邮箱");
+					}
+				}
+				
+
+	$("#infoupload").click(function(){ 
+				 var job=document.getElementById("jobid").value;
+				 if(job.length==0){
+					alert("请选择岗位")
+					return false;	 
+				}
+				
+				  var name =document.getElementById("nameid").value;
+				if(name.length==0||name==""){
+					alert("请输入姓名")
+					return false;
+				}
+				 
+				 var phone = document.getElementById("phoneid").value
+				 if(phone.length==0){
+					 alert("请输入手机号码");
+					 return false;
+				 } 
+				  var email = document.getElementById("emailid").value
+				 if(email.length==0){
+					 alert("请输入邮箱");
+					 return false;
+				 }     
+				 else{
+				 	alert("提交成功");
+				 }
+				  
+	})
+	
+	 
+</script>
+		
+
+</body>
+</html>

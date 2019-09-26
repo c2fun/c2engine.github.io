@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+header,section,footer,aside,nav,article,figure
+{
+	display:block;
+}
+body{padding:0; margin:0; background:rgb(16,25,24);overflow-x:hidden;
+font-family:Arial, 'Microsoft YaHei';}
+.container{color:#EFEFEF; /* background:#CCCCCC; */}
+/**/
+
+
+/*子菜单*/
+.ce-pagenav .navbar-nav li a{ color:rgb(156,154,156); font-size:14px; font-weight:normal;}
+/*图片轮播箭头*/
+.slick-next {margin-right: 10px;}
+@media(min-width: 444px) and (max-width: 555px){
+.slick-prev {left: 0vw !important;}
+.slick-next {right: 0vw !important; margin-right: 10px;}
+}
+@media(min-width: 319px) and (max-width: 444px){
+.slick-prev {left: 0vw !important;margin-left: 0px;}
+.slick-next {right: 0vw !important; margin-right: 5px;}
+.slick-prev:before, .slick-next:before {font-size: 20px !important;}
+}
+.slick-prev, .slick-next {top: 45% !important;}
+/*顶部长条背景*/
+.top-bg{ width:100%; display:block;}
+/*岗位*/
+.afixed {z-index: 4000;position: fixed;top: 0px;width: 100px !important;overflow: hidden !important;}
+#job-item{ width: 100%; margin-top: 36px; color: rgb(115,117,115); overflow: hidden; }
+#job-item li{ list-style: none; text-align:left; width:18vw; font-family:Arial,"宋体"; 
+font-size: 20px; margin-bottom: 12px; cursor: pointer;}
+#job-item li:hover{ color: #EFEFEF; }
+.curr{ color: #EFEFEF!important ;}
+.curr:after{
+	display: inline-block;
+	content:'';
+	width: 18px;
+	height: 14px;
+	background-image:url(http://cdn.c2engine.com/c2engine/img/partimg.png);
+	background-repeat:no-repeat;
+	background-position:-104px 0;
+}
+
+
+@media(max-width: 1140px){
+#job-item li{ font-size: 16px; }
+}
+
+.job-title{display: inline-block;vertical-align:middle; width: 100%; background: rgb(57,60,57); padding: 0px 50px 0px 50px; border-top-left-radius: 5px;
+border-top-right-radius: 5px; margin-top: 36px;}
+.job-title ul{ padding: 0; margin: 0; }
+.job-title ul li{ list-style: none;float: left;font-family:Arial,"宋体";font-size: 18px;padding: 15px 0px 15px 0px; }
+.job-title ul li:nth-child(1){width: 40%; }
+.job-title ul li:nth-child(2){width: 40%; }
+.job-title ul li:nth-child(3){width: 20%; }
+.single-job{display: inline-block;vertical-align:middle; width: 100%; background: rgb(231,231,231); border-top: 1px solid #000000;
+padding: 0 50px 0 50px;cursor: pointer;}
+.single-job li{list-style: none;float: left;font-family:Arial,"宋体";color: rgb(49,48,49); 
+font-size: 16px; padding: 15px 0px 15px 0px; -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none; user-select:none;}
+.single-job li:nth-child(1){width: 40%; }
+.single-job li:nth-child(2){width: 40%; }
+.single-job li:nth-child(3){width: 20%; }
+.icodown{position: relative;float: right; margin-top: 6px; text-align: right;}
+
+.job-content{ display:none; width: 100%;font-family:Arial,"宋体"; color: rgb(49,48,49); background: #EFEFEF; padding-top: 38px; padding-bottom: 36px;}
+.job-content h1{font-family:Arial,"Microsoft YaHei"; font-size: 18px; color: rgb(49,48,49); padding: 0px 50px 0px 50px; margin-bottom: 25px;}
+.job-content h3{font-family:Arial,"Microsoft YaHei"; font-size: 18px; line-height: 8px; color: rgb(49,48,49); 
+padding: 10px 50px 0px 50px;}
+.job-content ol{ padding-left: 85px;  padding: 0px 50px 0px 85px;}
+.job-content ol li{ list-style: decimal; font-size: 14px; line-height: 34px;}
+.send-out{width: 100%; text-align: center; padding: 0px 50px 0px 50px;}
+.send-out span{display: inline-block; padding: 7px 27px 7px 27px; color: #EFEFEF; background: rgb(0,174,239);
+	border-radius: 5px; cursor: pointer;margin-top: 10px; }
+.about-foot{ background:none!important; border:none!important; }
+
+
+
+/*bootstrap属性*/
+.col-lg-6{padding:10px;}
+.col-lg-12{padding:10px;}
+.row{padding:0 5px 0 5px;}
+
+@media(min-width:1140px){
+.subna{ display:none;}	
+}
+@media(min-width:1800px){
+.container{ width:1410px;}
+
+
+}
+@media(min-width:1500px) and (max-width:1799px){
+.container{ width:1410px;}
+
+
+}
+@media(min-width:1351px) and (max-width:1499px){
+.container{ width:1300px;}
+}
+@media(min-width:1200px) and (max-width:1350px){
+}
+@media(min-width:1140px) and (max-width:1199px){
+.container{ width:1140px;}	
+}
+@media(min-width:769px) amd (max-width:1199px){
+}
+@media(width:768px){
+#job-item li{ list-style: none; float: left; width: 28.8vw; 
+	font-family:Arial,"宋体"; 
+font-size: 18px; margin-bottom: 12px;padding-left: 20px; cursor: pointer;}
+#job-item li:hover{ color: #EFEFEF; }
+.job-title ul li{ font-size: 16px; }
+}
+@media(min-width: 768px){
+.job_slider{ display: none; }
+}
+@media(max-width:767px){
+.job-title{ padding: 0px 10px 0px 10px; margin-top: 16px; }
+.job-title ul li{font-size: 14px;}
+.job-title ul li:nth-child(1){width: 36%; }
+.job-title ul li:nth-child(2){width: 32%; }
+.job-title ul li:nth-child(3){width: 32%; }
+
+.single-job{ padding: 0px 10px 0px 10px;}
+.single-job li:nth-child(1){width: 36%; }
+.single-job li:nth-child(2){width: 32%; }
+.single-job li:nth-child(3){width: 32%; }
+
+.job_slider{display: block;width: 100%; height: 50px;
+	-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;-user-select:none;}
+.job_slider .container{height: 56px; background:rgb(33,36,41); margin-left: 20px; margin-right: 20px; padding-top: 8px;
+border-radius: 6px;}
+#job_select{ position:relative;float: left;font-family:Arial,"宋体"; font-size: 16px; padding-top: 10px;
+-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;-user-select:none;}
+#job_bar{ position:relative;float: right; width: 40px; height: 40px; border: 1px solid rgb(49,48,49);
+border-radius: 3px; text-align: center; padding-top: 8px; cursor: pointer; }
+#job_bar:active{ background:rgb(49,48,49);}
+#job_bar span{ display: inline-block;width:20px; height: 12px; margin-top: 5px; background-image:url(http://cdn.c2engine.com/c2engine/img/partimg.png); background-repeat:no-repeat;background-position:-122px 0;}
+.curr{ color: #000000 !important; }
+.curr:after{
+	content:none;}
+
+
+#job-item{display: none; position: relative; margin-top: 0px;  padding-left: 15px; background: #EFEFEF;
+border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;}
+#job-item li{ list-style: none; float: none;text-align: left; width: 100%;
+	font-family:Arial,"宋体";font-size: 16px; margin-top: 12px; cursor: pointer;}
+#job-item li:hover{ color: #000000; }
+.single-job li{ font-size: 14px; }
+
+.job-content{padding-top: 20px; padding-bottom: 36px;}
+.job-content h1{font-family:Arial,"Microsoft YaHei"; font-size: 14px; color: rgb(49,48,49); padding: 0px 15px 0px 15px; margin-bottom: 10px;}
+.job-content h3{font-family:Arial,"Microsoft YaHei"; font-size: 14px; line-height: 8px; color: rgb(49,48,49); padding: 10px 15px 0px 15px;}
+.job-content ol{ padding:0px 15px 0px 40px; }
+.job-content ol li{ font-size: 12px; line-height: 24px;}
+}

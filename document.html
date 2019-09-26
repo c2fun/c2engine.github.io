@@ -1,0 +1,916 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.o,user-scalable=no">
+<meta name="renderer" content="webkit"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<title>C²engine|学习-文档</title>
+<link href="css/global.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/document.css" rel="stylesheet">
+<script src="js/jquery_1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+</head>
+<body>
+<!--导航栏-->
+<div id="top-menu"></div>
+<script src="js/headernav.js"></script>
+<!--子菜单-->
+<div class="sub-header">
+    <div class="container">
+        <div class="sub-logo">
+            <h1>学习</h1>
+        </div>
+        <div id="sub-bar">
+            <div><span id="pic-sub"></span></div>
+        </div>
+        <div id="sub-down">
+        <ul class="sub-ul-head">
+            <li class="ahover dotted"><a href="#">文档</a></li>
+            <li class="dotted"><a href="http://wiki.c2engine.com">视频教程</a></li>
+            <li class="dotted"><a href="http://wiki.c2engine.com">API</a></li>
+            <li class="dotted"><a href="comingSoon.html">FAQ</a></li>
+        </ul>
+        </div>
+        <script>
+        var sub=0;
+            $("#sub-bar").click(function(){
+                $("#sub-down").slideToggle(300);
+                sub++;
+                $("#pic-sub").css("transform","rotate("+180*sub+"deg)");
+            });
+        </script>
+    </div>
+</div>
+<!--开始-->
+<div class="container">
+    <div class="clog_left">
+        <div class="catalog">
+            <span>C²engine引擎文档</span>
+            <hr style="height: 1px; border:none;border-top: 1px solid rgb(230,230,230); margin-top: 10px; margin-bottom: 10px;">
+            <ul class="first_">
+                <li>快速入门</li>
+                    <ul class="ul">
+                        <li>二级目录1-1</li>
+                            <ul class="ul">
+                                <li>三级目录1-1-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-1-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-1-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-2</li>
+                            <ul class="ul">
+                                <li>三级目录1-2-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-2-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-2-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-3</li>
+                            <ul class="ul">
+                                <li>三级目录1-3-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-3-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-3-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-4</li>
+                            <ul class="ul">
+                                <li>三级目录1-4-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-4-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-4-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                    </ul>
+                <li>C2手册</li>
+                    <ul class="ul">
+                        <li>二级目录1-1</li>
+                            <ul class="ul">
+                                <li>三级目录1-1-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-1-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-1-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-2</li>
+                            <ul class="ul">
+                                <li>三级目录1-2-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-2-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-2-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-3</li>
+                            <ul class="ul">
+                                <li>三级目录1-3-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-3-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-3-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-4</li>
+                            <ul class="ul">
+                                <li>三级目录1-4-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-4-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-4-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                    </ul>
+                <li>运行C2</li>
+                    <ul class="ul">
+                        <li>二级目录1-1</li>
+                            <ul class="ul">
+                                <li>三级目录1-1-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-1-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-1-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-2</li>
+                            <ul class="ul">
+                                <li>三级目录1-2-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-2-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-2-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-3</li>
+                            <ul class="ul">
+                                <li>三级目录1-3-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-3-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-3-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-4</li>
+                            <ul class="ul">
+                                <li>三级目录1-4-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-4-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-4-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                    </ul>
+                <li>图像</li>
+                    <ul class="ul">
+                        <li>二级目录1-1</li>
+                            <ul class="ul">
+                                <li>三级目录1-1-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-1-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-1-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-2</li>
+                            <ul class="ul">
+                                <li>三级目录1-2-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-2-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-2-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-3</li>
+                            <ul class="ul">
+                                <li>三级目录1-3-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-3-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-3-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-4</li>
+                            <ul class="ul">
+                                <li>三级目录1-4-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-4-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-4-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                    </ul>
+                <li>物理</li>
+                    <ul class="ul">
+                        <li>二级目录1-1</li>
+                            <ul class="ul">
+                                <li>三级目录1-1-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-1-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-1-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-2</li>
+                            <ul class="ul">
+                                <li>三级目录1-2-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-2-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-2-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-3</li>
+                            <ul class="ul">
+                                <li>三级目录1-3-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-3-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-3-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-4</li>
+                            <ul class="ul">
+                                <li>三级目录1-4-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-4-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-4-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                    </ul>
+                <li>脚本</li>
+                    <ul class="ul">
+                        <li>二级目录1-1</li>
+                            <ul class="ul">
+                                <li>三级目录1-1-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-1-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-1-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-2</li>
+                            <ul class="ul">
+                                <li>三级目录1-2-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-2-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-2-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-3</li>
+                            <ul class="ul">
+                                <li>三级目录1-3-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-3-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-3-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-4</li>
+                            <ul class="ul">
+                                <li>三级目录1-4-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-4-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-4-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                    </ul>
+                <li>音频</li>
+                    <ul class="ul">
+                        <li>二级目录1-1</li>
+                            <ul class="ul">
+                                <li>三级目录1-1-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-1-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-1-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-2</li>
+                            <ul class="ul">
+                                <li>三级目录1-2-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-2-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-2-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-3</li>
+                            <ul class="ul">
+                                <li>三级目录1-3-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-3-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-3-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-4</li>
+                            <ul class="ul">
+                                <li>三级目录1-4-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-4-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-4-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                    </ul>
+                <li>动画</li>
+                    <ul class="ul">
+                        <li>二级目录1-1</li>
+                            <ul class="ul">
+                                <li>三级目录1-1-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-1-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-1-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-2</li>
+                            <ul class="ul">
+                                <li>三级目录1-2-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-2-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-2-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-3</li>
+                            <ul class="ul">
+                                <li>三级目录1-3-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-3-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-3-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-4</li>
+                            <ul class="ul">
+                                <li>三级目录1-4-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-4-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-4-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                    </ul>
+                <li>服务</li>
+                    <ul class="ul">
+                        <li>二级目录1-1</li>
+                            <ul class="ul">
+                                <li>三级目录1-1-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-1-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-1-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-2</li>
+                            <ul class="ul">
+                                <li>三级目录1-2-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-2-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-2-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-3</li>
+                            <ul class="ul">
+                                <li>三级目录1-3-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-3-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-3-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                        <li>二级目录1-4</li>
+                            <ul class="ul">
+                                <li>三级目录1-4-1</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-4-2</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                                <li>三级目录1-4-3</li>
+                                    <ul class="ul layouted">
+                                        <li class="dotted">四级目录1-1-1-1</li>
+                                        <li class="dotted">四级目录1-1-1-2</li>
+                                        <li class="dotted">四级目录1-1-1-3</li>
+                                    </ul>
+                            </ul>
+                    </ul>
+            </ul>
+    <script>
+        $(".ul").hide();
+        $("li").not($(".dotted")).click(function(){
+            $(this).next().toggle();
+            var xx=$(this).css("background-image");
+            if(xx.match("plus")){
+              $(this).css("background-image","url(http://cdn.c2engine.com/c2engine/img2/study/document/minus.jpg)");
+            }
+            else{
+              $(this).css("background-image","url(http://cdn.c2engine.com/c2engine/img2/study/document/plus.jpg)");
+            }
+        });
+        //
+    </script>
+        </div>
+    </div>
+    <script>
+        $(function(){
+          var win=$(window);
+          var sc=$(document);
+          win.scroll(function(){
+            if(sc.scrollTop()>=120){
+              $(".catalog").css("position","fixed");
+              $(".catalog").css("top","0px");
+              }
+            else{
+              $(".catalog").css("position","relative");
+            }
+            });
+          })
+    </script>
+    <div class="clog_right">
+        <div class="tool_bar">
+
+            <button class="search_botton"></button>
+        </div>
+        <!--<iframe src="document/main.html" id="innerpage" width="100%" height="1200px" frameborder="0"></iframe>-->
+        <iframe src="document/main.html" id="iframepage" name="iframepage" frameBorder=0 width="100%" height="1200" onLoad="setIframeHeight()" ></iframe>
+        <hr style="height: 1px; border:none;border-top: 1px solid rgb(230,230,230); margin-top: 10px; margin-bottom: 10px;">
+        <script>
+function setIframeHeight(iframepage){
+  try{
+    var iframe = document.getElementById(iframepage);
+    if(iframe.attachEvent){
+      iframe.attachEvent("onload", function(){
+        iframe.height =  iframe.contentWindow.document.documentElement.scrollHeight;
+      });
+      return;
+    }else{
+      iframe.onload = function(){
+        iframe.height = iframe.contentDocument.body.scrollHeight;
+      };
+      return;                
+    }    
+  }catch(e){
+    throw new Error('setIframeHeight Error');
+  }
+}
+        </script>
+    </div>
+    <script>
+        var ww=$(".container").width();
+        $(".clog_right").css("width",ww-300+'px');
+    </script>
+</div>
+
+
+
+<!--底部导航栏-->
+
+
+
+
+
+
+
+</body>
+</html>

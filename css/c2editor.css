@@ -1,0 +1,94 @@
+﻿body{background:#101818;font-size:14px;}
+
+/*平台介绍-高度灵活的编辑器*/
+.container{height: 100%;}
+.topx{width:100%;height:540px;background:url("http://cdn.c2engine.com/c2engine/img2/show/sh_bg.jpg");    background-position: bottom center;background-size:cover;}
+.top{height:100%;position:relative;margin:0 auto;}
+.top .p_left{width:50%;height:100%;float: left;position: relative;}
+.p-left-top-ul{position: absolute;bottom: 50px;}
+.p-left-top-li{margin: 20px 0;}
+.p-left-top-ul .p_t_top{font-size:26px;width:100%;line-height: 26px;}
+.p-left-top-ul .p_t_in p{font-size:16px;line-height:30px;}
+.p-left-top-ul .p_t_in {width: 80%;}
+.p-left-top-ul .p_t_lower{background: #00aeef;cursor: pointer;width: 180px;margin-top:100px;border-radius: 3px;}
+.p-left-top-ul .p_t_lower p{font-size:24px;line-height:45px;text-align: center;color: #EFEFEF;}
+.p-left-top-ul .p_t_lower p sup{color:#EFEFEF;font-size:16px;}
+.p-left-top-ul a span{font-weight: bold;font-size: 16px;background: rgb(0,173,239) none repeat scroll 0% 0%;padding: 7px 29px;border-radius: 4px;color:#EFEFEF;line-height: 100px;}
+
+.top .p_right{width:50%;height:100%;float: right;position: relative;}
+.top .p_right .p_r_in{position: absolute;bottom:50px;width: 100%;}
+.top .p_right .p_r_in img{width: 100%;}
+.top .p_t_circular{width:100px;height:100px;cursor: pointer;background:url("http://cdn.c2engine.com/c2engine/img2/c2/c2_editor/10.png");border-radius:50px;background-size: cover;position: absolute;margin-top: -50px;margin-left: -50px;top:50%;left:50%;opacity: 0.9;}
+.top .p_t_circular:hover{opacity: 1;}
+#myVideo{display: none;}
+
+
+@media(max-width:991px){
+    .topx{width:100%;height:auto;}
+    .top{width:100%;height:auto;position:relative;margin:0 auto;}
+    .top .p_left{width:100%;height:400px;position:relative;}
+    .top .p_left .p_t_top{font-size:24px;margin-top: 40px;}
+    .top .p_left .p_t_in{width:100%;}
+    .top .p_left .p_t_in p{font-size:16px;line-height:36px;}
+    .top .p_left .p_t_lower{margin-top:60px;}
+    .top .p_left .p_t_lower p{font-size:24px;}
+
+    .top .p_t_circular{width:100px;height:100px;margin-top: -50px;margin-left: -50px;top:50%;left:50%;}
+    .top .p_right{width:100%;padding: 10px; margin-bottom: 20px;}
+    .top .p_right .p_r_in{position: relative;}
+}
+
+/*包含些什么*/
+.include-bg{background: #EFEFEF;}
+.include-title{text-align: center;}
+.include-title h1{color:#676767;margin-bottom: 40px;letter-spacing: 5px;}
+.include-checkbox{width: 100%;text-align: center;margin-bottom: 20px;}
+.include-checkbox-ul{display:inline-block;width: 100%;margin: auto;font-size: 0;}
+.include-checkbox-li{float:none;display:inline-block;width: 14.2%;margin-bottom: 20px;}
+.include-checkbox-div{width:80px;height:80px;margin: auto;}
+.include-checkbox-li img{width: 80px;}
+.include-checkbox-li p{color:#676767;font-size: 16px;margin:0;}
+.include-content{width: 100%;padding-bottom:2px;text-align: center;}
+.include-content-box{padding:20px;margin: auto;border:1px solid #DFDFDF;box-shadow:-2px 0px 3px #DFDFDF,0px -2px 3px #DFDFDF,0px 2px 3px #DFDFDF,2px 0px 3px #DFDFDF;}
+.include-content-ul{height: 100%;width: 100%; }
+.include-content-li-1{float: left;width: 30%;margin:auto;}
+.include-content-li-1 img{width: 150px;margin: 45px;}
+.include-content-li-2{float: left;width: 70%;padding-left:20px;}
+.clear{content:""; clear: both;}
+.include-content-li-2 h1{color:#676767;text-align: left;}
+.include-content-content li{color:#676767; text-align: left;list-style: inside;font-size: 16px;}
+@media(max-width: 1000px){
+    .include-content-li-1{display: none;}
+    .include-content-li-2{float:none;width: 90%;padding: 0;}
+    .include-content-box{width: 100%;}
+    .include-title h1{font-size: 32px;}
+    .include-content-li-2 h1{font-size: 32px;}
+}
+@media(max-width: 750px){
+    .include-checkbox-li{width:16.6%; float: left;}
+    .include-checkbox-li img{width: 60px;}
+    .include-title h1{font-size: 29px;}
+    .include-title h1{font-size: 30px;}
+    .include-content-li-2 h1{font-size: 30px;}
+}
+@media(max-width: 610px){
+    .include-checkbox-li{width:20%; }
+    .include-title h1{font-size: 29px;}
+    .include-content-li-2 h1{font-size: 29px;}
+}
+@media(max-width: 530px){
+    .include-checkbox-li{width:25%; }
+    .include-title h1{font-size: 28px;}
+    .include-content-li-2 h1{font-size: 28px;}
+}
+@media(max-width: 450px){
+    .include-checkbox-li{width:33.3%; }
+    .include-title h1{font-size: 27px;}
+    .include-content-li-2 h1{font-size: 27px;}
+}
+@media(max-width: 370px){
+    .include-checkbox-li{width:33.3%; }
+    .include-title h1{font-size: 26px;}
+    .include-content-li-2 h1{font-size: 26px;}
+}
+

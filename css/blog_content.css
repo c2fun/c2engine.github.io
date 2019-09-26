@@ -1,0 +1,125 @@
+﻿@charset "utf-8";
+/* CSS Document */
+header,section,footer,aside,nav,article,figure
+{
+	display:block;
+}
+body{padding:0; margin:0; background:rgb(16,25,24);overflow-x:hidden;}
+.container{color:#EFEFEF; /* background:#CCCCCC; */}
+
+
+
+#lay_line{ display: none; }
+div#bottom-menu {margin-top: 40px;}
+}
+/*博客主界面*/
+	/*左栏*/
+.sim_area{width: 100%; margin-bottom: 30px; }
+.blog_left{width: 74%; position: relative;float: left;margin-top: 60px; }
+.left_pic{ width: 100%;  border-top-left-radius: 5px; border-top-right-radius: 5px; }
+.left_pic img{border-top-left-radius: 5px; border-top-right-radius: 5px; }
+.left_content{padding: 50px 50px 50px 50px; border-bottom-left-radius: 5px;border-bottom-right-radius: 5px; background: #EFEFEF;    margin-bottom: 60px;}
+.left_content h1{font-size: 24px; color: rgb(51,51,51);}
+.left_content span{display: inline-block; font-size: 12px; color: rgb(51,51,51); margin-bottom: 40px;}
+.left_content p{display: inline-block; font-size: 14px; color: rgb(51,51,51); margin-bottom: 12px;}
+.left_content img{ margin-top: 7px; }
+.left_content h2{font-size: 20px; color: rgb(51,51,51);margin-top: 28px;margin-bottom: 13px;}
+	/*右栏*/
+
+
+
+.blog_right{width: 22%; position: relative;float: right;margin-top: 60px; margin-left: 4%; padding-top: 20px;}
+.blog_right h3{font-size: 14px; color: rgb(156,154,156); line-height: 5px; }
+.blog_right h3 span{padding-bottom: 10px; border-bottom: 2px solid rgb(0,174,239); }
+.blog_pop{width: 100%;  padding-top: 10px; }
+.blog_pop span{display: inline-block;font-size: 12px;color: rgb(153,153,153);margin-top: 10px;  }
+.blog_pop p{font-size: 14px;color: #EFEFEF;letter-spacing: 1px;margin-top: 10px;    margin-bottom: 35px;  }
+.blog_pop img{ cursor: pointer; }
+.blog_pop p{ cursor: pointer; }
+.blog_pop p:hover{ color: rgb(230,230,230); }
+.pickup{ display: none; width: 100%; padding-top: 24px; }
+.assort{ display: none; padding: 0px; margin: 0px; margin-top: -10px;}
+.assort li{font-size: 14px; line-height: 36px; color: rgb(147,149,151); border-bottom: 1px solid rgb(41,48,49); cursor: pointer; }
+.assort li:hover{ color: #EFEFEF; }
+.assort li:active{ color: #EFEFEF; }
+
+
+@media(max-width: 991px){
+.blog_left{float: none; width: 100%;}
+.blog_right{float: none;width: 100%; margin-left:0px; padding-top: 50px; }
+}
+@media(max-width: 749px){
+.blog_right{ display: none; }
+}
+@media(min-width: 450px) and (max-width: 768px){
+.blog_left {margin-top: 30px;}
+.left_content{ padding: 30px 25px 30px 25px; }
+}
+@media(min-width: 315px) and (max-width: 449px){
+.blog_left {margin-top: 15px;}
+.left_content{padding: 10px 10px 30px 10px; margin-bottom: 20px; }
+.left_content h1 {font-size: 20px;}
+.left_content p {font-size: 12px;line-height: 24px;}
+.left_content span{ margin-bottom: 20px;}
+.left_content h2 {font-size: 16px;}
+.assort li:hover{ color:rgb(147,149,151); }
+.assort li:active{ color: #EFEFEF; }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*bootstrap属性*/
+.col-lg-6{padding:10px;}
+.col-lg-12{padding:10px;}
+.row{padding:0 5px 0 5px;}
+
+@media(min-width:1140px){
+.container{ width:1140px;}	
+}
+@media(min-width:769px) and (max-width:1199px){
+.co-intro .container .row .col-lg-9 p{font-size:14px; color:#000000; margin-bottom:15px;}	
+}
+@media(max-width:768px){
+.co-intro .container .row .col-lg-9 p{font-size:12px; color:#000000; margin-bottom:15px;}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

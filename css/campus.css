@@ -1,0 +1,66 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body{background-color: rgb(28,28,28);overflow-x:hidden;}
+/**/
+.lay-body{width: 100vw; height: 100vh; background-image:url(http://cdn.c2engine.com/c2engine/img2/about/03.jpg);background-repeat:no-repeat;background-size:100%; 
+color:#EFEFEF; padding-top: 13vw;}
+.container h1{ text-align: center;font-size: 32px; text-shadow:0px 0px 10px #000000;line-height: 100px; margin-bottom: 2vw; }
+.col-lg-4 h3{ font-size: 20px; line-height: 20px; text-shadow:0px 0px 6px #000000; }
+.col-lg-4 h3 span{display:inline-block; vertical-align:middle; color:#FF3300;}
+.col-lg-4 p{ margin-top: 20px; }
+.row .feture{ padding: 0px 0px 0px 15px; margin: 0px; }
+.check{ font-size: 14px; line-height: 14px; font-weight: normal;width: 32%; }
+.check input{float:left;}
+.check p{ margin:3px 0 0 5px;float:left;letter-spacing:1px;}
+.button-position{width:100%;margin-top:15px;padding-top:20px;text-align:center;}
+.sendbtn{color:#EFEFEF;font-size:18px; padding: 4px 23px 4px 23px;background:rgb(0,174,239);border:none;
+border-radius:5px;}
+@media(min-width: 1468px) and (max-width:1800px) {
+.lay-body{background-size:110%; background-position: 50% 0%;padding-top: 15vw;}
+}
+@media(min-width: 1420px) and (max-width:1468px) {
+.lay-body{background-size:110%; background-position: 50% 0%;padding-top: 15vw;}
+}
+@media(min-width: 1199px) and (max-width:1420px) {
+.lay-body{background-size:110%; background-position: 50% 0%;padding-top: 13vw;}
+.button-position{ padding-top: 20px; }
+}
+@media(min-width: 785px) and (max-width:991px) {
+.lay-body{background-size:110%; background-position: 50% 0%;padding-top: 13vw;}
+.button-position{ padding-top: 20px; }
+}
+/**/
+@media(min-width: 750px) and (max-width:785px) {
+.lay-body{background-size:190%; background-position: 50% 0%;padding-top: 26vw;}
+.container h1{ margin-bottom: 7.4vw; }
+.button-position{ padding-top: 20px; }
+}
+@media(min-width: 500px) and (max-width:750px) {
+.lay-body{background-size:200%; background-position: 50% 0%;padding-top: 22vw;}
+.button-position{ padding-top: 20px; padding-bottom: 60px;}
+}
+@media(max-width:499px) {
+.lay-body{background-size:200%; background-position: 50% 0%;padding-top: 22vw;}
+.container{ padding-bottom: 20px; }
+.button-position{bottom: 0;left: 0; 
+	padding-top: 20px 15px 0px 15px; padding-bottom: 0px;}
+.sendbtn{color:#EFEFEF;font-size:18px;width: 100%; padding: 10px 0px 10px 0px;background:rgb(0,174,239);border:none;
+border-radius:0px;}
+.check{width:49%;}
+}
+
+/*=================================================================================================*/
+/*=================================================================================================*/
+/*=================================================================================================*/
+
+	
+	
+
+	
+.panel-title{
+	font-size:17px;
+	}
+.panel-body a{
+	font-size:16px;
+	color:#000000;
+	}

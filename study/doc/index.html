@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="../js/dynamicLoading.js"></script>
+	<script src="../js/jquery.js"></script>
+	<script type="text/javascript"> 
+		$("document").ready(function(){
+			var url = document.location.toString();
+			var arrObj = url.split("?");
+			if(arrObj.length > 1)
+			{
+				var arrPara = arrObj[1].split("&");
+				var arr
+				for(var i = 0; i < arrPara.length;i++)
+				{
+					arr = arrPara[i].split("=");
+					if(arr !=null && arr[0] == "win" && arr[1] == "doc")
+					{
+						$("#mainpage").attr("src","TwDevDoc.html");
+					}else if(arr !=null && arr[0] == "win" && arr[1] == "video")
+					{
+						$("#mainpage").attr("src","Course.html");
+					}else if(arr !=null && arr[0] == "win" && arr[1] == "faq")
+					{
+						$("#mainpage").attr("src","FAQ.html");
+					}
+				}
+			}else{
+				$("#mainpage").attr("src","TwDevDoc.html");
+			}
+		});
+		if(browser.versions.mobile){
+			dynamicLoading.css("../mobile/css/core.css");
+			dynamicLoading.css("../mobile/css/video.css");
+			dynamicLoading.js("../mobile/js/htmlcore.js");
+		}else{
+			dynamicLoading.css("../css/core.css");
+			dynamicLoading.js("../js/htmlcore.js");
+		}
+		function checkJsLoad(JsName){
+			var js = /js$/i.test(JsName);
+			var es = document.getElementsByTagName(js?'script':'link');
+			for(var i=0;i<es.length;i++)
+			{
+				if(es[i][js?'src':'href'].indexOf(JsName) != -1){
+					return true;
+				}
+			}
+			checkJsLoad(JsName);
+		}
+		function reinitIframe(){  
+		var iframe = document.getElementById("mainpage");  
+		try{  
+		    var bHeight = iframe.contentWindow.document.body.scrollHeight;  
+		    var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;  
+		    var height = dHeight;  
+		    iframe.height = height;  
+		}catch (ex){}  
+		}  
+		  
+		var timer1 = window.setInterval("reinitIframe()", 500); //定时开始  
+		  
+		function reinitIframeEND(){  
+		var iframe = document.getElementById("mainpage");  
+		try{  
+		    var bHeight = iframe.contentWindow.document.body.scrollHeight;  
+		    var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;  
+		    var height = Math.max(bHeight, dHeight);  
+		    iframe.height = height;  
+		}catch (ex){}   
+		window.clearInterval(timer1);  
+		  
+		}  
+  </script> 
+  <meta charset="utf-8">
+  <title>jsTree test</title>
+  <!-- 2 load the theme CSS file -->
+  <script charset="GB2312" src="../js/toc.js"></script>
+</head>
+<body style="overflow:hidden;">
+  <!-- 3 setup a container element -->
+  <div id='sidebar' class='sidebar'>
+  	<div class='sidebar-wrap'>
+  		<div class='content'>
+  			<div class='sidebar-menu'>
+  				<div class='toc mCustomScrollbar _mCs_1'>
+  					<h2>C2engine</h2>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<iframe id='mainpage' name='mainpage' frameBorder=0 ></iframe>
+  </div>
+</body>
+</html>

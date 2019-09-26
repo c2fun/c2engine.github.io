@@ -1,0 +1,175 @@
+@charset "utf-8";
+/* CSS Document */
+header,section,footer,aside,nav,article,figure
+{
+	display:block;
+}
+body{padding:0; margin:0; background:rgb(16,25,24);overflow-x:hidden;
+font-family:Arial, 'Microsoft YaHei';}
+.container{color:#EFEFEF; /* background:#CCCCCC; */}
+
+
+
+
+/*banner*/
+.vr_banner{ width: 100vw; height: 600px; background-color: #666666;background-image:url(http://cdn.c2engine.com/c2engine/img/c2/vr_bg.jpg);
+background-repeat: no-repeat; background-size: 100%; background-position: center center; }
+.vr_banner .container h1{ font-family:Arial, 'Microsoft YaHei'; color: #EFEFEF; font-size: 48px; text-shadow: 0px 1px 4px #000000;
+margin-top: 155px; }
+.vr_banner .container p{ width: 380px; font-family:Arial, '宋体'; color: #EFEFEF; font-size: 24px; line-height: 40px; text-shadow: 0px 1px 4px #000000;
+margin-top: 38px;}
+/*vr行业*/
+.vr_trade{ width: 100%; padding-top: 80px;}
+.vr_trade .container h2{font-family:Arial, 'Microsoft YaHei';font-size: 30px; color: #EFEFEF; }
+.vr_trade .container p{width:50%;font-family:Arial, '宋体';font-size: 16px; color: #EFEFEF; line-height: 28px; }
+hr{ color: rgb(41,48,49)!; }
+.vr_font{ background-color: rgb(33,36,41); border-radius:5px; margin-top: 10px; margin-bottom: 50px;}
+.vr_pos_left{ margin-right: 20px; }
+.vr_pos_right{ margin-left: 20px; }
+.vr_font li img{border-top-left-radius:5px;border-top-right-radius:5px;}
+.vr_font li:nth-child(2){padding:20px 20px 8px 20px; min-height: 130px;}
+.vr_font li h3{ width: 100% !important;color:#EFEFEF; font-size: 20px; }
+.vr_font li p{ width: 100% !important;color:rgb(204,204,204)!important;font-size: 14px!important; }
+@media(min-width: 1599px) and (max-width: 1920px){
+.vr_banner{background-size: 122%; background-position: center center; }
+.vr_banner .container h1{font-size: 48px;margin-top: 155px; }
+.vr_banner .container p{font-size: 22px; line-height: 40px;margin-top: 38px;}
+}
+@media(min-width: 1400px) and (max-width: 1598px){
+.vr_banner{background-size: 140%; background-position: center center; }
+.vr_banner .container h1{font-size: 48px;margin-top: 155px; }
+.vr_banner .container p{font-size: 22px; line-height: 40px;margin-top: 38px;}
+}
+@media(min-width: 1285px) and (max-width: 1399px){
+.vr_banner{background-size: 150%; background-position: center center; }
+.vr_banner .container h1{font-size: 48px;margin-top: 155px; }
+.vr_banner .container p{font-size: 20px; line-height: 36px;margin-top: 38px;}
+}
+@media(min-width: 1140px) and (max-width: 1284px){
+.vr_banner{height: 500px;background-size: 145%; background-position: center center; }
+.vr_banner .container h1{font-size: 48px;margin-top: 155px; }
+.vr_banner .container p{font-size: 20px; line-height: 36px;margin-top: 38px;}
+}
+@media(min-width: 899px) and (max-width: 1139px){
+.vr_banner{height: 450px;background-size: 162%; background-position: center center; }
+.vr_banner .container h1{font-size: 48px;margin-top: 155px; }
+.vr_banner .container p{font-size: 18px; line-height: 30px;margin-top: 38px;}
+.vr_trade{padding-top: 70px;}
+}
+@media(min-width: 769px) and (max-width: 899px){
+.vr_banner{height: 400px;background-size: 170%; background-position: center center; }
+.vr_banner .container h1{font-size: 48px;margin-top: 120px; }
+.vr_banner .container p{font-size: 18px; line-height: 30px;margin-top: 38px;}
+.vr_trade{padding-top: 65px;}
+}
+@media(min-width: 549px) and (max-width: 769px){
+.vr_banner{height: 350px;background-size: 210%; background-position: center center; }
+.vr_banner .container h1{font-size: 44px;margin-top: 90px; }
+.vr_banner .container p{font-size: 18px; line-height: 30px;margin-top: 38px;}
+.vr_trade{padding-top: 60px;}
+}
+@media(min-width: 314px) and (max-width: 549px){
+.vr_banner{height: 280px;background-size: 280%; background-position: center center; }
+.vr_banner .container h1{font-size: 32px;margin-top: 80px; }
+.vr_banner .container p{width: 100%; font-size: 16px; line-height: 28px;margin-top: 38px;}
+.vr_trade{padding-top: 55px;}
+.vr_trade .container h2{font-size: 25px;}
+
+}
+
+
+
+
+@media(min-width: 1351px) and (max-width: 1499px){
+.vr_font{margin-top: 10px; margin-bottom: 25px;}
+.vr_pos_left{ margin-right: 10px; }
+.vr_pos_right{ margin-left: 10px; }
+}
+@media(min-width: 1140px) and (max-width: 1350px){
+.vr_font{margin-top: 10px; margin-bottom: 10px;}
+.vr_pos_left{ margin-right: 0px; }
+.vr_pos_right{ margin-left: 0px; }
+}
+@media(min-width: 769px) and (max-width: 1139px){
+.vr_trade .container p{width:70%; font-size: 14px;}
+.vr_font li h3{font-size: 20px; }
+.vr_font li p{font-size: 14px!important;line-height: 22px!important;}
+.vr_font{margin-top: 10px; margin-bottom: 10px;}
+.vr_pos_left{ margin-right: 0px; }
+.vr_pos_right{ margin-left: 0px; }
+}
+@media(min-width: 549px) and (max-width: 768px){
+.vr_trade .container p{width:100%; font-size: 14px;}
+.vr_font{margin-top: 10px; margin-bottom: 10px;}
+.vr_pos_left{ margin-right: 0px; }
+.vr_pos_right{ margin-left: 0px; }
+.vr_font li h3{font-size: 18px; line-height: 18px; }
+.vr_font li p{font-size: 12px!important;line-height: 20px!important; }
+}
+@media(max-width: 549px){
+.vr_trade .container h2{width:100%; font-size:20px;}
+.vr_trade .container p{width:100%; font-size: 12px;}
+.vr_font{margin-top: 10px; margin-bottom: 10px;}
+.vr_pos_left{ margin-right: 0px; }
+.vr_pos_right{ margin-left: 0px; }
+.vr_font li h3{font-size: 18px; line-height: 18px; }
+.vr_font li p{font-size: 12px!important;line-height: 20px!important; }
+}
+
+
+
+
+
+/*bootstrap属性*/
+.col-lg-6{padding:10px;}
+.col-lg-12{padding:10px;}
+.row{padding:0 5px 0 5px;}
+
+
+@media(min-width:1500px) {
+.container{ width:1410px;}
+
+
+}
+@media(min-width:1351px) and (max-width:1499px){
+.container{ width:1300px;}
+}
+@media(min-width:1200px) and (max-width:1350px){
+	.container{ width:1140px;}	
+}
+@media(min-width:1140px) and (max-width:1199px){
+.container{ width:1140px;}	
+}
+@media(min-width:769px) and (max-width:1199px){
+.co-intro .container .row .col-lg-9 p{ font-family:Arial,"宋体"; font-size:14px; color:#000000; margin-bottom:15px;}	
+}
+@media(max-width:768px){
+.co-intro .container .row .col-lg-9 p{ font-family:Arial,"宋体"; font-size:12px; color:#000000; margin-bottom:15px;}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

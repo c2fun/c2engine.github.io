@@ -1,0 +1,485 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<meta name="renderer" content="webkit"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<title>C²engine|案例展示</title>
+<link href="css/global.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/show.css" rel="stylesheet">
+<script src="js/jquery_1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/html5media/html5media.min.js"></script>
+<script src="js/dynamicLoading.js"></script>
+<script src="js/show.js"></script>
+</head>
+<body>
+<!--判断当前浏览器是否IE8及以下版本-->
+<!--[if lte IE 8]>
+<script>
+    alert("您的IE浏览器版本过低！部分功能无法正常使用！请更新至IE9及以上版本");
+</script>
+<![endif]-->
+<script>
+	window.onload = function(){
+		var imgheight = $("#sh_img_1").height();
+		var divheight = imgheight / 5;
+		$(".show_text_bg").css("height",divheight);
+		$(".show_text_bg").css("margin-top",-divheight);
+	}
+</script>
+<!--导航栏-->
+<div id="top-head"></div>
+<div id="top-menu"></div>
+<script src="js/headernav.js"></script>
+<!--banner-->
+<div class="sh_banner">
+    <div class="container">
+        <ul class="top">
+          <li class="p_left">
+            <ul class="p-left-top-ul">
+              <li class="p-left-top-li">
+                <h2 class="p_t_top">案例展示</h2>
+              </li>
+              <li class="p-left-top-li">
+                <div class="p_t_in">
+                  <p>开发者可通过C²engine创作3D/VR/AR/MR内容，<br />并应用到游戏、军事、旅游、电商、教育等领域。</p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="p_right">
+            <div id="movie" class="p_r_in">
+                <img id="bf-poster" src="http://cdn.c2engine.com/c2engine/img/show/sh_vedio.jpg" width="100%"/>
+                <img id="bf-btn" src="http://cdn.c2engine.com/c2engine/img/show/bf.png" width="16%" />
+            </div>
+          </li>
+        </ul>
+        <!--
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <h1>案例展示</h1>
+                <p>开发者可通过C²engine创作3D/VR/AR/MR内容，<br />并应用到游戏、军事、旅游、电商、教育等领域。</p>
+            </div>
+            <div id="movie" class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                <img id="bf-poster" src="http://cdn.c2engine.com/c2engine/img/show/sh_vedio.jpg" width="100%"/>
+                <img id="bf-btn" src="http://cdn.c2engine.com/c2engine/img/show/bf.png" width="16%" />
+            </div>
+        </div>
+        -->
+    </div>
+</div>
+<!--热门-->
+<div class="popular_ex" style="background-color:#22272a;">
+    <div class="container">
+        <h3>游戏</h3>
+        
+        <h2>《真三国战记》</h2>
+        <p>首款全视角、电影级动作效果的3D H5游戏</p>
+        <div class="game-show">
+            <img src="http://cdn.c2engine.com/c2engine/img2/show/sanguowushuang.png"/>
+            <img src="http://cdn.c2engine.com/c2engine/img2/show/playbutton.png" class="playvideo"></img>
+            <div class="movefield" src="http://player.youku.com/embed/XMTg2NTcyMjQyMA=="></div>
+        </div>
+    </div>
+</div>
+<div class="popular_ex" style="background-color:#101918;">
+    <div class="container">
+        <h2>《Vampire Log》</h2>
+        <p>Facebook 3D次时代页游大作</p>
+        <div class="game-show">
+            <img src="http://cdn.c2engine.com/c2engine/img2/show/muguang.png"/>
+            <img src="http://cdn.c2engine.com/c2engine/img2/show/playbutton.png" class="playvideo"></img>
+            <div class="movefield" src="http://player.youku.com/embed/XMTg2NTcxNDU0MA=="></div>
+        </div>
+    </div>
+</div>
+<div class="popular_ex" style="background-color:#22272a;">
+    <div class="container">
+        <h2>《全面回忆》</h2>
+        <p>斩获ChinaJoy金翎奖及出版总署十强奖的3D次时代游戏</p>
+        <div class="game-show">
+            <img src="http://cdn.c2engine.com/c2engine/img2/show/quanmianhuiyi.png"/>
+            <img src="http://cdn.c2engine.com/c2engine/img2/show/playbutton.png" class="playvideo"></img>
+            <div class="movefield" src="http://player.youku.com/embed/XMTg3MjAyMzA5Mg=="></div>
+        </div>
+    </div>   
+</div>
+
+<!--3D模型展示-->
+<div class="threed-show">
+    <div class="container">
+        <ul class="movie-play-ul-list">
+            <li class="threed-show-half threed-show-half-left">
+                <div class="movie-img-show">
+                    <img src="http://cdn.c2engine.com/c2engine/img2/show/military.png"></img>
+                    <img src="http://cdn.c2engine.com/c2engine/img2/show/playbutton.png" id="play-video" class="playvideo"></img>
+                    <div class="movefield" src="http://player.youku.com/embed/XMTc3NzU3NTM1Mg=="></div>
+                    <ul class="threed-show-txtlist">
+                        <li class="threed-show-title"><span>军事</span>&nbsp;&nbsp;国家相关机构指定的3D/VR引擎</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="threed-show-half threed-show-half-right">
+                <div class="movie-img-show">
+                    <img src="http://cdn.c2engine.com/c2engine/img2/show/tourism.png"></img>
+                    <img src="http://cdn.c2engine.com/c2engine/img2/show/playbutton.png" id="play-video" class="playvideo"></img>
+                    <div class="movefield" src="http://player.youku.com/embed/XMTg3MjE5OTI0NA=="></div>
+                    <ul class="threed-show-txtlist">
+                        <li class="threed-show-title"><span>旅游</span>&nbsp;&nbsp;智慧旅游解决方案</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="threed-show-half threed-show-half-left">
+                <div class="movie-img-show">
+                    <img src="http://cdn.c2engine.com/c2engine/img2/show/house.png"></img>
+                    <img src="http://cdn.c2engine.com/c2engine/img2/show/playbutton.png" id="play-video" class="playvideo"></img>
+                    <div class="movefield" src="http://player.youku.com/embed/XMTc3NzUyNTUyMA=="></div>
+                    <ul class="threed-show-txtlist">
+                        <li class="threed-show-title"><span>地产</span>&nbsp;&nbsp;VR看房解决方案</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="threed-show-half threed-show-half-right">
+                <div class="movie-img-show">
+                    <img src="http://cdn.c2engine.com/c2engine/img2/show/clothingshow.png"></img>
+                    <img src="http://cdn.c2engine.com/c2engine/img2/show/playbutton.png" id="play-video" class="playvideo"></img>
+                    <div class="movefield" src="http://player.youku.com/embed/XMTc3NzU2NjIyOA=="></div>
+                    <ul class="threed-show-txtlist">
+                        <li class="threed-show-title"><span>服装</span>&nbsp;&nbsp;VR服装设计解决方案</li>
+                    </ul>
+                </div>
+            </li>
+            <li id="show_3d_al" class="threed-show-half threed-show-half-left">
+                <div class="movie-img-show">
+                    <img src="http://cdn.c2engine.com/c2engine/img2/show/electronicbusiness.png"></img>
+                    <img src="http://cdn.c2engine.com/c2engine/img2/show/playbutton.png" id="play-video" class="playvideo"></img>
+                    <ul class="threed-show-txtlist">
+                        <li class="threed-show-title"><span>电商</span>&nbsp;&nbsp;商品三维展示解决方案（点击二维码可查看3D商品）</li>
+                    </ul>
+                </div>
+            </li>
+            <li id="show_3d_education" class="threed-show-half threed-show-half-right">
+                <div class="movie-img-show">
+                    <img src="http://cdn.c2engine.com/c2engine/img2/show/education.png"></img>
+                    <img src="http://cdn.c2engine.com/c2engine/img2/show/playbutton.png" id="play-video" class="playvideo"></img>
+                    <ul class="threed-show-txtlist">
+                        <li class="threed-show-title"><span>教育</span>&nbsp;&nbsp;智慧教学解决方案（点击二维码可查看3D熊猫）</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <p class="konw-more"><a href="http://c2engine.com/social/?/explore/category-4" class="fa fa-angle-double-right" style="display:none;" target="_blank">点击查看更多案例</a></p>
+</div>
+
+<!--3D模型展示开始-->
+<div class="pout-ng-common">
+    <div id="close-mov-common">
+        <span class="fa fa-times" id="offmov" aria-hidden="true"></span>
+    </div>
+    <div class="pmov">
+        <!--<embed id="ykbf" src="http://wan3.cn/threejs/untitled-scene/index1.html" allowFullScreen="true" quality="high" width="100%"  align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>-->
+        <img class="pimg"/>
+        <iframe id="sh_common_iframe" class="piframe" scrolling="no" frameborder="0" allowtransparency="yes"></iframe>
+    </div>
+</div>
+<!--3D模型展示开始-->
+<div class="pout-movie-common">
+    <div id="close-movie-common">
+        <span class="fa fa-times" id="offmov" aria-hidden="true"></span>
+    </div>
+    <div class="movie-playfield">
+        <iframe id='iframe1' src='' frameborder=0 'allowfullscreen'></iframe>
+    </div>
+</div>
+
+
+
+
+<!--放大显示结束->
+<div class="sh_supplier">
+	 <div class="container">
+	 		<div class="row">
+		 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		 			<div class="precent-100">
+			 			<h2>互联网电商展示案例</h2>
+			 			<p>随着经济体制的转型，电商几乎已经覆盖到了所有消费品市场，如何帮助消费者准确决策？如何提升消费者的购买欲望？如何让平台更优特点？三维展示就是一个新互联网时代的解决方案！C²engine的三维云展示可以和电商网站无缝，包括微商在内的所有平台都可以使用。</p>
+			 			<ul>产品功能：</ul>
+			 			<ul>
+			 				<li>纯在线应用，无需任何安装，上网即可使用；</li>
+			 				<li>使用扫一扫功能，就能将三维展品展示出来；</li>
+			 				<li>提供电商、微商，商品设计等多种功能。</li>
+			 			</ul>
+			 		</div>
+		 		</div>
+		 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		 			<div class="col-lg-12 col-md-12">
+            <div class="pic-7">
+                
+		 					<img src="http://cdn.c2engine.com/c2engine/img/show/sh_ds_s.png" class="onepic" id="show_3d_al" name="0" alt="重新定义了HTML5游戏的开发工作流，开发、调试尽在浏览器内。不断丰富的插件库，让游戏开发更加便捷、简单。全中文文档和开发者社区齐全，助您快速上手。" />
+                            <img src="http://cdn.c2engine.com/c2engine/img/show/guide.gif" id="show_3d_div1"/>                                        
+		 				</div>                       
+		 			</div>
+		 		</div>
+		 	</div>
+	 </div>
+</div>
+<div class="sh_supplier">
+	 <div class="container">
+	 		<div class="row">
+		 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		 			 <div class="col-lg-12 col-md-12">
+             <div class="pic-7">
+		 					<img src="http://cdn.c2engine.com/c2engine/img/show/sh_lp_s.png" class="onepic" id="show_3d_house" name="0" alt="重新定义了HTML5游戏的开发工作流，开发、调试尽在浏览器内。不断丰富的插件库，让游戏开发更加便捷、简单。全中文文档和开发者社区齐全，助您快速上手。"/>
+		 				 <img src="http://cdn.c2engine.com/c2engine/img/show/guide.gif" id="show_3d_div2"/>  
+                         </div>
+		 			 </div>
+		 		</div>
+		 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		 			<div class="precent-100">
+			 			<h2>三维展示在房地产行业的应用</h2>
+			 			<p>用3D数字化形式来展示房地产产品，对于吸引消费人群、推动楼盘营销、提升产品品味都起到重要作用，成为地产产品展示的新趋向。</p>
+			 			<ul>产品功能：</ul>
+			 			<ul>
+			 				<li>房地产项目官方网站：超好的用户体验，更直观的楼盘信息；</li>
+			 				<li>三维数字楼书：可以扫码直接在手机或者平板浏览，可以与房客充分互动，更加直观的介绍项目信息；</li>
+			 				<li>三维数字楼书和电子沙盘以及传统纸质宣传媒介结合：电子沙盘及纸质宣传媒介上印有二维码，购房客直接扫描二维码，把三维数字楼书带回家，与家人朋友讨论，分享。</li>
+			 			</ul>
+		 			</div>
+		 		</div>
+		 	</div>
+	 </div>
+</div>
+<script>
+     $("#show_3d_div1").click(function(){
+          $(".pout-ng-al").fadeIn(300);
+          $("#youku-html5player-video").remove();
+          $("#bf-poster,#bf-btn").show();
+          });
+         $("#show_3d_div2").click(function(){
+          $(".pout-ng-al").fadeIn(300);
+          $("#youku-html5player-video").remove();
+          $("#bf-poster,#bf-btn").show();
+          });
+      $("#show_3d_al").click(function(){
+          $(".pout-ng-al").fadeIn(300);
+          $("#youku-html5player-video").remove();
+          $("#bf-poster,#bf-btn").show();
+          });
+      $("#show_3d_house").click(function(){
+          $(".pout-ng-house").fadeIn(300);
+       		$("#youku-html5player-video").remove();
+          $("#bf-poster,#bf-btn").show();
+          });
+      $("#close-mov-al").click(function(){
+          $(".pout-ng-al").fadeOut(300);
+          });
+      $("#close-mov-house").click(function(){
+          $(".pout-ng-house").fadeOut(300);
+          });
+      var h=window.innerHeight;
+      var ut=h*0.98;
+      function sliderdown(){
+        $("body,html").animate({scrollTop:ut},460,"easeOutCirc");
+        return false;
+      };
+</script>
+
+<!--更多->
+
+<div class="more_ex">
+    <div class="container">
+        <h3>更多作品</h3>
+        <!--案例->
+        <div class="row">
+            <div id="line1" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <ul class="vr_font vr_pos_left">
+                    <li>
+                    		<img id="sh_img_1" src="http://cdn.c2engine.com/c2engine/img/show/sample/sh_1.jpg" width="100%" alt=""/>
+                    		<div class="show_text_bg">
+                        	<h3></h3>
+                        	<p></p>
+                      	</div>
+                    </li>
+                </ul>
+            </div>
+            <div id="line2" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <ul class="vr_font vr_pos_right">
+                    <li><img id="sh_img_2" src="http://cdn.c2engine.com/c2engine/img/show/sample/sh_2.jpg" width="100%" alt=""/>
+                  		<div class="show_text_bg">
+                      	<h3></h3>
+                      	<p></p>
+                    	</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div id="line3" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <ul class="vr_font vr_pos_left">
+                    <li><img id="sh_img_3" src="http://cdn.c2engine.com/c2engine/img/show/sample/sh_3.jpg" width="100%" alt=""/>
+		                  <div class="show_text_bg">
+		                    	<h3></h3>
+		                    	<p></p>
+		                  </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="line4" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <ul class="vr_font vr_pos_right">
+                    <li><img id="sh_img_4" src="http://cdn.c2engine.com/c2engine/img/show/sample/sh_4.jpg" width="100%" alt=""/>
+                    	<div class="show_text_bg">
+		                    	<h3></h3>
+		                    	<p></p>
+		                  </div>
+		                </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div id="line5" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <ul class="vr_font vr_pos_left">
+                    <li><img id="sh_img_5" src="http://cdn.c2engine.com/c2engine/img/show/sample/sh_5.jpg" width="100%" alt=""/>
+                    	<div class="show_text_bg">
+		                    	<h3></h3>
+		                    	<p></p>
+		                  </div>
+		                </li>
+                </ul>
+            </div>
+            <div id="line6" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <ul class="vr_font vr_pos_right">
+                    <li><img id="sh_img_6" src="http://cdn.c2engine.com/c2engine/img/show/sample/sh_6.jpg" width="100%" alt=""/>
+                    	<div class="show_text_bg">
+		                    	<h3></h3>
+		                    	<p></p>
+		                  </div>
+		                </li>
+                </ul>
+            </div>
+        </div>
+        <!--分页按钮->
+        <div class="min_page">
+            <ul>
+                <a href='#here'><li id="pre"><span></span></li></a>
+            </ul>
+            <ul id="sh_li">
+                <!--
+                <li id="sp1" class="spa spon">1</li>
+                <li id="sp2" class="spa">2</li>
+                <li id="sp3" class="spa">3</li>
+                <li id="sp4" class="spa">4</li>
+                <li id="sp5" class="spa">5</li>
+                ->
+            </ul>
+            <ul>
+                <a href='#here'><li id="next"><span></span></li></a>
+            </ul>
+            <script>
+            var list=6;//22张图片
+            var page;//分页按钮个数
+            var nubb=1;
+            var rem=list%6;
+            if(rem==0){page=list/6;}
+            else{page=Math.floor(list/6)+1;}
+                for(m=1;m<page+1;m++){
+                    document.getElementById("sh_li").innerHTML+="<a href='#here'><li id='sp"+m+"' class='spa'>"+m+"</li></a>";
+                }
+                $(".spa").first().addClass("spon");
+
+
+                for(i=1;i<page+1;i++){
+                    !function(i){
+                        document.getElementById("sp"+i).addEventListener("click",function(){
+                            /*$(this).addClass("spon").siblings().removeClass("spon");*/
+                            $("#sh_li a li").removeClass("spon");
+                            $(this).addClass("spon");
+                            $("#line1,#line2,#line3,#line4,#line5,#line6").show();
+							
+                            nubb=i;
+                            //写在此处
+                            /*alert(nubb);*/
+                            for(n=1;n<7;n++){
+                                    var p=n+(nubb-1)*6;
+                                    document.getElementById("sh_img_"+n).src="http://cdn.c2engine.com/c2engine/img/show/sample/sh_"+p+".jpg";
+                                }
+
+                            });
+                        }(i);
+                    }
+                    //
+                    document.getElementById("sp"+page).addEventListener("click",function(){
+                    $(this).addClass("spon").siblings().removeClass("spon");
+                    for(q=1;q<7;q++){
+                            var t=q+(page-1)*6;
+                            document.getElementById("sh_img_"+q).src="http://cdn.c2engine.com/c2engine/img/show/sample/sh_"+t+".jpg";
+                        }
+
+                    for(w=rem+1;w<7;w++){
+                        $("#line"+w).hide();
+                    }
+                });
+                    //
+
+            $("#next").click(function(){
+                nubb++;
+                if(nubb>page){nubb=page;}
+                else if(nubb==page){
+                    $("#sh_li a li").removeClass("spon");
+                    $("#sp"+nubb).addClass("spon");
+
+                    for(w=rem+1;w<7;w++){
+                        $("#line"+w).hide();
+                    }
+                }
+                else
+                {
+                    $("#sh_li a li").removeClass("spon");
+                    $("#sp"+nubb).addClass("spon");
+                }
+                //写在此处
+                /*alert(nubb);*/
+                for(n=1;n<7;n++){
+                    var p=n+(nubb-1)*6;
+                    document.getElementById("sh_img_"+n).src="http://cdn.c2engine.com/c2engine/img/show/sample/sh_"+p+".jpg";
+                }
+            });
+            $("#pre").click(function(){
+                nubb--;
+                if(nubb<=0){nubb=1}
+                else
+                {
+                    $("#sh_li a li").removeClass("spon");
+                    $("#sp"+nubb).addClass("spon");
+                    $("#line1,#line2,#line3,#line4,#line5,#line6").show();
+                }
+                //写在此处
+                /*alert(nubb);*/
+                for(n=1;n<7;n++){
+                    var p=n+(nubb-1)*6;
+                    document.getElementById("sh_img_"+n).src="http://cdn.c2engine.com/c2engine/img/show/sample/sh_"+p+".jpg";
+                }
+            });
+
+            </script>
+        </div>
+
+
+
+    </div>
+</div>
+-->
+
+<!--底部导航栏-->
+<div id="bottom-menu"></div>
+<script src="js/footernav.js"></script>
+
+
+
+</body>
+</html>
