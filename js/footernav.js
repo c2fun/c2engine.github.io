@@ -6,8 +6,8 @@ function initfooterNav(){
 			"<ul class='container-footer-ul'><li><div class='QRcode-footer uu_footer'><img src='http://cdn.c2engine.com/c2engine/img2/index/weixin_code.png'/><p>C²engine资讯平台</p></div></li>"+
 		"</div>"+
 		"<div class='container gongan'>"+
-		"<a target='_blank' href='http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502202202'><img src='http://cdn.c2engine.com/c2engine/img2/index/wangjing.png'/><p>沪公网安备 31011502202202号</p></a>"+
-		"<a><p>沪ICP备15042356号-2</p></a>"+
+		"<a target='_blank' style='display:none' href='http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502202202'><img src='http://cdn.c2engine.com/c2engine/img2/index/wangjing.png'/><p>沪公网安备 31011502202202号</p></a>"+
+		"<a><p>苏ICP备19019020号-2</p></a>"+
 		"</div>";
 
 	$('.uu_footer div span').click(function(){
